@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "erc-ai-feedback: a prompt + rubric for AI triage of ERC StG/CoG drafts"
+message: >-
+  If this tool informs a teaching, workshop, or research process you
+  publish about, please cite it as below.
+type: software
+authors:
+  - given-names: Tomáš
+    family-names: Havránek
+    affiliation: Charles University, Prague
+    orcid: "https://orcid.org/0000-0003-0729-7754"
+repository-code: "https://github.com/tjhavranek/erc-ai-feedback"
+url: "https://github.com/tjhavranek/erc-ai-feedback"
+abstract: >-
+  A small package consisting of a locked ERC Starting / Consolidator
+  Grant evaluation rubric (verbatim sub-questions from the ERC Guide
+  for Peer Reviewers v6.0) and a single self-contained AI prompt that
+  loads the rubric, applies structural score caps, and enforces an
+  evidence-grounded, no-sycophancy critique register. Intended to
+  triage routine issues in proposal drafts so human reviewers can
+  focus on the harder problems only experienced reviewers can flag.
+  Not a substitute for human peer review or ERC support groups.
+keywords:
+  - ERC
+  - European Research Council
+  - grant writing
+  - peer review
+  - AI tools
+  - research support
+license: MIT
+version: "0.1.0"
+date-released: "2026-05-27"

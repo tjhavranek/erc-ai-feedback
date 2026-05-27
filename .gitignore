@@ -1,0 +1,34 @@
+# Local artifacts that should never reach the public repo
+
+# Proposal drafts and applicant material — never commit these
+*.proposal.pdf
+*.proposal.docx
+*.proposal.tex
+drafts/
+applicant_material/
+test_drafts/
+sanitised_drafts/
+
+# AI-session artifacts (private)
+mad_sessions/
+codex_*.txt
+codex_*_response.md
+codex_*_last_message.md
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Python / Node debris in case the repo grows tooling
+__pycache__/
+*.pyc
+node_modules/
+.env
+
+# Test notes (local only, may contain real material)
+test_notes.md
+package_v0/test_notes.md
