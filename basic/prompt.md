@@ -57,10 +57,13 @@ ASK ONCE before reviewing:
 
   Full proposal — Complete B1 (1-page B1 cover with abstract and
                  cross-panel explanation + 5-page Part I + up to
-                 4-page CV), or B1 + Part II (the 7-page section
-                 covering methodology, work plan, risk
-                 assessment, and budget justification). For
-                 Step 2 applicants, the complete submission.
+                 4-page CV and Track Record), plus any available
+                 B2 draft (Part II — the 7-page section covering
+                 methodology, work plan, risk assessment, and
+                 budget justification). B1 and B2 are both
+                 required for final ERC submission; the panel
+                 reads B1 alone at Step 1 of its evaluation and
+                 reads B1 plus B2 at Step 2.
 
 INTERNAL CONTENT DETECTION
 

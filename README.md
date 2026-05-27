@@ -42,8 +42,9 @@ is a direct application of the former.
    - **Pitch** — idea sketch, or abstract plus draft CV.
    - **Part I + CV** — Extended Synopsis (Part I of the Scientific
      Proposal) in progress, with a draft CV.
-   - **Full proposal** — complete B1 (Part I + CV), or B1 + B2 for
-     Step 2 applicants.
+   - **Full proposal** — complete B1 (cover-page abstract, Part I,
+     CV and track record), plus any available B2 draft (Part II;
+     required for final ERC submission).
 4. Read the output. The model returns the top findings ranked by
    severity, each grounded in a verbatim quote from your draft;
    which structural caps fired; a short list of what the next draft
@@ -104,7 +105,9 @@ use. The repository also contains:
 - A Claude Code + Codex CLI integration in
   [`advanced/`](advanced/) that runs the
   [`mad-research`](https://github.com/tjhavranek/mad-research)
-  protocol against the same ERC rubric.
+  protocol against the same ERC rubric (experimental; not yet
+  end-to-end pilot-verified — see
+  [`advanced/README.md`](advanced/README.md)).
 - A question-bank and answer stress-test prompt pair in
   [`mock_interview/`](mock_interview/) for Step-2 applicants
   preparing for the panel interview.
