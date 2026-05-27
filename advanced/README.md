@@ -29,10 +29,12 @@ to run an ERC-specific audit. A cleaner upstream-supported
 "external rubric" mechanism is the long-term target but is not
 yet available.
 
-Tested against: see
-[`mad_research_compatibility.yml`](mad_research_compatibility.yml)
-for the specific commit / release of mad-research these overrides
-are known to work against.
+Written against `mad-research` v0.5; see
+[`mad_research_compatibility.yml`](mad_research_compatibility.yml).
+The integration has not yet been end-to-end pilot-verified. The
+v0.3 pilots covered Standard, Mock interview, and Resubmission
+but not Advanced. A first end-to-end Advanced run on one of the
+synthetic fixtures is a v0.4 candidate.
 
 ## Prerequisites
 

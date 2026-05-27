@@ -15,9 +15,12 @@ should not look like these — these are sloppy on purpose.
 
 - [`pe6_synthetic_full_proposal.md`](pe6_synthetic_full_proposal.md)
   — full-proposal-stage draft in PE6 Computer Science and
-  Informatics. Seeded with all six structural failures CAP-A
-  through CAP-F. Tests the prompts' ability to recognise a
-  high-cap-firing proposal.
+  Informatics. Seeded with weak forms of all six structural
+  failures CAP-A through CAP-F. Tests the prompts' handling of
+  marginal cap-firing cases: the prompt may fire each cap or may
+  correctly read weak-but-present signals as scoring weaknesses;
+  both are defensible. See "Why two fixtures with different
+  failure profiles" below.
 - [`pe6_expected_findings.md`](pe6_expected_findings.md) —
   annotation describing what the prompt should produce on the
   PE6 fixture, including expected cap firings and expected

@@ -1,4 +1,4 @@
-# Step 4 of 3 — Synthesis (you do this, not the model)
+# Synthesis — after Steps 1-3 (you do this, not the model)
 
 After the Panel Reviewer, Devil's Advocate, and Writing Coach have
 all produced their outputs, you (the applicant) merge them. The

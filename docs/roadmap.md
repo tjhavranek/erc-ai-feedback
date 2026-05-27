@@ -3,9 +3,10 @@
 What is in the package today, what is on the roadmap, and what is
 explicitly deferred.
 
-## What is in v0.2
+## What is in v0.3
 
-Compared to v0.1.1, v0.2 adds:
+v0.3 contains the v0.2 expansion plus the v0.3.0 documentation
+and calibration additions:
 
 - **Standard pre-review** (multi-prompt sequence in one model) in
   [`../standard/`](../standard/). Three role prompts run in
@@ -19,37 +20,43 @@ Compared to v0.1.1, v0.2 adds:
 - **Mock interview preparation** in
   [`../mock_interview/`](../mock_interview/). A question bank
   generator plus an answer stress-test prompt for Step-2
-  applicants preparing for the panel interview. Shipped in v0.2;
-  maturity is early because the module has not yet been used in
-  a real Step-2 cycle. Marked accordingly in its own README.
+  applicants preparing for the panel interview.
 - **Resubmission audit** in
   [`../resubmission/`](../resubmission/). A prompt that takes a
   previous Evaluation Report and a new draft and reports
   point-by-point whether the new draft engages with each
-  criticism. Shipped in v0.2; not yet pilot-tested against a real
-  resubmission cycle (real evaluation reports are confidential).
-  Marked accordingly in its own README.
+  criticism.
 - **Test fixtures** in [`../tests/fixtures/`](../tests/fixtures/).
   Two synthetic ERC StG drafts (PE6 and SH3) with different
   failure profiles, plus their expected-findings annotations.
-  Used to exercise the prompts during pilot and regression
-  testing.
 - **Annual rubric verification** workflow at
   [`../.github/workflows/annual_verification_reminder.yml`](../.github/workflows/annual_verification_reminder.yml).
   Opens an Issue every September prompting the maintainer to
   re-verify the rubric against the new Work Programme.
-
-## What is on the v0.3 roadmap
-
-- **Multi-model convergence variant of Standard.** A documented
-  manual protocol for running the Standard sequence across two
+- **Companion-repository links** in
+  [`../README.md`](../README.md), connecting this ERC package to
+  the manual duel protocol and mad-research automation it builds
+  on.
+- **Contributor guidance and issue templates** in
+  [`../CONTRIBUTING.md`](../CONTRIBUTING.md) and
+  [`../.github/ISSUE_TEMPLATE/`](../.github/ISSUE_TEMPLATE/),
+  so workshop users can report calibration issues without
+  exposing proposal content.
+- **Multi-model convergence walkthrough** at
+  [`multi_model_walkthrough.md`](multi_model_walkthrough.md), a
+  manual protocol for running the Basic pre-review across two
   or three providers (Claude, ChatGPT, Gemini) and synthesising
-  the outputs. Privacy and orchestration friction made this
-  hard for the v0.1 audience; the convergence-across-streams
-  logic is recorded as the manual protocol in
-  [`tjhavranek/research-audit-duel-protocol`](https://github.com/tjhavranek/research-audit-duel-protocol)
-  and might surface here as an explicit walkthrough once
-  applicants have asked for it.
+  the outputs.
+- **Pilot outputs** in
+  [`../tests/fixtures/example_outputs/`](../tests/fixtures/example_outputs/)
+  for Standard, Mock interview, and Resubmission, using the
+  synthetic PE6 and SH3 fixtures.
+- **Calibration interpretation update** documenting how weak but
+  present PE6 signals may be read as scoring weaknesses rather
+  than formal cap-triggering absences.
+
+## What is on the v0.4 roadmap
+
 - **Field-tuned versions of the rubric** for SH and LS panels
   where the default rubric's emphasis on "specific
   methodological independence in CV" lands differently. The
@@ -89,8 +96,12 @@ public release). The v0.1.1 patch incorporated changes from a
 four-model council audit (ChatGPT, Claude, Gemini, Grok acting as
 independent reviewers on v0.1), with Codex cross-auditing the
 patch. The v0.2 expansion added Standard, Advanced, Mock
-interview, Resubmission, test fixtures, and the GitHub Action,
-with synthetic-fixture pilot testing before tag. See
+interview, Resubmission, test fixtures, and the GitHub Action;
+the Basic pre-review was piloted on synthetic fixtures before
+tag. The v0.3.0 follow-up added companion-repo links,
+contribution paths, a multi-model walkthrough, example pilot
+outputs for Standard, Mock interview, and Resubmission, and the
+PE6 calibration interpretation update. See
 [`../CHANGELOG.md`](../CHANGELOG.md) for the version-by-version
 record.
 
