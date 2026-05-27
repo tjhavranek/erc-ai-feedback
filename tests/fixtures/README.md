@@ -33,19 +33,44 @@ should not look like these — these are sloppy on purpose.
 
 ## Why two fixtures with different failure profiles
 
-The PE6 fixture is a "bad draft" stress test — many caps should
-fire, the workshop hand-off should be severe, the Step-1 risk
-level should be high or critical. If the prompts fail to flag
-these problems, they are under-firing.
+The PE6 fixture tests **marginal cap-firing cases**. Its
+expected-findings annotation seeds all six caps to fire, but the
+seeded failures are deliberately weak rather than absent. The CV
+has first-author labels (a partial originality signal) but no
+contribution narrative; the B2 risk section exists but is
+perfunctory; the PI's algorithmic background touches the
+project's interpretability methods but does not bridge to the
+biological domain. A well-calibrated prompt may fire each of
+these caps or read them as scoring weaknesses rather than
+cap-triggering absences. Both readings are defensible — the
+prompt's cap definitions are conjunctive ("all three signals
+absent", "no risk content present"), and a partial signal does
+not strictly meet the conjunction.
 
-The SH3 fixture is a "good draft with specific weaknesses"
-calibration test — only two caps should fire, the workshop
-hand-off should be focused, the Step-1 risk level should be
-medium. The CV is strong, the cross-panel justification is
-specific, the risk plan in B2 is concrete. If the prompts fire
-caps that the annotation says should not fire, they are
-over-firing. The package needs to pass both fixtures, not just
-one.
+The SH3 fixture tests **clear cap-firing cases**. Its
+expected-findings annotation seeds only CAP-A and CAP-B; the CV
+is genuinely strong, the cross-panel justification is specific,
+the risk plan in B2 is detailed. A well-calibrated prompt should
+**not** fire CAP-C, CAP-D, CAP-E, or CAP-F here, regardless of
+provider.
+
+In the v0.2 pilot (documented in
+[`../../CHANGELOG.md`](../../CHANGELOG.md)), Codex acting as the
+receiving model passed the SH3 calibration test cleanly and
+produced a partial-firing pattern on PE6 (caps A, B, E fired;
+C, D, F did not). The under-firing on PE6 is the marginal-case
+test working as intended: weak-but-present signals are read as
+scoring weaknesses (which they are), not as cap absences (which
+they are not). The expected-findings annotation for PE6 is a
+test oracle that documents an upper bound on what the prompt
+*could* fire, not a guarantee of what every model will fire.
+
+The package's calibration story therefore needs both fixtures:
+SH3 verifies the prompt does not over-fire on a strong draft;
+PE6 verifies that when failures are present (even weakly), the
+prompt finds them as findings (whether or not it formally fires
+the cap). Cap firing is a discrete signal; finding-level severity
+is the continuous one.
 
 ## How to use the fixtures
 

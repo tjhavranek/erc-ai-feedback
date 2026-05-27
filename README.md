@@ -16,6 +16,17 @@ with source citations. The prompt loads the rubric, applies
 structural caps that fire when an expected element is missing, and
 produces an evidence-grounded critique.
 
+This package is the ERC-specific application of two general
+research-audit projects by the same author group:
+[`tjhavranek/research-audit-duel-protocol`](https://github.com/tjhavranek/research-audit-duel-protocol)
+(manual multi-model adversarial-debate protocols) and
+[`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research)
+(Claude Code skills that automate the same audit discipline for
+Claude + Codex). The Advanced pre-review here is a direct
+extension of the latter; the multi-model convergence walkthrough
+in [`docs/multi_model_walkthrough.md`](docs/multi_model_walkthrough.md)
+is a direct application of the former.
+
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ## Use

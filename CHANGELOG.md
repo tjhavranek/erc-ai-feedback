@@ -6,6 +6,137 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.3.0] — 2026-05-27
+
+Extension release. The locked rubric is unchanged from v0.2.0
+(`shared/rubric_locked.md` remains v1.1); the Basic, Standard,
+Advanced, Mock interview, and Resubmission prompts are unchanged
+from v0.2.0. v0.3.0 adds pilot data for the modes that v0.2.0
+shipped untested, plus repository hygiene that the package was
+missing.
+
+### Additions
+
+- **Manual multi-model convergence walkthrough** at
+  [`docs/multi_model_walkthrough.md`](docs/multi_model_walkthrough.md).
+  The parked v0.3 roadmap item made concrete: how to run the
+  Basic pre-review across two or three providers (Claude,
+  ChatGPT-5, Gemini 2.5 Pro), how to read convergence and
+  divergence between the outputs, and when convergence is more
+  informative than divergence (and the reverse). This is a
+  walkthrough, not new prompts; the discipline draws on the
+  parent
+  [`tjhavranek/research-audit-duel-protocol`](https://github.com/tjhavranek/research-audit-duel-protocol)
+  manual protocols.
+- **Companion-repo links surfaced in the main README.** The
+  README now states early — not buried in the lineage section —
+  that this package is the ERC-specific application of the
+  `research-audit-duel-protocol` (manual) and `mad-research`
+  (Claude Code automation) projects. Readers arriving at the
+  repo can immediately see the package's place in the larger
+  research-audit family.
+- **`CONTRIBUTING.md`** covering bug reports, factual
+  corrections, workshop-use reports, and what not to contribute
+  (real proposal content, real Evaluation Reports, AI-marketing
+  language).
+- **GitHub Issue templates** under
+  `.github/ISSUE_TEMPLATE/`: bug report, factual correction,
+  workshop-use report. The workshop-use report template is the
+  most important addition — it is the format for the feedback
+  loop the package needs to keep improving across calls.
+- **Repository topics** set on GitHub: `erc`, `grant-writing`,
+  `ai-tools`, `research-support`, `claude-code`, `codex`, `peer-review`.
+  Discoverability for searchers.
+
+### Pilot results (v0.3 modes)
+
+The Standard, Mock interview, and Resubmission modes shipped in
+v0.2.0 but were not piloted. v0.3.0 pilots each with Codex CLI
+(gpt-5.5) acting as the receiving model.
+
+**Standard pre-review (Devil's Advocate + Writing Coach on
+SH3).** Output saved to
+[`tests/fixtures/example_outputs/sh3_standard_critique_codex.md`](tests/fixtures/example_outputs/sh3_standard_critique_codex.md).
+Six Devil's Advocate counterarguments, of which two overlapped
+Panel Reviewer findings from the existing Basic pilot (high-
+confidence signal where two role-streams converge) and four
+were novel angles the Panel Reviewer did not surface. Nine
+Writing Coach edits, all prose-level (no content drift). Zero
+forbidden phrases. The role separation discipline (Devil's
+Advocate avoids re-scoring; Writing Coach avoids content) held
+across the sequence.
+
+**Mock interview question bank on SH3.** Output saved to
+[`tests/fixtures/example_outputs/sh3_mock_interview_questions_codex.md`](tests/fixtures/example_outputs/sh3_mock_interview_questions_codex.md).
+Twenty-five panel questions distributed 5/5/4/4/3/4 across the
+six required categories (scientific question and ambition;
+methodology and feasibility; risk and contingency; PI fit and
+track record; panel-specific follow-ups; hostile or "I don't
+believe you" questions). Every question grounded in a specific
+quoted phrase from the fixture draft. The pilot self-assessment
+names the five questions Codex suggests the applicant rehearse
+most thoroughly — the same kind of triage a human mock-panel
+preparation session would produce.
+
+**Resubmission audit on PE6 against synthetic Evaluation
+Report.** Output saved to
+[`tests/fixtures/example_outputs/resubmission_audit_codex.md`](tests/fixtures/example_outputs/resubmission_audit_codex.md).
+A synthetic ERC-2024-StG B-scored Evaluation Report (panel
+comment + three individual reviews) was paired with the PE6
+fixture treated as a "revised" draft. Codex extracted nine
+distinct criticisms from the report; the engagement verdicts
+distributed as 1 ADDRESSED, 3 PARTIALLY ADDRESSED, and 5 NOT
+ADDRESSED — broadly the expected pattern for a draft that was
+not actually revised against the synthetic report. No invented
+engagement. The audit correctly identified that the new draft
+had not substantively engaged with most of the prior report —
+which is the failure pattern the audit exists to surface.
+
+**Cross-mode observations.** The Standard sequence's
+convergence signal (two of six counterarguments overlap with
+Panel Reviewer findings) demonstrates the value of the
+multi-role design without producing a different rubric. The
+Mock interview question bank stays grounded in the draft and
+does not drift into generic interview questions. The
+Resubmission audit's verdict distribution matches the expected
+calibration. All three modes earned their place in the
+package.
+
+### Calibration interpretation (PE6 fixture)
+
+In v0.2.0 the PE6 fixture's expected-findings annotation
+seeded all six caps to fire; Codex's pilot fired only A, B,
+and E. The v0.3.0 update to
+[`tests/fixtures/README.md`](tests/fixtures/README.md)
+re-interprets this not as a prompt bug but as the intended
+marginal-cap-firing test: the PE6 fixture seeds *weak* signals
+rather than *absent* signals, and the prompt's conjunctive cap
+definitions correctly read weak-but-present signals as scoring
+weaknesses (continuous severity ladder) rather than as cap
+absences (discrete trigger). The SH3 fixture continues to test
+clear cases. Together the two fixtures test calibration at
+both the discrete trigger and the continuous severity-ladder
+levels.
+
+### Pre-release audit
+
+Codex audited the v0.2 → v0.3 diff before commit; results
+documented in `_private/codex_v03_diff_audit_response.md`
+(private). Issues caught and fixed before commit.
+
+### Authorship
+
+Co-authored by Claude Code (Opus 4.7) and Codex CLI (gpt-5.5).
+Codex acted as the receiving model for all three v0.3 mode
+pilots (Standard, Mock interview, Resubmission) and produced
+the example outputs now committed to
+`tests/fixtures/example_outputs/`. Claude Code authored
+CONTRIBUTING.md, the issue templates, the multi-model
+walkthrough, the calibration interpretation update, and the
+README cross-references to the companion repositories.
+
+---
+
 ## [0.2.0] — 2026-05-27
 
 Expansion release. The v0.1.1 candidate's pilot stop conditions
