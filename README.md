@@ -82,6 +82,29 @@ to applicants, the operational note at
 covers the hand-off template and the consent rule that applies
 when a reader runs the tool on someone else's draft.
 
+## Other ways to use the package
+
+The single-prompt pre-review above is what most applicants will
+use. The repository also contains:
+
+- A three-prompt sequence in [`standard/`](standard/) for
+  applicants who want a more thorough single-model pass
+  (Panel Reviewer, then Devil's Advocate, then Writing Coach).
+- A Claude Code + Codex CLI integration in
+  [`advanced/`](advanced/) that runs the
+  [`mad-research`](https://github.com/tjhavranek/mad-research)
+  protocol against the same ERC rubric.
+- A question-bank and answer stress-test prompt pair in
+  [`mock_interview/`](mock_interview/) for Step-2 applicants
+  preparing for the panel interview.
+- A resubmission audit prompt in [`resubmission/`](resubmission/)
+  that checks whether a new draft engages with a previous
+  Evaluation Report.
+
+Synthetic test fixtures used to exercise the prompts are in
+[`tests/fixtures/`](tests/fixtures/). Roadmap and development
+notes are in [`docs/roadmap.md`](docs/roadmap.md).
+
 ## Citation, licence, maintainer
 
 Tomáš Havránek, Charles University, Prague. MIT licence; see

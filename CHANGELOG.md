@@ -6,7 +6,153 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
-## [0.1.1] — [pending release date] (candidate; pilot pending)
+## [0.2.0] — 2026-05-27
+
+Expansion release. The v0.1.1 candidate's pilot stop conditions
+(see the v0.1.1 entry below) are absorbed into v0.2's pilot
+results below; v0.1.1 was never tagged separately because the
+patched Basic prompt is now also v0.2's Basic prompt and was
+piloted as part of the v0.2 release.
+
+### Additions
+
+- **Standard pre-review** in [`standard/`](standard/): three role
+  prompts (Panel Reviewer, Devil's Advocate, Writing Coach) run
+  in sequence inside one chat session, with a synthesis-by-the-
+  applicant document. About 20-30 minutes of applicant time.
+  Reuses the locked rubric and Basic prompt's discipline; adds
+  counterargument depth and prose clarity as parallel
+  perspectives.
+- **Advanced pre-review** in [`advanced/`](advanced/): an ERC
+  rubric override and three ERC-adapted Round 1 role prompts
+  the user drops into a local checkout of
+  [`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research)
+  to run the full three-stream adversarial audit with anonymised
+  cross-critique and fresh-context synthesis. Integration is
+  manual; the long-term target is an upstream-supported
+  `--external-rubric` flag.
+- **Mock interview preparation** in
+  [`mock_interview/`](mock_interview/): a question-bank
+  generator and an answer stress-test prompt for Step-2
+  applicants. Framed as preparation *for* a human mock panel,
+  not a substitute. Module shipped in v0.2; maturity is early
+  (no real Step-2 cycle behind it yet).
+- **Resubmission audit** in [`resubmission/`](resubmission/): a
+  prompt that takes a previous Evaluation Report and a new
+  draft, then reports point-by-point whether the new draft
+  engages with each criticism. Module shipped in v0.2; not yet
+  tested on a real resubmission cycle (real Evaluation Reports
+  are confidential).
+- **Test fixtures** in [`tests/fixtures/`](tests/fixtures/):
+  two synthetic ERC StG drafts (PE6 Computer Science and SH3
+  The Social World and Its Interactions) with different failure
+  profiles, each with an expected-findings annotation. Used to
+  exercise the prompts during pilot and regression testing.
+- **Annual rubric verification workflow** at
+  [`.github/workflows/annual_verification_reminder.yml`](.github/workflows/annual_verification_reminder.yml).
+  Opens an Issue every September prompting the maintainer to
+  re-verify the rubric against the new Work Programme.
+
+### Patches incorporated from v0.1.1 candidate
+
+The v0.1.1 candidate's twelve locked changes (see the v0.1.1
+entry below) are all present in v0.2. The README de-AI rewrite,
+the prompt's three-stage menu with internal content checklist,
+the structural score caps including CAP-F, the authorship-safe
+repair field, the privacy default of applicant-runs-by-default,
+the workshop-leaders pattern A / pattern B consent rule, and the
+output-schema stage-dependent finding caps all carry forward.
+
+### Pilot results (synthetic fixtures, two providers acting)
+
+The Basic pre-review was piloted on both v0.2 test fixtures via
+Codex CLI (gpt-5.5) acting as the AI model the applicant would
+paste the prompt into.
+
+**SH3 calibration test (Codex output saved locally).** Codex
+fired CAP-A and CAP-B and did not fire CAP-C, CAP-D, CAP-E, or
+CAP-F. This matched the SH3 fixture's expected-findings
+annotation, which seeds only the vague-hypothesis and
+ambition-without-contingency failures. The Step-1 risk
+verdict was "medium". The societal-impact and venue-prestige
+traps were flagged as specific findings rather than as
+proxies the AI mistakenly used in its own scoring. No
+forbidden phrases were emitted. The calibration test passed:
+the prompt does not over-fire on a generally strong draft.
+
+**PE6 stress test (Codex output saved locally).** Codex fired
+CAP-A, CAP-B, and CAP-E but did not fire CAP-C, CAP-D, or
+CAP-F. The PE6 fixture's annotation expected all six caps to
+fire. Codex's self-assessment gave defensible reasons for each
+non-firing: the CV contains first-author and sole-author
+outputs (so it is not strictly a pub-list-only CV, narrowing
+CAP-C); the B2 risk section contains some mitigation text (so
+B2 is not strictly empty of risk content, narrowing CAP-D);
+and the PI's published work does include items in adjacent
+areas to the project's biological-interpretation methods
+(narrowing CAP-F). The Step-1 risk verdict was "high", three
+HIGH severity findings, five MEDIUM. No invented quotes
+(spot-checked five quotes against the fixture; all verbatim).
+No forbidden phrases. No societal-impact or
+journal-impact-factor proxies used in scoring.
+
+**Interpretation of the PE6 under-firing.** The honest reading
+is that the PE6 fixture's annotation set a stricter
+expected-firing bar than the prompt's cap definitions actually
+require. The cap definitions are narrow (CAP-C requires *all
+three* originality signals absent; CAP-D requires *no* risk
+content in B2; CAP-F requires the PI-project link to be
+*unstated*). The fixture seeded weak versions of those
+signals; Codex correctly read the weak signals as scoring
+weaknesses rather than as cap-triggering absences. The
+under-firing is calibration drift between the fixture
+annotation and the prompt, not a prompt bug. Two follow-up
+options for v0.2.1: (a) tighten the fixture so the cap
+absences are unambiguous, or (b) loosen the cap definitions
+to fire on weak-but-present signals. Both have trade-offs;
+neither is urgent enough to block v0.2.
+
+**What the pilot did not test.** Standard, Advanced, Mock
+interview, and Resubmission were not piloted in v0.2. The
+Basic pre-review is the load-bearing single-prompt component;
+the other modules are documented and shipped but await real-
+use feedback before claiming pilot validation.
+
+**Hallucinated quotes.** Zero in the PE6 pilot output, zero in
+the SH3 pilot output (across the spot checks).
+
+**Schema compliance.** Clean in both pilot outputs.
+
+### Pre-release audit
+
+Three audits were run before tagging:
+
+1. Codex consultation on the v0.1.1 patch brief (council audit
+   ideas vs directives) — completed; informed v0.1.1 patches.
+2. Codex diff audit of v0.1.1 patched files — three commit-
+   blocking issues caught and fixed before commit.
+3. Independent subagent audit of v0.2 additions — two
+   commit-blocking issues caught (broken `erc_role_prompts/`
+   directory reference in Advanced README; missing v0.2.0
+   CHANGELOG entry) and several NITs (cap-label casing drift;
+   AI-tell headings; locked-rubric tension with the Advanced
+   synthesis frame). All fixed before commit.
+
+### Authorship
+
+Co-authored by Claude Code (Opus 4.7) and Codex CLI (gpt-5.5).
+Codex authored the Devil's Advocate concept work behind
+`standard/02_devils_advocate.md`'s structural moves and
+contributed the v0.1.1 patched prompt sections it carried into
+v0.2. Claude Code authored the README rewrites, the new mode
+READMEs (Standard, Advanced, Mock interview, Resubmission), the
+docs/roadmap update, the GitHub Action, and the test-fixture
+briefs that produced the PE6 and SH3 synthetic drafts via
+parallel sub-agent passes.
+
+---
+
+## [0.1.1] — superseded by v0.2.0 (was: candidate; pilot pending)
 
 Patch release driven by a multi-model council audit and Codex
 cross-audit of v0.1. The rubric remains

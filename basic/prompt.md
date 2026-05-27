@@ -512,8 +512,9 @@ To test that this prompt works against a current model:
    reader. Useful overlap on shared dimensions is the indicator;
    there is no fixed numerical threshold.
 
-If the test fails: log what failed in `package_v0/test_notes.md` and
-revise the prompt.
+If the test fails: log what failed in a local `test_notes.md` (the
+package's `.gitignore` excludes this file so notes do not reach the
+public repository) and revise the prompt.
 
 ---
 

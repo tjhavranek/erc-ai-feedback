@@ -1,0 +1,114 @@
+name: Annual ERC rubric re-verification reminder
+
+# Runs once a year in early September (after the typical ERC
+# Work Programme adoption window in summer) to open an Issue
+# prompting the maintainer to re-verify the rubric in
+# shared/rubric_locked.md against the current Work Programme,
+# the current Guide for Peer Reviewers, and the current
+# Information for Applicants. Can also be triggered manually
+# via workflow_dispatch.
+
+on:
+  schedule:
+    # 09:00 UTC on 1 September every year
+    - cron: '0 9 1 9 *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  open_verification_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Determine current year
+        id: year
+        run: |
+          echo "year=$(date -u +%Y)" >> "$GITHUB_OUTPUT"
+
+      - name: Open verification reminder issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const year = "${{ steps.year.outputs.year }}";
+            const title = `Annual rubric re-verification: WP ${year} cycle`;
+            const body = `
+            Automated annual reminder to re-verify
+            \`shared/rubric_locked.md\` against the current ERC
+            documents. This issue is opened by
+            \`.github/workflows/annual_verification_reminder.yml\`
+            and is the maintainer's prompt to do the annual
+            check.
+
+            ## Verification checklist
+
+            For each of the following, open the official source,
+            compare to the rubric and prompt, and update if
+            anything has changed:
+
+            - [ ] **ERC Work Programme ${year}** — search the
+              ERC website news section for "Work Programme
+              ${year} adopted" or the Funding & Tenders portal.
+              Check changes to evaluation criteria, page
+              limits, eligibility windows, time commitment
+              requirements, panel structure.
+            - [ ] **Guide for Peer Reviewers — Starting and
+              Consolidator Grant Calls** (current version).
+              Particular attention to **Annex 1 (Evaluation
+              Form)** — verify Criterion 1 and Criterion 2
+              sub-questions are still verbatim against
+              \`shared/rubric_locked.md\` §2 and §3 and
+              \`basic/prompt.md\` Section 2.
+            - [ ] **Information for Applicants — Starting and
+              Consolidator Grant Calls** (current version).
+              Check page limits, references-not-counted rule,
+              cross-panel justification requirement, eligibility
+              extensions list.
+            - [ ] **ERC Scientific Council position on AI in
+              proposal preparation** — check for changes to
+              applicant-side AI use policy. If a disclosure
+              requirement has been added, surface it in the
+              README and prompt.
+            - [ ] **ERC clarification on AI use in grant
+              evaluation** — check reviewer-side rule
+              (currently: no upload of proposals to external AI).
+            - [ ] **Provider privacy controls**: ChatGPT,
+              Claude, Gemini. UI labels and toggle locations
+              drift; check the URLs in README's Privacy
+              section against current provider help pages.
+
+            ## What changes if something is updated
+
+            - **Rubric content change** → bump rubric version
+              in \`shared/rubric_locked.md\` (e.g., 1.1 → 1.2),
+              update the "Last verified against" stamp,
+              propagate to \`basic/prompt.md\` Section 2 if
+              sub-questions changed, propagate to
+              \`advanced/erc_rubric_for_mad_research.md\` if
+              the rubric's audit dimensions need to follow.
+            - **Provider privacy controls drift** → update the
+              README Privacy section URLs and re-test on at
+              least one provider.
+            - **No changes after careful check** → update the
+              "Last verified" stamp to the current date and
+              note "no rubric substance change for WP ${year}"
+              in CHANGELOG.
+
+            After completing the checklist, comment on this
+            issue with the verification outcome and close the
+            issue.
+
+            If this issue remains open for more than 60 days
+            without a verification comment, the README should be
+            updated to flag the package as unverified against
+            the current Work Programme cycle.
+            `;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: title,
+              body: body,
+              labels: ['verification', 'maintenance']
+            });

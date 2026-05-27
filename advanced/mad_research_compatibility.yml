@@ -1,0 +1,54 @@
+# Compatibility pin for the mad-research integration
+#
+# The Advanced pre-review's rubric override and role-prompt
+# overrides in this directory have been written against a specific
+# state of mad-research. This file records that state so that
+# future maintainers can either (a) re-test the overrides against a
+# newer mad-research release, or (b) check out the pinned commit if
+# the overrides stop working with current upstream.
+
+target_repo: tjhavranek/mad-research
+
+# The mad-research version tag (or commit short SHA) this directory
+# was last tested against. When upgrading, set this to the new
+# tested version and update the "last_tested" date.
+pinned_version: "v0.5"
+pinned_commit: "unspecified — set on next testing pass"
+
+# Date the overrides were last run end-to-end against the pinned
+# version with a synthetic ERC fixture.
+last_tested: null   # filled by pilot in v0.2 candidate; null until then
+
+# What the overrides change in mad-research:
+overrides:
+  - file: rubric.md
+    source: advanced/erc_rubric_for_mad_research.md
+    purpose: |
+      Replace the default empirical-paper synthesis rubric with the
+      ERC StG/CoG synthesis rubric. Six audit dimensions matched to
+      ERC Criterion 1 sub-questions, Criterion 2 sub-questions,
+      panel-fit, evidence discipline, and register fidelity.
+
+  - directory: prompts/
+    source: advanced/erc_role_prompts/
+    purpose: |
+      Optional. Replace the three Round 1 role prompts
+      (round1_methodologist.md, round1_evidence_auditor.md,
+      round1_contribution_skeptic.md) with ERC-adapted versions
+      that read the draft as an ERC proposal at a declared stage
+      rather than as an empirical paper.
+
+# Known incompatibilities to watch for on mad-research upgrades:
+upgrade_watchlist:
+  - "rubric.md schema change: if mad-research adds front-matter to rubric.md, regenerate erc_rubric_for_mad_research.md to match."
+  - "synthesis prompt change: if mad-research's synthesis prompt starts referencing additional rubric fields, mirror them in the ERC rubric."
+  - "role-prompt schema change: if the Round 1 role prompts change their evidence-discipline requirements, update the ERC role-prompts to match."
+  - "external rubric flag: if mad-research adds support for --external-rubric or similar, this directory's setup walkthrough should switch to that mechanism instead of file replacement."
+
+# Long-term target:
+#   Upstream mad-research adds an --external-rubric flag (and
+#   optionally an --external-role-prompts flag), and the Advanced
+#   pre-review here points at the ERC rubric file directly without
+#   needing the file-replacement dance. Open as an issue on
+#   mad-research if/when this directory's user count justifies the
+#   upstream feature request.
