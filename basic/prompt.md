@@ -63,7 +63,13 @@ ASK ONCE before reviewing:
                  budget justification). B1 and B2 are both
                  required for final ERC submission; the panel
                  reads B1 alone at Step 1 of its evaluation and
-                 reads B1 plus B2 at Step 2.
+                 reads B1 plus B2 at Step 2. If the applicant
+                 also pastes a Resources / Time Commitment text
+                 (a separate Step-2 submission element, usually
+                 a Part A administrative section), Criterion 1.4
+                 (timescales / resources) becomes assessable;
+                 otherwise mark 1.4 "not assessable from
+                 supplied material" in the output schema.
 
 INTERNAL CONTENT DETECTION
 

@@ -22,16 +22,22 @@ jobs:
   open_verification_issue:
     runs-on: ubuntu-latest
     steps:
-      - name: Determine current year
+      - name: Determine target Work Programme year
         id: year
         run: |
-          echo "year=$(date -u +%Y)" >> "$GITHUB_OUTPUT"
+          # The action runs on 1 September. The ERC Work Programme
+          # for year N+1 is adopted in the summer of year N. So in
+          # September of year N, the newly-adopted Work Programme
+          # to verify against is for year N+1, not for year N.
+          echo "current_year=$(date -u +%Y)" >> "$GITHUB_OUTPUT"
+          echo "target_year=$(( $(date -u +%Y) + 1 ))" >> "$GITHUB_OUTPUT"
 
       - name: Open verification reminder issue
         uses: actions/github-script@v7
         with:
           script: |
-            const year = "${{ steps.year.outputs.year }}";
+            const currentYear = "${{ steps.year.outputs.current_year }}";
+            const year = "${{ steps.year.outputs.target_year }}";
             const title = `Annual rubric re-verification: WP ${year} cycle`;
             const body = `
             Automated annual reminder to re-verify

@@ -10,11 +10,14 @@ spent on them. It does not replace human review.
 
 Two files do the work: the locked evaluation rubric in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) and the prompt
-in [`basic/prompt.md`](basic/prompt.md). The rubric is the verbatim
-ERC Annex 1 evaluation form for Starting and Consolidator Grants,
-with source citations. The prompt loads the rubric, applies
-structural caps that fire when an expected element is missing, and
-produces an evidence-grounded critique.
+in [`basic/prompt.md`](basic/prompt.md). The rubric contains the
+verbatim Annex 1 Criterion 1 and Criterion 2 sub-questions from the
+ERC *Guide for Peer Reviewers* for Starting and Consolidator Grant
+calls, plus source-checked notes on scoring scales, proposal
+structure, eligibility windows, panel structure, and the ERC's
+AI-use rules. The prompt loads the rubric, applies structural caps
+that fire when an expected element is missing, and produces an
+evidence-grounded critique.
 
 This package is the ERC-specific application of two general
 research-audit projects by the same author group:

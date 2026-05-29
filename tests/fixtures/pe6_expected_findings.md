@@ -6,17 +6,30 @@
 
 ## 1. Expected score caps
 
-The draft is constructed so that **six caps (A–F)** are designed to fire. A well-calibrated tool should fire all six and explain each with reference to specific text. Caps refer to the structural cap rules in the prompt.
+The draft is constructed so that **all six caps (A–F)** are seeded
+to fire — but in *weak* forms rather than as outright absences (see
+the calibration interpretation in [`README.md`](README.md) for why
+this matters). A well-calibrated tool may legitimately fire each cap
+*or* read the weak signal as a scoring weakness rather than as a
+cap-triggering absence; both are defensible under the prompt's
+conjunctive cap definitions. The Codex pilot in
+[`example_outputs/pe6_basic_critique_codex.md`](example_outputs/pe6_basic_critique_codex.md)
+fired three of the six (A, B, E) and correctly read C, D, F as
+scoring weaknesses rather than as cap absences.
+
+This section therefore documents what *could* fire under a strict
+reading; it is an **upper bound oracle**, not a guarantee that
+every well-calibrated tool will fire all six.
 
 ### CAP-A — Vague scientific question — **EXPECTED TO FIRE**
 - **Where:** Part I §2 Objectives, opening sentence: *"We will develop a better understanding of how neural network behaviour emerges from training dynamics in the era of large foundation models, with a focus on molecular prediction tasks."*
 - **Why:** No falsifiable hypothesis, no specific quantitative target, no statement of what would count as success or failure. The four sub-objectives are concrete but the overarching scientific question is not.
-- **Caps:** Criterion 1.1 (Ground-breaking nature and potential impact of the proposed research) at **Very Good**.
+- **Caps:** Criterion 1.1 ("important scientific questions") at **Very Good**.
 
 ### CAP-B — Ambition without contingency — **EXPECTED TO FIRE**
 - **Where:** Abstract: *"MECHBIO is **high risk / high gain**: it operates at the frontier of two fields that have not yet fused, and success would transform how we deploy, audit, and trust AI in molecular science."*; Part I §2 closing: *"These objectives are ambitious and **transformative**. Their successful completion would mark a frontier-advancing shift..."*
 - **Why:** The proposal invokes the prestige rhetoric ("high risk / high gain", "transformative", "frontier-advancing") without naming (i) a specific mechanism by which the frontier would be advanced, or (ii) a contingency plan if the ambitious objective fails. The Risks section (B2 §4) is generic and does not address what happens if the theoretical predictions of Pillar C fail to match the empirics of Pillar A, or if the equivariant-patching procedure cannot be made to work on full-scale models.
-- **Caps:** Criterion 1.2 (Scientific approach feasibility / risk-taking) at **Very Good**.
+- **Caps:** Criterion 1.2 ("ambitious / advance frontier of knowledge") at **Very Good**.
 
 ### CAP-C — CV signal absent on all three axes (softened cap) — **EXPECTED TO FIRE**
 - **Where:** CV "Research outputs" and "Track record description".
@@ -24,12 +37,12 @@ The draft is constructed so that **six caps (A–F)** are designed to fire. A we
   1. **No methodological independence signal beyond authorship order.** The CV labels papers "first/co-first author" but never describes a specific method the PI invented, a research direction she initiated independently of her PhD advisor, or evidence that she runs a methodologically distinctive line of work.
   2. **No peer recognition beyond venue prestige.** No invited talks, no awards, no editorships, no fellowships, no service on programme committees beyond generic "reviewer". The track record narrative leans entirely on journal names.
   3. **No PI-attributable original contribution narrative.** The track record description does not say "I developed X" or "my contribution was Y"; it says "her work spans..." in generic terms.
-- **Caps:** Criterion 2.2 (Intellectual capacity, creativity, and independence) at **Good**.
+- **Caps:** Criterion 2.2 ("creative and original thinking") at **Good**.
 
 ### CAP-D — Risks treated perfunctorily — **EXPECTED TO FIRE**
 - **Where:** B2 §4 Risks.
 - **Why:** The section enumerates only generic project-management risks (delays, turnover, compute, model availability). It does not consolidate the methodology-specific risks that *are* scattered through the B1/B2 methodology text (SAE interpretability fallback in Pillar A; the M30 red-team review; the compute fallback to expansion-16) into a structured risk register, and it does not address the most consequential methodological risks at all: what if equivariant patching cannot be made causally meaningful at scale? What if the theory of Pillar C predicts features that the empirics of Pillar A do not find? What if the partner laboratories cannot use the library at M48 — is there a fallback delivery? No named mitigations beyond "the PI is confident".
-- **Caps:** Criterion 1.3 (Soundness and feasibility of the proposed methodology) at **Very Good**. (Note: 1.3 is the methodology criterion; CAP-D applies there because the risk plan is part of feasibility assessment. A well-calibrated tool should also note that good risk content exists *elsewhere* in the proposal but is not consolidated; this is a structural-presentation flaw as well as a substance flaw.)
+- **Caps:** Criterion 1.3 ("methodology and working arrangements") at **Very Good**. (Note: CAP-D applies to 1.3 because the risk plan is part of methodology assessment. A well-calibrated tool should also note that good risk content exists *elsewhere* in the proposal but is not consolidated; this is a structural-presentation flaw as well as a substance flaw.)
 
 ### CAP-E — Weak cross-panel justification — **EXPECTED TO FIRE**
 - **Where:** B1 cover page "Cross-panel justification": *"...because the project has broad applicability across the engineering sciences and the methodology is expected to be of policy relevance to standardisation bodies. The interpretability tools we develop are general and may be of interest to PE7 reviewers concerned with signal processing and system identification more broadly. We trust the panels to coordinate as appropriate."*
@@ -39,7 +52,7 @@ The draft is constructed so that **six caps (A–F)** are designed to fire. A we
 ### CAP-F — PI–project fit gap — **EXPECTED TO FIRE**
 - **Where:** CV Education / Positions / Track record vs. the project methodology in B2 §1.
 - **Why:** The PI's track record is in **algorithms and optimisation theory** for neural networks (convex relaxations, implicit bias of gradient descent, identifiability, initialisation, optimisation landscape). The project demands **mechanistic interpretability methods applied to molecular structure prediction** — a domain that requires (i) deep familiarity with circuits/SAE methodology, and (ii) substantive molecular-biology fluency. The track record shows two papers in the relevant area (paper [2] on AlphaFold-2 attention; paper [3] as co-first on RhoFold-Next), which is a thin foundation for a five-year programme of this scope. The track-record narrative does not address the gap; it asserts that "algorithmic rigour and interdisciplinary breadth" suffice, without evidence.
-- **Caps:** Criterion 2.3 (PI–project fit and commitment) at **Very Good**.
+- **Caps:** Criterion 2.3 ("scientific expertise and capacity to execute the project") at **Very Good**.
 
 ---
 
@@ -133,15 +146,20 @@ A poorly-calibrated tool might over-fire on the following; these are **not** rea
 
 ---
 
-## 5. Summary score-cap matrix (expected)
+## 5. Summary score-cap matrix (upper bound under strict reading)
 
-| Criterion | Sub-criterion | Cap | Driver |
+| Criterion | Sub-question (Annex 1 wording) | Cap if fired | Cap driver |
 |---|---|---|---|
-| 1. Research project | 1.1 Ground-breaking nature | Very Good | CAP-A + CAP-E |
-| 1. Research project | 1.2 Risk/ambition | Very Good | CAP-B |
-| 1. Research project | 1.3 Methodology | Very Good | CAP-D (+ milestone vagueness) |
-| 2. Principal investigator | 2.1 (n/a in this taxonomy) | — | — |
-| 2. Principal investigator | 2.2 Intellectual capacity, creativity, independence | Good | CAP-C softened |
-| 2. Principal investigator | 2.3 PI–project commitment / fit | Very Good | CAP-F |
+| 1. Research project | 1.1 important scientific questions | Very Good | CAP-A + CAP-E |
+| 1. Research project | 1.2 ambitious / advance frontier of knowledge | Very Good | CAP-B |
+| 1. Research project | 1.3 methodology and working arrangements | Very Good | CAP-D (+ milestone vagueness) |
+| 1. Research project | 1.4 timescales and resources | (not assessed by this fixture; resources material not supplied) | — |
+| 2. Principal investigator | 2.1 ability to conduct groundbreaking research | — | — |
+| 2. Principal investigator | 2.2 creative and original thinking | Good | CAP-C softened |
+| 2. Principal investigator | 2.3 scientific expertise and capacity to execute the project | Very Good | CAP-F |
 
-A well-calibrated tool should reach an overall provisional grade of **B** (or borderline B/C) for this draft, with clear and specific revision guidance under each criterion.
+A well-calibrated tool's Step-1 risk verdict on this draft should be
+*high* or *critical*, with clear and specific revision guidance under
+each criterion. (The prompt's output schema produces risk levels,
+not panel scores; the panel score A/B/C is the panel meeting's
+output, not a single reviewer's.)

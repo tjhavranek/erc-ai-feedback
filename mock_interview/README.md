@@ -7,7 +7,10 @@ panel interview.
 ## Scope
 
 The Step 2 panel interview is roughly thirty minutes: a short
-presentation by the PI, then panel and remote referee questions.
+presentation by the PI, then questions from the panel members
+(panel format varies; the panel may use points raised in the
+written remote-referee reviews to formulate questions, but the
+remote referees themselves do not attend the interview).
 The interview tests judgement under pressure, panel chemistry,
 clarity of communication, and command of the proposal's details —
 all of which a human mock panel (a workshop simulation, or a few
