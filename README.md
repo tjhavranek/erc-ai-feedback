@@ -85,7 +85,7 @@ merit.
 
 The ERC rubric changes annually. The version in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) was last
-verified on 2026-05-27 against ERC Work Programme 2026 and the
+verified on 2026-05-30 against ERC Work Programme 2026 and the
 *Guide for Peer Reviewers* v6.0 (30 September 2025). If you read
 this twelve months later, re-verify before use.
 

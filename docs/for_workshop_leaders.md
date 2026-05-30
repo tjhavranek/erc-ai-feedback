@@ -73,7 +73,7 @@ open an Issue immediately — this is a release-blocking failure.
 ## Verification
 
 The rubric was last verified against the official ERC documents on
-2026-05-27. If you are reading this more than a year later,
+2026-05-30. If you are reading this more than a year later,
 re-verify before recommending to applicants. The maintainer
 commits to annual re-verification within 60 days of each new ERC
 Work Programme.
