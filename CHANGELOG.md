@@ -6,6 +6,110 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.3.1] — 2026-05-30
+
+Patch release. Consolidates the post-v0.3.0 fixes (which had landed
+on `main` without their own tag) and records the result of a final
+primary-source fact-check of the locked rubric. No sub-question,
+score cap, scoring scale, or mode prompt changed in behaviour.
+
+### Rubric re-verification (the headline of this release)
+
+The locked rubric was re-verified end-to-end against primary ERC
+sources in a two-model fact-check: a web-enabled factual agent that
+read the *Guide for Peer Reviewers* v6.0 Annex 1 "Evaluation Form"
+PDF text layer word-for-word, plus Gemini 3 Pro
+(`gemini-3.1-pro-preview`) as a lower-weight third opinion. Claude
+Opus 4.8 held final say.
+
+**No factual errors were found.** Eligibility windows (StG 2019-2023,
+CoG 2014-2018, reference date 1 Jan 2026), the 2-7 / 7-12 year
+glosses, all three time-commitment percentages, the 28-panel
+(11/9/8) taxonomy, the max-44-per-panel Step-2 cap, the 1-5 reviewer
+scale and the PI's five-label qualitative scale, the StG-2025 and
+CoG-2026 statistics, the 2027 eligibility expansion, and both
+AI-use rules were all confirmed against official sources. All seven
+Criterion 1 and Criterion 2 Annex 1 sub-questions were confirmed
+**verbatim**, word-for-word.
+
+Two clarifications resulted (rubric bumped v1.1 → v1.2):
+
+- **§2.3 ("high risk / high gain").** One of the two fact-check
+  models asserted that "high risk / high gain" is still a formal
+  Annex 1 sub-question and quoted the pre-2024 form to "prove" it.
+  Two independent primary-source reads of the *current* Annex 1
+  (the factual agent's word-for-word check, and a direct PDF read
+  earlier in the project) confirm it is **not** in the current
+  form. Rather than change the rubric, §2.3 now adds a short
+  historical note: the phrase *was* an explicit sub-question in
+  ERC evaluation forms used before the current methodology (revised
+  with the 2024 Work Programme) and was removed when the form was
+  restructured. This preempts a confusion a knowledgeable reader —
+  or a model citing older training data — could plausibly make.
+- **§8 (statistics).** The one figure both fact-checkers flagged as
+  hard to verify ("Women 40% of submissions") was replaced with the
+  ERC's published headline figure (women received ~42% of grants
+  awarded), with a note that the applicant-pool share lives only in
+  the detailed statistics annex.
+
+### Consolidated post-v0.3.0 fixes
+
+These had been applied to `main` after the v0.3.0 tag and are
+gathered here for a clean patch release:
+
+- **Annual verification workflow calendar bug.**
+  `.github/workflows/annual_verification_reminder.yml` ran on 1
+  September and titled the reminder for the *current* calendar year,
+  but on that date the newly-adopted ERC Work Programme is for the
+  *next* year. The action now computes `target_year = current_year
+  + 1`. (Flagged independently by Codex and Gemini in the prior
+  round.)
+- **Mock interview process accuracy.** `mock_interview/README.md`
+  and `mock_interview/01_question_bank.md` no longer imply that
+  remote referees attend the Step-2 interview. Remote referees
+  submit written reviews; panel members ask the interview questions
+  (which may draw on referee reviews). Exact format is
+  panel-specific.
+- **PE6 fixture calibration alignment.**
+  `tests/fixtures/pe6_expected_findings.md` was reframed so its
+  six-cap expectation reads as an upper-bound oracle under a strict
+  reading, consistent with the v0.3.0 calibration interpretation;
+  stale Annex-1 sub-question labels were replaced with verbatim
+  wording, and an obsolete "overall B / borderline B-C grade" line
+  was removed (the prompt outputs risk levels, not panel grades).
+- **README precision.** "verbatim ERC Annex 1 evaluation form"
+  became "verbatim Annex 1 Criterion 1 and Criterion 2 sub-questions
+  ... plus source-checked notes on scoring, structure, eligibility,
+  panel structure, and AI-use rules" — exact about what is official
+  vs derived.
+- **Full proposal stage wording.** README and `basic/prompt.md` no
+  longer imply B2 is a separate later submission "for Step 2
+  applicants" (Step 2 is an evaluation phase; B1 and B2 are
+  submitted together). A note was added that a pasted Resources /
+  Time Commitment text makes Criterion 1.4 assessable.
+- **Advanced flagged experimental.** The main README's Advanced
+  entry now carries "(experimental; not yet end-to-end
+  pilot-verified)", matching `advanced/README.md`.
+- **Five fresh-eyes nits.** Advanced compatibility honesty
+  (`mad_research_compatibility.yml` `last_tested: null` now matches
+  the README), `docs/roadmap.md` updated to a v0.3 vantage,
+  `standard/04_synthesis.md` heading "Step 4 of 3" renamed, and a
+  version-string sync in `advanced/erc_rubric_for_mad_research.md`.
+
+### Authorship
+
+This round was led by Claude Opus 4.8 (final say) with a web-enabled
+factual sub-agent standing in for Codex (which had reached its usage
+limit) and Gemini 3 Pro as the lower-weight third opinion. Earlier
+post-v0.3.0 fixes were authored by Codex CLI (gpt-5.5) and Claude
+Code. Per the project's standing rule, the lower-weight Gemini voice
+did not override the convergence of the two trusted-core
+verifications — and in this round that rule mattered: adopting
+Gemini's "high risk / high gain" claim would have re-introduced an
+error the project had already corrected.
+
+---
+
 ## [0.3.0] — 2026-05-27
 
 Extension release. The locked rubric is unchanged from v0.2.0

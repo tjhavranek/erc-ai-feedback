@@ -1,6 +1,6 @@
 # ERC StG / CoG evaluation rubric — locked
 
-**Version:** 1.1
+**Version:** 1.2
 **Last verified against:** ERC Work Programme 2026 (Commission Decision
 C(2025) 5000, 8 July 2025); *Guide for Peer Reviewers — Starting and
 Consolidator Grant Calls*, version 6.0 (30 September 2025), **Annex 1
@@ -8,7 +8,9 @@ Consolidator Grant Calls*, version 6.0 (30 September 2025), **Annex 1
 Starting and Consolidator Grant Calls*, current version on the EU
 Funding & Tenders Portal; ERC Scientific Council position on AI in
 proposal preparation.
-**Verified on:** 2026-05-27.
+**Verified on:** 2026-05-30 (re-verified against primary sources in a
+two-model fact-check; no factual errors found; two clarifications
+applied — see §12).
 
 **This file is locked.** The Basic and Standard pre-reviews score
 against this rubric exactly as written. The Advanced pre-review (in
@@ -76,10 +78,23 @@ apply only at Step 2:**
 This phrase appears widely in ERC framing language (Work Programme
 2026, training materials, "Guide" introductions) and describes the
 **ethos** of frontier research the ERC funds. **It is not a formal
-sub-question in Annex 1.** The evaluation of risk-bearing ambition is
-folded into the "ambitious and will it advance the frontier" question
-at Step 1, and into the methodology / timescales / resources questions
-at Step 2.
+sub-question in the current Annex 1.** The evaluation of risk-bearing
+ambition is folded into the "ambitious and will it advance the
+frontier" question at Step 1, and into the methodology / timescales /
+resources questions at Step 2.
+
+Note for readers who remember the older form: ERC evaluation forms
+used before the current methodology (revised with the 2024 Work
+Programme) **did** contain an explicit sub-question worded roughly
+*"To what extent is the proposed research high risk / high gain
+(i.e. if successful the payoffs will be very significant, but there
+is a high risk that the research project does not entirely fulfil
+its aims)?"* That sub-question was removed when the form was
+restructured; risk-bearing ambition is now assessed through
+sub-question 1.2. If a source or a model tells you high risk / high
+gain is still a verbatim Annex 1 sub-question, it is citing the
+pre-2024 form — check the current Guide for Peer Reviewers, Annex 1,
+to confirm.
 
 This package's prompts treat "ambition without realistic management of
 how the ambition might fail" as a structural weakness — but as a
@@ -264,8 +279,10 @@ source for the current call.
 ## 8. Headline statistics (most recent)
 
 - **StG 2025:** 3,928 applications, 478 grants awarded → success
-  rate ~12.2%. Domain split: PE 42%, SH 30%, LS 28%. Women 40% of
-  submissions.
+  rate ~12.2%. Domain split: PE 42%, SH 30%, LS 28%. Women received
+  ~42% of the grants awarded (the ERC's headline, press-release-level
+  figure; the share of women among all *applicants* is published only
+  in the detailed statistics annex and is not reproduced here).
 - **CoG 2026:** 3,060 applications received (call closed 13 January
   2026).
 - Country leaders for StG 2025 grants: Germany 99, UK 60,
@@ -328,6 +345,22 @@ Peer Reviewers** — that is the single most critical source.
 
 ## 12. Changelog
 
+- **v1.2 (2026-05-30):** Re-verified the entire rubric against
+  primary ERC sources in a two-model fact-check (a web-enabled
+  factual agent reading the Annex 1 PDF text layer word-for-word,
+  plus Gemini 3 Pro). **No factual errors were found** — eligibility
+  windows, page limits, time commitments, the 28-panel taxonomy, the
+  max-44-per-panel cap, scoring scales, statistics, 2027 changes, and
+  both AI-use rules all confirmed; all seven Annex 1 sub-questions
+  confirmed verbatim. Two clarifications applied: (1) §2.3 now notes
+  that "high risk / high gain" *was* an explicit sub-question in the
+  pre-2024 evaluation form and was removed when the form was
+  restructured — preempting the common error (one of the two
+  fact-check models made it) of citing the old form as current; (2)
+  §8 replaced the hard-to-verify "Women 40% of submissions" figure
+  with the ERC's published headline figure (women received ~42% of
+  grants awarded). No change to any sub-question, score cap, or
+  scoring scale.
 - **v1.1 (2026-05-27):** Replaced Criterion 1 and Criterion 2
   sub-question wording with verbatim Annex 1 text. Added §2.3
   clarifying that "high risk / high gain" is ERC framing language,

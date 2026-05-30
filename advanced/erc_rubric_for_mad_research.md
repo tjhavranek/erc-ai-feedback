@@ -16,10 +16,13 @@ stamp, and re-sync with `shared/rubric_locked.md` in the same
 commit.
 
 Version: 1.0 (ERC StG/CoG audit rubric, for mad-research)
-Source: `tjhavranek/erc-ai-feedback` v0.3, `shared/rubric_locked.md`
-Last verified: 2026-05-27 against ERC Work Programme 2026 and
+Source: `tjhavranek/erc-ai-feedback` v0.3.1, `shared/rubric_locked.md`
+(v1.2)
+Last verified: 2026-05-30 against ERC Work Programme 2026 and
 *Guide for Peer Reviewers — Starting and Consolidator Grant Calls*
-v6.0 (30 September 2025).
+v6.0 (30 September 2025). The Annex 1 sub-questions this frame
+re-projects were re-confirmed verbatim in the v0.3.1 primary-source
+fact-check.
 
 ## Six audit dimensions
 
