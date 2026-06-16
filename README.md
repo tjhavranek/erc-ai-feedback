@@ -30,13 +30,16 @@ extension of the latter; the multi-model convergence walkthrough
 in [`docs/multi_model_walkthrough.md`](docs/multi_model_walkthrough.md)
 is a direct application of the former.
 
-A sibling project —
-[`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop)
-— applies the same quote-grounded adversarial discipline to whole
-research papers rather than ERC proposals (a Claude Code skill that
-stress-tests and then rebuilds a manuscript). It is neither used by
-nor part of this package, and is mentioned only because an ERC
-applicant is usually also a paper author.
+A sibling project,
+[`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop),
+is a heavier Claude Code skill that runs an adversarial expert
+workshop on a full manuscript and then rebuilds it; it is built for
+papers but can be adapted to proposals. It is noted here for
+completeness rather than recommended for ERC use, because it does
+something this pre-review deliberately avoids: it proposes and writes
+edits, whereas this package only identifies problems and leaves the
+drafting to the applicant. It is not calibrated to the ERC rubric and
+is not part of this package.
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 

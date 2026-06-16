@@ -121,17 +121,22 @@ research-audit projects by the same author group:
   checkout.
 
 A third project by the same author group is a *sibling* of this
-package, not a parent — the ERC tool is not derived from it and
-does not use it:
+package, not a parent. The ERC tool is not derived from it and does
+not use it:
 
-- [`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop)
-  — an adversarial AI expert workshop (a Claude Code skill) that
-  stress-tests and then rebuilds a research *paper*: rival-tradition
-  referees, every comment quote-grounded and independently
-  re-verified, then a tracked-changes redline, a clean version, the
-  author's code re-run under a provenance wall, and a replication
-  package. It shares this package's research-audit lineage but
-  targets manuscripts, not ERC proposals.
+- [`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop):
+  an adversarial AI expert workshop (a Claude Code skill) that
+  stress-tests and then rebuilds a research manuscript, with
+  rival-tradition referees, every comment quote-grounded and
+  independently re-verified, then a tracked-changes redline, a clean
+  version, the author's code re-run under a provenance wall, and a
+  replication package. It is built for papers but can be adapted to
+  proposals. It shares this package's research-audit lineage, but it
+  goes a step this package deliberately does not: it proposes and
+  writes edits, whereas the ERC pre-review only identifies problems
+  and leaves the drafting to the applicant. For that reason it is
+  listed as a related tool, not recommended as part of the ERC
+  pre-review.
 
 This package was created specifically for ERC. Other members of
 the Czech ERC support group (Technologické centrum AV ČR
