@@ -120,6 +120,19 @@ research-audit projects by the same author group:
   drops an ERC rubric override into a local mad-research
   checkout.
 
+A third project by the same author group is a *sibling* of this
+package, not a parent — the ERC tool is not derived from it and
+does not use it:
+
+- [`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop)
+  — an adversarial AI expert workshop (a Claude Code skill) that
+  stress-tests and then rebuilds a research *paper*: rival-tradition
+  referees, every comment quote-grounded and independently
+  re-verified, then a tracked-changes redline, a clean version, the
+  author's code re-run under a provenance wall, and a replication
+  package. It shares this package's research-audit lineage but
+  targets manuscripts, not ERC proposals.
+
 This package was created specifically for ERC. Other members of
 the Czech ERC support group (Technologické centrum AV ČR
 expert group and Charles University ERC Přípravka) are welcome

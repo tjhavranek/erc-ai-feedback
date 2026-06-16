@@ -30,6 +30,14 @@ extension of the latter; the multi-model convergence walkthrough
 in [`docs/multi_model_walkthrough.md`](docs/multi_model_walkthrough.md)
 is a direct application of the former.
 
+A sibling project —
+[`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop)
+— applies the same quote-grounded adversarial discipline to whole
+research papers rather than ERC proposals (a Claude Code skill that
+stress-tests and then rebuilds a manuscript). It is neither used by
+nor part of this package, and is mentioned only because an ERC
+applicant is usually also a paper author.
+
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ## Use
