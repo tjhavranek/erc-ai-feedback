@@ -6,6 +6,63 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.3.2] — 2026-06-19
+
+Patch release. Changes how findings are worded and packaged so a
+busy, non-specialist reader can act on the critique without a second
+tool. The locked rubric, the Annex 1 sub-questions, the structural
+score caps, the scoring scales, and the severity legend are all
+unchanged; this release touches output wording only. Prompted by
+panel-member feedback that an earlier delivered pre-review read as too
+jargon-heavy to act on directly.
+
+### Added
+
+- **Self-glossing score-cap codes.** Wherever the output prints a
+  `CAP-x` code (the scorecard, a finding's score consequence, the
+  workshop hand-off), the code must now carry its plain meaning in the
+  same place. A bare `CAP-A` is no longer allowed. Applied to the
+  basic prompt, the advanced synthesis rubric, and the three advanced
+  round-1 role prompts.
+- **"In plain words (read this first)" summary.** The output now opens
+  with a bounded four-to-six sentence plain-language summary: the
+  proposal's core claim, the two or three issues most likely to lower
+  the score, and the single highest-value fix, with no codes or
+  metaphors. It is the block a workshop leader can forward to a
+  non-specialist colleague. Required in the basic prompt and the
+  advanced synthesis rubric.
+- **Banned-phrasings list.** A closed list of insider metaphors
+  (lane, spine, moat, hinge, and similar) and software-ticket words
+  (blocking, non-blocking), which the model must replace with their
+  literal meaning, plus a ban on symbol arrows and two-noun shorthand
+  in the output. Mirrored across the basic prompt, the advanced
+  rubric, and the three role prompts, each entry scoped to its
+  figurative sense so genuine technical terms are kept.
+- **Forwarding guidance** in `docs/for_workshop_leaders.md`: which
+  part of the output is written for a non-specialist and is the part
+  to forward, with a reminder to check the plain summary against the
+  detailed findings first.
+
+### Changed
+
+- The per-finding `Workshop value:` field is renamed to the plainer
+  `Would a human reviewer catch this fast? (YES/NO)`.
+
+### Notes
+
+- Named theories and technical terms are kept verbatim with a short
+  gloss rather than replaced with vaguer words; the plain layer says
+  what to change and why but does not write the applicant's text;
+  severity wording is unchanged.
+- These are prompt-instruction changes and have not yet been measured
+  on a fresh real-draft run. The next pilot should check the output
+  against the readability and substance-preservation tests in the
+  package's design notes.
+- A dated note was added to the example-output fixtures recording that
+  those captures predate this release (they still show the old field
+  label and bare codes). They are kept as an unedited model-output
+  record rather than regenerated.
+
 ## [0.3.1] — 2026-05-30
 
 Patch release. Consolidates the post-v0.3.0 fixes (which had landed

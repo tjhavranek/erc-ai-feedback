@@ -4,6 +4,16 @@ What each pre-review prompt produced when Codex CLI (gpt-5.5) was
 run as the AI receiving the prompt, against the synthetic PE6 and
 SH3 fixtures in this directory's parent.
 
+> **Note (2026-06):** These captures are frozen v0.2/v0.3 pilot
+> outputs and predate the v0.3.x readability edits. They still show
+> the retired `Workshop value:` field label and bare `CAP-x` codes.
+> The current prompts self-gloss each cap code inline (never a bare
+> `CAP-x`) and rename that field to `Would a human reviewer catch
+> this fast? (YES/NO)`. These files are kept as an unedited
+> model-output record, not regenerated — the package's discipline
+> lives in the schema, rubric, and cap definitions, not in this
+> phrasing.
+
 These are real, unedited model outputs. The "Pilot self-assessment"
 section at the end of each file is Codex's own candid note on what
 it triggered, what it avoided, and where it noticed ambiguity in

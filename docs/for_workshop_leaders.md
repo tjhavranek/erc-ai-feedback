@@ -25,6 +25,23 @@ Send applicants this in advance of their workshop session:
 > findings where you want our judgement. Workshop time will focus
 > on what you bring forward.
 
+## Which part to read, which part to forward
+
+The pre-review opens with a plain-language "In plain words" summary.
+That block is written for a non-specialist: it is the part to read
+quickly, and the part to forward to a colleague who is not in the
+proposal's field. The detailed findings below it carry the exact
+quotes, locators, and rubric codes (the CAP-A…CAP-F score caps) that
+a lead reader needs to verify a point; those codes are internal
+shorthand, glossed in place but still written for someone working
+through the full review. If a colleague only needs the gist, send the
+summary alone.
+
+Before forwarding, sanity-check the top three findings: does each
+plain sentence in the summary still match the detailed finding it
+stands for? Plain wording must not drift from the precise finding —
+if it has, fix the summary, not the finding.
+
 ## Who runs the tool
 
 **Pattern A — applicant runs the pre-review.** This is the default:

@@ -54,6 +54,50 @@ Cap-firing within your scope:
     sub-question, note which sub-question and let the synthesis
     decide whether it raises an existing cap.
 
+Readability discipline (so a non-specialist reading the
+synthesised memo can act on your finding):
+
+  - Self-glossing codes. Whenever you name a score-cap code,
+    print its plain meaning in the same breath — never a bare
+    "CAP-A". Write, e.g., "CAP-F (the CV does not show why
+    this PI can execute this project)". A reader who never saw
+    the cap definitions must be able to decode it on the spot.
+  - Banned phrasings (closed list; no technical content, a
+    non-specialist cannot decode them — write the literal
+    point instead). This does NOT license dropping or
+    softening any named theory or technical term — keep those
+    verbatim and add a short gloss. Replace the term on the
+    left with the plain meaning on the right:
+      - "lane" / "pick the lane": name the actual option or
+        framing
+      - "spine": the central claim or argument
+      - "knife" / "sharpest knife": the strongest argument
+      - "moat": what rivals cannot easily replicate
+      - "hinge": the connecting mechanism
+      - "altitude" (of a claim): the level of the claim
+      - "delta" (as contribution): what you add beyond prior
+        work
+      - "wire" / "circuit" / "parallel monologues": connect
+        one point to another so they speak to each other
+      - "surface-polish pass": a light copy-edit
+      - "evidence legs": the supporting evidence
+      - "leverage" / "per sentence spent" (as a vague impact
+        metaphor): the changes that help most for the least
+        rewriting
+      - "score-killing" (in prose): would materially lower
+        the score
+      - "fundable-shaped": a strong idea with a presentation
+        problem
+      - "staged against a weak opponent" / "straw man":
+        compared to a literature that is easy to beat
+    Do not use software-ticket words in prose — write "would
+    sink the proposal" / "would not sink it on its own"
+    rather than "blocking" / "non-blocking". Severity stays
+    HIGH / MEDIUM / LOW. Do not use symbol shorthand
+    ("A -> B", "X <-> Y") — write the relationship as a
+    sentence. Do not compress a finding into a two-noun stack
+    ("method-claim mismatch") — write the sentence.
+
 Output format: see the Evidence Auditor output schema in
 mad-research's shared_grounding_rules.md. Bound each finding by
 the rules above. Severity is a property of the draft, not a quota.

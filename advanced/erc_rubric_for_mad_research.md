@@ -116,12 +116,72 @@ The ERC panel produces ranked scores (A invited, A not invited, B,
 C at Step 1; A and B at Step 2). Those scores are panel-meeting
 output that depends on the comparative ranking against other
 proposals in the panel — a single-reviewer or AI critique cannot
-produce them honestly. The synthesis instead produces:
+produce them honestly. The synthesis instead produces, in this order:
 
+- A short **"In plain words (read this first)"** opener — 4-6
+  sentences a busy non-specialist can act on without a glossary or
+  a second tool, with no codes, no cross-references, and no
+  metaphors. State, in plain words: (a) one neutral sentence on the
+  proposal's core claim (orient the reader, do NOT praise it); (b)
+  the 2-3 issues most likely to lower the score, and why; (c) the
+  single highest-value fix. Plain does not mean soft: no hedges, no
+  "however / that said", no reassurance, and keep every severity
+  word. Keep any named theory or technical term you must use and add
+  a short gloss rather than a vaguer substitute. Say what to change
+  and why; do not write the applicant's replacement sentence. This
+  is the block a workshop leader forwards to a non-specialist.
 - A two-to-three sentence prose verdict for each of the six
   dimensions above.
 - A summary "Step-1 risk if submitted unchanged" of *low / medium
   / high / critical*, justified against the dimensional verdicts.
+
+## Readability of the synthesised memo
+
+The synthesised memo is read by busy, cross-disciplinary panel
+members who may not be specialists in the proposal's field and may
+not be native English speakers. Write so that reader can act on
+every finding without a glossary or a second tool. Both rules below
+cost no substance:
+
+- Self-glossing codes. Whenever the memo prints a score-cap code —
+  in a verdict, a finding, or the hand-off — print its plain
+  meaning in the same breath, every time, even at the cost of
+  repetition. Never emit a bare "CAP-A". Write, e.g., "CAP-B
+  (ambition asserted with no mechanism or fallback)". A reader who
+  never saw the cap definitions must be able to decode it on the
+  spot. (The cap glosses in the six dimensions above are the source
+  wording.)
+- Banned phrasings (closed list; no technical content, a
+  non-specialist cannot decode them — write the literal point
+  instead). This does NOT license dropping or softening any named
+  theory or technical term — keep those verbatim and add a short
+  gloss; never swap a precise term for a vaguer one. Replace the
+  term on the left with the plain meaning on the right:
+    - "lane" / "pick the lane": name the actual option or framing
+    - "spine": the central claim or argument
+    - "knife" / "sharpest knife": the strongest argument
+    - "moat": what rivals cannot easily replicate
+    - "hinge": the connecting mechanism
+    - "altitude" (of a claim): the level of the claim
+    - "delta" (as contribution): what you add beyond prior work
+    - "wire" / "circuit" / "parallel monologues": connect one
+      point to another so they speak to each other
+    - "surface-polish pass": a light copy-edit
+    - "evidence legs": the supporting evidence
+    - "leverage" / "per sentence spent" (as a vague impact
+      metaphor): the changes that help most for the least
+      rewriting
+    - "score-killing" (in prose): would materially lower the score
+    - "fundable-shaped": a strong idea with a presentation problem
+    - "staged against a weak opponent" / "straw man": compared to
+      a literature that is easy to beat
+  Do not use software-ticket words in prose — write "would sink the
+  proposal" / "would not sink it on its own" rather than "blocking"
+  / "non-blocking". Severity stays HIGH / MEDIUM / LOW (see the
+  severity ladder below), each printed with its one-line meaning.
+  Do not use symbol shorthand ("A -> B", "X <-> Y") — write the
+  relationship as a sentence. Do not compress a finding into a
+  two-noun stack ("method-claim mismatch") — write the sentence.
 
 ## Severity ladder for individual findings
 
