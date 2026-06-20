@@ -135,7 +135,8 @@ notes are in [`docs/roadmap.md`](docs/roadmap.md).
 
 ## Citation, licence, maintainer
 
-Tomáš Havránek, Charles University, Prague. MIT licence; see
+Developed by Tomáš Havránek and Zuzana Iršová, Charles University,
+Prague. MIT licence; see
 [`LICENSE`](LICENSE). The ERC materials cited in the rubric remain
 the property of the European Research Council Executive Agency
 and are referenced under fair use with source URLs in
