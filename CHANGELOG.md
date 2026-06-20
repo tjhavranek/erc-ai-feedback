@@ -82,7 +82,7 @@ Opus 4.8 held final say.
 **No factual errors were found.** Eligibility windows (StG 2019-2023,
 CoG 2014-2018, reference date 1 Jan 2026), the 2-7 / 7-12 year
 glosses, all three time-commitment percentages, the 28-panel
-(11/9/8) taxonomy, the max-44-per-panel Step-2 cap, the 1-5 reviewer
+(11/9/8) taxonomy, the max-44-per-panel Step-1 cap, the 1-5 reviewer
 scale and the PI's five-label qualitative scale, the StG-2025 and
 CoG-2026 statistics, the 2027 eligibility expansion, and both
 AI-use rules were all confirmed against official sources. All seven

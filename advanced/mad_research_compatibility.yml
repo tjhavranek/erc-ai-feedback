@@ -17,7 +17,7 @@ pinned_commit: "unspecified — set on next testing pass"
 
 # Date the overrides were last run end-to-end against the pinned
 # version with a synthetic ERC fixture.
-last_tested: null   # filled by pilot in v0.2 candidate; null until then
+last_tested: null   # filled by pilot in v0.4 candidate; null until then
 
 # What the overrides change in mad-research:
 overrides:

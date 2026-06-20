@@ -62,7 +62,7 @@ Categories:
 
   Example shape: "What is the single most likely reason this
   project fails to deliver the result claimed in Objective 2?
-  What part of the work plan address that risk?"
+  What part of the work plan addresses that risk?"
 
   ## 4. PI fit and track record (3-4 questions)
 
