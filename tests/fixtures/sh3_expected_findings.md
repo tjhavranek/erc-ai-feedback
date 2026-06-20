@@ -114,7 +114,7 @@ The tool must **not** also fire CAP-C on the basis of F5: a single venue-prestig
 - **Do not flag the B2 §4 risk plan as missing or generic.** R1–R7 are concrete with quantitative thresholds, named external partners, and a go/no-go review point. The *Part I* contingency paragraph is generic (CAP-B), but the *B2 risk section* is not; the tool must not conflate them.
 - **Do not pad findings beyond what the evidence supports.** If the quota is 6–8 and only 6 substantive findings present, the output should be 6, not 8.
 - **Do not down-score on societal-impact grounds.** The framing of societal impact is a *style/register* issue (Section 5), not a methodology defect. The tool must surface it as register, not as a scoring deduction on Criteria 1.1/1.2/1.3.
-- **Do not let the venue-prestige slip in B2 §1.7 leak into a CV/Criterion-3 deduction.** It is a single sentence; flag the sentence, leave the CV scoring untouched.
+- **Do not let the venue-prestige slip in B2 §1.7 leak into a CV/Criterion-2 deduction.** It is a single sentence; flag the sentence, leave the CV scoring untouched.
 
 ---
 
