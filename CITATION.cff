@@ -9,6 +9,10 @@ authors:
     family-names: Havránek
     affiliation: Charles University, Prague
     orcid: "https://orcid.org/0000-0002-3158-2539"
+  - given-names: Zuzana
+    family-names: Iršová
+    affiliation: Charles University, Prague
+    orcid: "https://orcid.org/0000-0002-0753-8124"
 repository-code: "https://github.com/tjhavranek/erc-ai-feedback"
 url: "https://github.com/tjhavranek/erc-ai-feedback"
 abstract: >-
