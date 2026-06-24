@@ -6,6 +6,14 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.3.3] — 2026-06-24
+
+Archival release to mint a Zenodo DOI for the package. Also captures
+the small post-0.3.2 fixes that landed on `main` without their own
+tag (developer credit for Havránek and Iršová, an ORCID correction,
+and a fixture cross-reference fix). No rubric, prompt, score-cap, or
+behaviour change.
+
 ## [0.3.2] — 2026-06-19
 
 Patch release. Changes how findings are worded and packaged so a
