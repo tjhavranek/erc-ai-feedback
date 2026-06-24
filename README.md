@@ -42,6 +42,7 @@ drafting to the applicant. It is not calibrated to the ERC rubric and
 is not part of this package.
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![DOI](https://zenodo.org/badge/1251103176.svg)](https://doi.org/10.5281/zenodo.20829165)
 
 ## Use
 
@@ -140,8 +141,10 @@ Prague. MIT licence; see
 [`LICENSE`](LICENSE). The ERC materials cited in the rubric remain
 the property of the European Research Council Executive Agency
 and are referenced under fair use with source URLs in
-[`shared/rubric_locked.md`](shared/rubric_locked.md). For citation
-metadata see [`CITATION.cff`](CITATION.cff).
+[`shared/rubric_locked.md`](shared/rubric_locked.md). Archived on
+Zenodo with a DOI that resolves to the latest release:
+[`https://doi.org/10.5281/zenodo.20829165`](https://doi.org/10.5281/zenodo.20829165).
+For citation metadata see [`CITATION.cff`](CITATION.cff).
 
 Bug reports and factual corrections to the rubric: GitHub Issues.
 Please do not paste real proposal content in public issues.

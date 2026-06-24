@@ -15,6 +15,11 @@ authors:
     orcid: "https://orcid.org/0000-0002-0753-8124"
 repository-code: "https://github.com/tjhavranek/erc-ai-feedback"
 url: "https://github.com/tjhavranek/erc-ai-feedback"
+doi: "10.5281/zenodo.20829165"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20829165"
+    description: "Concept DOI (Zenodo); resolves to the latest release"
 abstract: >-
   A small package consisting of a locked ERC Starting / Consolidator
   Grant evaluation rubric (verbatim sub-questions from the ERC Guide
