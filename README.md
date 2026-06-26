@@ -6,7 +6,12 @@ proposal that the applicant runs in one chat session with a current
 frontier model. The intent is to clear routine structural problems
 — vague hypotheses, hidden incrementalism, missing risk logic,
 weak panel fit, CV–project disconnect — before workshop time is
-spent on them. It does not replace human review.
+spent on them. It does not replace human review. It is for
+applicants and applicant-authorised workshop preparation only: do
+not use it on a proposal you are evaluating as an ERC panel member
+or remote reviewer, since the ERC [prohibits reviewers from
+uploading proposals under evaluation to external AI
+systems](https://erc.europa.eu/news-events/news/erc-clarifies-limits-ai-use-grant-evaluation).
 
 Two files do the work: the locked evaluation rubric in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) and the prompt
