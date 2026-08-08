@@ -150,6 +150,21 @@ The PI assessment is **qualitative**, not numerical: reviewers
 choose one of five options — *Outstanding / Excellent / Very Good /
 Good / Non-competitive*.
 
+**Two source divergences here, disclosed rather than resolved,
+because the ERC's own documents differ.** First, the top label:
+the *Guide for Peer Reviewers* v6.0 says *Outstanding*, while
+*Information for Applicants* v11.0 says *Exceptional* for the same
+top option. The remaining four are identical in both. This package
+uses *Outstanding*; a reader working from the applicant-facing
+document will see *Exceptional*. Nothing turns on it, but do not
+"correct" either one — both are current ERC wording, in different
+documents. Second, granularity: the reviewer's form carries **one
+overall** qualitative assessment of the PI and **one overall**
+numerical mark for the Research Project. This package scores each
+sub-question separately in its output. That is a deliberate
+diagnostic device for locating where a mark is lost, not a
+reproduction of the form, and the prompts say so where they emit it.
+
 ---
 
 ## 4. Scoring scales
@@ -228,7 +243,7 @@ research strategy.
 Note: the Information for Applicants explicitly says **"try to avoid
 repeating sections of Part I in Part II"**.
 
-### 5.3 Annexes (unlimited; submitted with the proposal)
+### 5.3 Annexes (no page limit, but only what is asked for)
 
 - Statement of support from the Host Institution.
 - Copy of PhD certificate (StG/CoG).
@@ -247,7 +262,7 @@ repeating sections of Part I in Part II"**.
 
 ---
 
-## 6. Eligibility windows (2027 calls — the open ones)
+## 6. Eligibility windows (2027 call cycle — the current one)
 
 Reference date is **1 January 2027** for the 2027 calls. The windows
 were widened in Work Programme 2027.
@@ -297,9 +312,10 @@ one applicants most often get wrong, and it is severe:**
 | Starting, Consolidator or Advanced Grant **2025**, scored **C at Step 1** | Starting, Consolidator, Advanced, ERC Plus **and** Synergy 2027 |
 | Any call, rejected for a breach of research integrity | All 2027 main grant calls |
 
-So a B at Step 1 in the 2026 StG or CoG call bars the applicant from the
-**entire** next Work Programme, not merely from the same scheme, and a C
-in 2025 bars them two cycles running. An **A (not invited)** at Step 1,
+So a B at Step 1 in the 2026 StG or CoG call bars the applicant from **all
+five 2027 main grant calls**, not merely from the same scheme, and a C in
+2025 bars them two cycles running. (Proof of Concept is not a main grant
+call and is not covered by these rows.) An **A (not invited)** at Step 1,
 and an **A or B at Step 2**, carry **no** resubmission restriction —
 those are the applicants who may come straight back. Inadmissible,
 ineligible or withdrawn proposals do not count against any of these
@@ -410,7 +426,7 @@ perform.
 
 ---
 
-## 10. Calendar — the open 2027 calls
+## 10. Calendar — the 2027 call cycle
 
 Work Programme 2027 was adopted on **20 July 2026** (Commission Decision
 C(2026) 4907). These are the calls an applicant using this package today
@@ -473,7 +489,7 @@ Peer Reviewers** — that is the single most critical source.
   windows retired; (3) new **§6.1** with the Work Programme 2027
   submission restrictions quoted verbatim and the Table 6 resubmission
   restrictions tabulated — a B or C at Step 1 in the 2026 StG/CoG call
-  bars the applicant from the entire 2027 Work Programme, which the
+  bars the applicant from all five 2027 main grant calls, which the
   previous version did not state; (4) §9 rewritten around the ERC's
   **two** principles, adding **non-delegation**, which the file
   previously omitted entirely — with the guidelines' own Q2/Q3/Q7/Q8/Q9

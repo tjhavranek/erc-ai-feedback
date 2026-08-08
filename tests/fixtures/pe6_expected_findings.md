@@ -139,7 +139,7 @@ A poorly-calibrated tool might over-fire on the following; these are **not** rea
 3. **The budget total (€1.498M) is within StG norms.** Do not flag the headline figure as inappropriate — only the internal allocation (esp. compute) merits comment.
 4. **The five-year duration is correct for StG.** Do not flag.
 5. **Open-source / open-access commitments are appropriate.** These are positives, not negatives — do not mistake them for "industry-relevance" pandering.
-6. **PI's PhD year (2020) is within StG eligibility window.** Six years post-PhD at submission in 2026 is fine for StG. Do not flag eligibility.
+6. **PI's PhD year (2020) is within the StG eligibility window.** Six years post-PhD is comfortably inside the StG window under both the 2026 rules (2-7 years) and the widened 2027 rules (0-10 years). Do not flag eligibility. (This fixture was written for the 2026 cycle; the eligibility conclusion is unchanged for 2027.)
 7. **Interdisciplinary scope itself is not a flaw.** PE6 ↔ molecular biology is a legitimate scope; the issue is the *thin cross-panel justification* and *thin PI–project bridge*, not the interdisciplinary ambition.
 8. **Sub-objectives O1–O4 are concrete.** Each sub-objective has measurable deliverables. Do not over-extend CAP-A to apply to the sub-objectives — CAP-A fires on the *overarching* question only.
 9. **Reference list format.** The references include "*(invented)*" markers because this is a synthetic fixture; in a real review these would be real papers. Do not flag the format as "fabricated references".

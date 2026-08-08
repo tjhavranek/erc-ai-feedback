@@ -79,12 +79,12 @@ What to produce:
 
   After the per-criticism audit, summarise:
 
-    - How many criticisms are ADDRESSED, PARTIALLY, NOT.
-    - Whether the pattern of engagement signals careful reading
-      of the previous report (e.g., the applicant has touched
-      each major criticism somewhere) or selective engagement
-      (some criticisms are clearly addressed; others are
-      ignored as if invisible).
+    - How many of the underlying weaknesses are ADDRESSED,
+      PARTIALLY, NOT.
+    - Whether the unresolved ones cluster (e.g. every criticism
+      about the methodology is still open while the framing ones
+      were fixed). A cluster usually means one underlying problem
+      the applicant has not yet confronted, not several small ones.
     - The single most important criticism that remains NOT
       ADDRESSED, and a one-paragraph note on what the
       applicant might add to the new draft to engage with it.

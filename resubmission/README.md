@@ -14,9 +14,11 @@ Table 6:
 - **B or C at Step 1** in the Starting or Consolidator Grant **2026**
   call → ineligible for Starting, Consolidator, Advanced, ERC Plus
   **and** Synergy under Work Programme 2027. Not just the same
-  scheme — the whole Work Programme.
-- **C at Step 1** in a 2025 call → the same bar for 2027, so a C
-  costs two cycles.
+  scheme — all five 2027 main grant calls. (Proof of Concept is not
+  a main grant call and is not covered by this bar; it is open only
+  to existing ERC grant holders in any case.)
+- **C at Step 1** in a Starting, Consolidator or Advanced Grant
+  **2025** call → the same bar for 2027, so a C costs two cycles.
 - **A (not invited)** at Step 1, or **A or B at Step 2** → no
   resubmission restriction. These are the applicants who can come
   straight back.
@@ -106,14 +108,12 @@ For each criticism in the previous report:
   a quote.
 - A verdict: **addressed**, **partially addressed**, or **not
   addressed**.
-- A short note on whether the engagement is likely to convince
-  a new panel reader.
+- A short note on whether the underlying weakness is actually
+  fixed, judged as a fresh reader would judge it.
 
 Plus a summary: how many of the previous criticisms are
-addressed / partially / not addressed; whether the pattern of
-engagement is itself signal-positive (the panel sees that the
-applicant has read the report carefully) or signal-negative
-(the new draft ignores the report).
+addressed / partially / not addressed, and whether the unresolved
+ones cluster around a single underlying problem.
 
 ## Privacy
 

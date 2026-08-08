@@ -18,8 +18,7 @@ non-delegation is not discharged by keeping the data safe: the
 guidelines answer "no" to a model run locally (Q2), to a tool that
 discloses nothing to a third party (Q3), and to asking an AI whether
 your review is missing points (Q8). Running it offline is not a
-workaround. Applicants are in a different position, which is what
-licenses this package: the [Scientific
+workaround. Applicants are in a different position: the [Scientific
 Council](https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai)
 permits AI in preparing a proposal provided the author takes full
 authorship responsibility for the result.
@@ -49,9 +48,10 @@ and the reasoning behind them are listed in
 
 1. Open a paid chat session with a current frontier model, and
    select the provider's strongest reasoning setting rather than
-   the fast default — the score caps and quote grounding degrade
-   noticeably on a non-reasoning model. Confirm training opt-out is
-   on. (Provider settings change; see Privacy below.)
+   the fast default. The prompt asks for conjunctive checks and
+   quote grounding across a long document, which is the work a
+   reasoning model is for. Confirm training opt-out is on.
+   (Provider settings change; see Privacy below.)
 2. Copy the text between the `=== PROMPT BEGIN ===` and `=== PROMPT
    END ===` markers in [`basic/prompt.md`](basic/prompt.md). Paste
    it into the chat.
@@ -123,12 +123,9 @@ when a reader runs the tool on someone else's draft.
 ## Other ways to use the package
 
 The single-prompt pre-review above is what most applicants should
-use. It is one structured pass by a frontier model, and that is the
-configuration that came out ahead of the more elaborate ones in the
-comparison cited in [`advanced/README.md`](advanced/README.md). The
-alternatives below cost more of your time, and Advanced also sends
-the draft to a second provider. Run them as cross-checks on a draft
-that has already been through the pre-review, not instead of it.
+use. The alternatives below cost more of your time, and Advanced also
+sends the draft to a second provider. Run them as cross-checks on a
+draft that has already been through the pre-review, not instead of it.
 
 - A three-prompt sequence in [`standard/`](standard/) for
   applicants who want a more thorough single-model pass

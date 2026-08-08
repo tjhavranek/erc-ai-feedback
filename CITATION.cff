@@ -22,8 +22,9 @@ identifiers:
     description: "Concept DOI (Zenodo); resolves to the latest release"
 abstract: >-
   A small package consisting of a locked ERC Starting / Consolidator
-  Grant evaluation rubric (verbatim sub-questions from the ERC Guide
-  for Peer Reviewers v6.0) and a single self-contained AI prompt that
+  Grant evaluation rubric (verbatim sub-questions for the 2027 calls,
+  from ERC Work Programme 2027 and Information for Applicants v11.0)
+  and a single self-contained AI prompt that
   loads the rubric, applies structural score caps, and enforces an
   evidence-grounded, no-sycophancy critique register. Intended to
   triage routine issues in proposal drafts so human reviewers can

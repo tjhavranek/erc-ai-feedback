@@ -1,6 +1,6 @@
 name: Annual ERC rubric re-verification reminder
 
-# Runs once a year in late July to open an Issue prompting the
+# Runs once a year on 1 July to open an Issue prompting the
 # maintainer to re-verify the rubric in
 # shared/rubric_locked.md against the current Work Programme,
 # the current Guide for Peer Reviewers, and the current
@@ -9,12 +9,12 @@ name: Annual ERC rubric re-verification reminder
 
 on:
   schedule:
-    # 09:00 UTC on 25 July every year. Deliberately before the start
-    # of August: Work Programme 2027 was adopted on 20 July 2026 and
-    # the Starting Grant call opened on 22 July, so a September
-    # reminder left the rubric stale through the opening weeks of a
-    # live call.
-    - cron: '0 9 25 7 *'
+    # 09:00 UTC on 1 July every year, deliberately ahead of the
+    # adoption window rather than after it: Work Programme 2027 was
+    # adopted on 20 July 2026 and the Starting Grant call opened on
+    # 22 July, so the previous 1 September trigger left the rubric
+    # stale through the opening weeks of a live call.
+    - cron: '0 9 1 7 *'
   workflow_dispatch:
 
 permissions:
@@ -28,10 +28,12 @@ jobs:
       - name: Determine target Work Programme year
         id: year
         run: |
-          # The action runs on 1 September. The ERC Work Programme
-          # for year N+1 is adopted in the summer of year N. So in
-          # September of year N, the newly-adopted Work Programme
-          # to verify against is for year N+1, not for year N.
+          # The action runs on 1 July. The ERC Work Programme for
+          # year N+1 is adopted in mid-summer of year N and the
+          # Starting Grant call can open within days of adoption
+          # (2026: adopted 20 July, call opened 22 July). So in
+          # July of year N, the Work Programme to verify against is
+          # for year N+1, not for year N.
           echo "current_year=$(date -u +%Y)" >> "$GITHUB_OUTPUT"
           echo "target_year=$(( $(date -u +%Y) + 1 ))" >> "$GITHUB_OUTPUT"
 
@@ -62,13 +64,17 @@ jobs:
               Check changes to evaluation criteria, page
               limits, eligibility windows, time commitment
               requirements, panel structure.
-            - [ ] **Guide for Peer Reviewers — Starting and
-              Consolidator Grant Calls** (current version).
-              Particular attention to **Annex 1 (Evaluation
-              Form)** — verify Criterion 1 and Criterion 2
-              sub-questions are still verbatim against
+            - [ ] **Sub-question wording.** The verbatim source
+              is the **Work Programme's evaluation elements and
+              the current Information for Applicants**, NOT the
+              Guide for Peer Reviewers, which is stamped per Work
+              Programme and lagged a full revision on 1.2 in 2027.
+              Verify Criterion 1 and Criterion 2 against
               \`shared/rubric_locked.md\` §2 and §3 and
-              \`basic/prompt.md\` Section 2.
+              \`basic/prompt.md\` Section 2. Also check the Guide
+              (current version, Annex 1) for the reviewer-form
+              mechanics in §4, and note any divergence between the
+              two documents rather than silently picking one.
             - [ ] **Information for Applicants — Starting and
               Consolidator Grant Calls** (current version).
               Check page limits, references-not-counted rule,
@@ -79,9 +85,12 @@ jobs:
               applicant-side AI use policy. If a disclosure
               requirement has been added, surface it in the
               README and prompt.
-            - [ ] **ERC clarification on AI use in grant
-              evaluation** — check reviewer-side rule
-              (currently: no upload of proposals to external AI).
+            - [ ] **ERC guidelines on AI use in grant evaluation**
+              — check BOTH reviewer-side principles are still
+              stated correctly: confidentiality (no proposal text
+              to an external AI) AND non-delegation (no AI
+              assessment of a proposal at all, including a
+              locally-run or institutional model).
             - [ ] **Provider privacy controls**: ChatGPT,
               Claude, Gemini. UI labels and toggle locations
               drift; check the URLs in README's Privacy

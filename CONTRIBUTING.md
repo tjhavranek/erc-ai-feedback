@@ -43,7 +43,11 @@ Open an Issue or a Pull Request under "Factual correction" if:
 
 - The Criterion 1 or Criterion 2 sub-question wording in
   [`shared/rubric_locked.md`](shared/rubric_locked.md) does not
-  match the current Annex 1 of the *Guide for Peer Reviewers*.
+  match the evaluation elements for the **current** call year, as
+  given in the current ERC Work Programme and *Information for
+  Applicants*. Check those first: the *Guide for Peer Reviewers* is
+  stamped per Work Programme and can lag a call by a full revision,
+  as it did for the 2027 change to sub-question 1.2.
 - A page limit, eligibility window, time commitment, panel-score
   scale, or panel-structure descriptor in the rubric or prompt
   does not match the current ERC Work Programme.
