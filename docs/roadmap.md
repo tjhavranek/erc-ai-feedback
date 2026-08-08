@@ -133,8 +133,12 @@ not use it:
   replication package. It is built for papers but can be adapted to
   proposals. It shares this package's research-audit lineage, but it
   goes a step this package deliberately does not: it proposes and
-  writes edits, whereas the ERC pre-review only identifies problems
-  and leaves the drafting to the applicant. For that reason it is
+  writes edits and re-runs analyses, whereas the ERC pre-review
+  identifies problems and leaves the science to the applicant. (The
+  one place this package supplies any text is the Writing Coach step
+  in `standard/`, which may reword a sentence the applicant already
+  wrote; it never authors new scientific content.) For that reason
+  it is
   listed as a related tool, not recommended as part of the ERC
   pre-review.
 

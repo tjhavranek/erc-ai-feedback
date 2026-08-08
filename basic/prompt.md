@@ -636,6 +636,25 @@ public repository) and revise the prompt.
 
 ## Changelog (this file)
 
+- **v1.4 (2026-08-08):** Brought to the 2027 calls and hardened two
+  rails. Section 2 now carries the 2027 wording of sub-question 1.2,
+  which gained the clause "and is the proposed approach
+  scientifically convincing?" and applies it at Step 1 — so an
+  Extended Synopsis whose approach a generalist cannot find
+  convincing is weak on 1.2 itself rather than merely exposed at
+  Step 2. The Section 7 scorecard label was updated to match; it had
+  been left on the old two-clause gloss, which is where the model and
+  the applicant actually see what is being scored. Section 6 split
+  into refuse-entirely and decline-but-continue, because the single
+  list made a request to rewrite a sentence read as grounds to refuse
+  the whole review; a refusal condition was added for a user who is
+  evaluating the proposal for the ERC; and the prompt-injection
+  clause was rewritten so it fires on text addressed to the model
+  inside the draft rather than on any draft that mentions such
+  attacks — which had made the tool refuse proposals about AI safety.
+  The scorecard now states that the ERC form carries one overall mark
+  and the per-sub-question breakdown is this tool's diagnostic. No
+  change to any score cap, severity definition, or scoring scale.
 - **v1.3 (2026-06-19):** Added output-readability rails. A
   self-glossing rule so score-cap codes always print with their plain
   meaning (never a bare CAP-x). A closed banned-phrasings list that

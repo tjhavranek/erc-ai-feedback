@@ -34,11 +34,23 @@ examples.
 > and use the v0.3.4 capture above for that.
 
 These are real, unedited model outputs. The "Pilot self-assessment"
-section at the end of each file is Codex's own candid note on what
+section at the end of each pilot file is Codex's own candid note on what
 it triggered, what it avoided, and where it noticed ambiguity in
 the prompt rules.
 
 ## Files
+
+### Basic pre-review (v0.3.4 — current prompt)
+
+- [`sh3_basic_critique_codex_v034.md`](sh3_basic_critique_codex_v034.md) —
+  Basic critique on the SH3 fixture, Full proposal stage, produced by
+  Codex CLI (gpt-5.6) against prompt v1.4 on 2026-08-08. Fired CAP-A
+  only. Step-1 risk: high. This is the capture to read if you want to
+  know what the tool produces today: it opens with the plain-language
+  summary, glosses the cap code inline every time it appears, and
+  scores 1.2 against the 2027 wording. The `[items]` brackets in the
+  workshop hand-off paragraph are deliberate — the prompt leaves them
+  for the applicant to fill before sending.
 
 ### Basic pre-review (v0.2 pilot)
 

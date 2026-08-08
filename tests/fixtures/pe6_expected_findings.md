@@ -148,7 +148,7 @@ A poorly-calibrated tool might over-fire on the following; these are **not** rea
 
 ## 5. Summary score-cap matrix (upper bound under strict reading)
 
-| Criterion | Sub-question (Annex 1 wording) | Cap if fired | Cap driver |
+| Criterion | Sub-question (2027 wording) | Cap if fired | Cap driver |
 |---|---|---|---|
 | 1. Research project | 1.1 important scientific questions | Very Good | CAP-A + CAP-E |
 | 1. Research project | 1.2 ambition / frontier advance / approach convincing | Very Good | CAP-B |
