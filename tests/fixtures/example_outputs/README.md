@@ -1,8 +1,18 @@
-# Example outputs from the v0.2 and v0.3 pilots
+# Example outputs
 
-What each pre-review prompt produced when Codex CLI (gpt-5.5) was
-run as the AI receiving the prompt, against the synthetic PE6 and
-SH3 fixtures in this directory's parent.
+What each pre-review prompt produced when Codex CLI was run as the AI
+receiving the prompt, against the synthetic PE6 and SH3 fixtures in
+this directory's parent.
+
+**Start with
+[`sh3_basic_critique_codex_v034.md`](sh3_basic_critique_codex_v034.md).**
+It is the only capture produced by the current prompt (v0.3.4, Codex
+CLI gpt-5.6, Full proposal stage, SH3 fixture), and the only one that
+shows what a report actually looks like now: the `In plain words`
+opening, cap codes glossed inline, and the 2027 wording of
+sub-question 1.2. The other files predate all of that and are kept as
+a historical record — see the note below before reading them as
+examples.
 
 > **Note (2026-06):** These captures are frozen v0.2/v0.3 pilot
 > outputs and predate the v0.3.x readability edits. They still show
@@ -14,15 +24,14 @@ SH3 fixtures in this directory's parent.
 > lives in the schema, rubric, and cap definitions, not in this
 > phrasing.
 >
-> **Two further gaps, as of v0.3.4.** None of these captures shows
-> the `## In plain words (read this first)` block, which did not
-> exist when they were made — so do not read them as examples of
-> how the current prompt opens a report. And they were scored
-> against rubric v1.2, before sub-question 1.2 gained its third
-> clause for the 2027 calls, so any judgement they make about
-> approach quality at Step 1 is calibrated to the older form. Treat
-> them as a record of output *structure*, not as a current
-> reference for content or wording.
+> **Two further gaps, as of v0.3.4.** None of the older captures
+> shows the `## In plain words (read this first)` block, which did
+> not exist when they were made. And they were scored against rubric
+> v1.2, before sub-question 1.2 gained its third clause for the 2027
+> calls, so any judgement they make about approach quality at Step 1
+> is calibrated to the older form. Treat them as a record of output
+> *structure*, not as a current reference for content or wording —
+> and use the v0.3.4 capture above for that.
 
 These are real, unedited model outputs. The "Pilot self-assessment"
 section at the end of each file is Codex's own candid note on what

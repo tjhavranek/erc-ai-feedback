@@ -89,10 +89,22 @@ than added to: the paper-workshop paragraph is gone, and with it an
 inconsistency, since it claimed the package "only identifies problems"
 while `standard/`'s Writing Coach proposes replacement wording.
 
+**A current example output.** `tests/fixtures/example_outputs/` now
+carries `sh3_basic_critique_codex_v034.md`, a fresh Codex CLI run of the
+current prompt against the SH3 fixture. Until now every shipped capture
+predated the v0.3.2 readability rails, so nothing in the repository
+showed the `In plain words` block or inline cap glosses — the package
+described a readability fix that no artifact demonstrated. The older
+captures are kept unedited as a historical record and labelled as such.
+
 **Maintenance.** The annual re-verification reminder moves from
-1 September to 25 July, because a September trigger left the rubric
-stale through the opening weeks of a live call. Example outputs are
-flagged as predating both the readability rails and the 1.2 change.
+1 September to 1 July: Work Programme 2027 was adopted on 20 July and
+the call opened two days later, so the reminder now fires ahead of the
+adoption window rather than after it. The workflow's own checklist was
+also correcting the wrong source — it treated the Guide for Peer
+Reviewers as the verbatim origin of the sub-questions, which is what
+allowed the 1.2 change to be missed, and summarised the reviewer AI rule
+as upload-only.
 
 ## [0.3.3] — 2026-06-24
 
