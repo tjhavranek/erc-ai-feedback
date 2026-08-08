@@ -29,7 +29,7 @@ every well-calibrated tool will fire all six.
 ### CAP-B — Ambition without contingency — **EXPECTED TO FIRE**
 - **Where:** Abstract: *"MECHBIO is **high risk / high gain**: it operates at the frontier of two fields that have not yet fused, and success would transform how we deploy, audit, and trust AI in molecular science."*; Part I §2 closing: *"These objectives are ambitious and **transformative**. Their successful completion would mark a frontier-advancing shift..."*
 - **Why:** The proposal invokes the prestige rhetoric ("high risk / high gain", "transformative", "frontier-advancing") without naming (i) a specific mechanism by which the frontier would be advanced, or (ii) a contingency plan if the ambitious objective fails. The Risks section (B2 §4) is generic and does not address what happens if the theoretical predictions of Pillar C fail to match the empirics of Pillar A, or if the equivariant-patching procedure cannot be made to work on full-scale models.
-- **Caps:** Criterion 1.2 ("ambitious / advance frontier of knowledge") at **Very Good**.
+- **Caps:** Criterion 1.2 ("ambition / frontier advance / approach scientifically convincing") at **Very Good**.
 
 ### CAP-C — CV signal absent on all three axes (softened cap) — **EXPECTED TO FIRE**
 - **Where:** CV "Research outputs" and "Track record description".
@@ -151,7 +151,7 @@ A poorly-calibrated tool might over-fire on the following; these are **not** rea
 | Criterion | Sub-question (Annex 1 wording) | Cap if fired | Cap driver |
 |---|---|---|---|
 | 1. Research project | 1.1 important scientific questions | Very Good | CAP-A + CAP-E |
-| 1. Research project | 1.2 ambitious / advance frontier of knowledge | Very Good | CAP-B |
+| 1. Research project | 1.2 ambition / frontier advance / approach convincing | Very Good | CAP-B |
 | 1. Research project | 1.3 methodology and working arrangements | Very Good | CAP-D (+ milestone vagueness) |
 | 1. Research project | 1.4 timescales and resources | (not assessed by this fixture; resources material not supplied) | — |
 | 2. Principal investigator | 2.1 ability to conduct groundbreaking research | — | — |

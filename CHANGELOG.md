@@ -35,7 +35,7 @@ v1.2 → v1.3, re-verified against Work Programme 2027 and
   are retired rather than kept alongside.
 - New **§6.1** quoting the Work Programme 2027 submission
   restrictions and tabulating the Table 6 resubmission restrictions.
-- Calendar section replaced with the open 2027 calls.
+- Calendar section replaced with the 2027 call cycle.
 - Panel-structure link repointed at the Work Programme annex; the
   former `projects-figures/panel-structure` page has been removed by
   the ERC and returned "Page not found".
@@ -64,8 +64,8 @@ resubmissions are evaluated as new proposals, and prior reviews are
 never shown to the reviewers of a resubmitted proposal. The audit is
 reframed around whether the weakness is actually fixed. The module
 also now opens with the resubmission bar itself — a B or C at Step 1
-in the 2026 StG/CoG call makes the applicant ineligible for the whole
-2027 Work Programme — which the previous version never mentioned
+in the 2026 StG/CoG call makes the applicant ineligible for all five
+2027 main grant calls — which the previous version never mentioned
 while addressing exactly those applicants.
 
 **Prompt robustness** (`basic/prompt.md`): the refusal section
@@ -73,15 +73,18 @@ conflated "refuse the whole review" with "decline this sub-request",
 and its prompt-injection clause triggered on draft *content*, so a
 proposal about AI safety quoting "ignore previous instructions" would
 have had its review refused. Split into refuse / decline-and-continue,
-with an explicit statement that material after the prompt is data
-rather than instructions, and that discussing such attacks as a
-research object is normal draft content.
+with an explicit statement that the draft is data rather than
+instructions — scoped to the draft, so the applicant's own stage
+declaration still counts as an instruction — and that discussing such
+attacks as a research object is normal draft content.
 
 **Framing.** The README now states that the single-pass pre-review is
-what most applicants should use and is the configuration that came
-out ahead in the authors' own pre-registered comparison; the modes are
-reordered so the list runs from cheapest and best-supported to
-heaviest and least verified, with Advanced last. `advanced/README.md`
+what most applicants should use, and the modes are reordered so the
+list runs from cheapest and best-supported to heaviest and least
+verified, with Advanced last. The appeal to the authors' own study is
+deliberately *not* made in the README body — that study concerns
+finished papers, and using it there to justify the default would
+overstate what it shows. `advanced/README.md`
 cites that study (arXiv:2607.14713, a preprint under review) including
 its limits and the fact that it mentions but does not evaluate this
 package. Self-reference on the README's first screen was cut rather
