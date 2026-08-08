@@ -1,16 +1,24 @@
 # ERC StG / CoG evaluation rubric — locked
 
-**Version:** 1.2
-**Last verified against:** ERC Work Programme 2026 (Commission Decision
-C(2025) 5000, 8 July 2025); *Guide for Peer Reviewers — Starting and
-Consolidator Grant Calls*, version 6.0 (30 September 2025), **Annex 1
-"Evaluation Form" in particular**; *Information for Applicants to the
-Starting and Consolidator Grant Calls*, current version on the EU
-Funding & Tenders Portal; ERC Scientific Council position on AI in
-proposal preparation.
-**Verified on:** 2026-05-30 (re-verified against primary sources in a
-two-model fact-check; no factual errors found; two clarifications
-applied — see §12).
+**Version:** 1.3
+**Last verified against:** ERC Work Programme 2027 (Commission Decision
+C(2026) 4907, 20 July 2026); *Information for Applicants to the
+Starting and Consolidator Grant Calls*, version 11.0 (22 July 2026);
+*Guide for Peer Reviewers — Starting and Consolidator Grant Calls*,
+version 6.0 (30 September 2025), **Annex 1 "Evaluation Form" in
+particular**; ERC Scientific Council position on AI in proposal
+preparation; *The use of AI in grant proposal evaluation — Guidelines
+for ERC panel members and remote reviewers* (23 March 2026).
+**Verified on:** 2026-08-08.
+
+**Note on the reviewer-form source.** The *Guide for Peer Reviewers* at
+the URL in §11 is still v6.0, which is stamped for the Work Programme
+2026 calls. The Criterion 1 sub-question wording in §2 below is taken
+from the **2027** sources (Work Programme 2027 §1.6.5 and Information
+for Applicants v11.0), which carry a revised sub-question 1.2. Where
+the two differ, the 2027 wording governs, because that is the wording
+applied to the open calls. Re-check for a Guide v7.0 before the
+ERC-2027-StG deadline.
 
 **This file is locked.** The Basic and Standard pre-reviews score
 against this rubric exactly as written. The Advanced pre-review (in
@@ -35,8 +43,12 @@ commit.
 The criterion is applied to two elements:
 
 1. **The Research Project.** Panels primarily evaluate the
-   *ground-breaking nature* and *ambition* of the project; *feasibility*
-   is also evaluated, but in formal sub-questions only at Step 2.
+   *ground-breaking nature* and *ambition* of the project. Detailed
+   *feasibility* — methodology, working arrangements, timescales,
+   resources — carries its own sub-questions only at Step 2, but note
+   that since the 2027 calls sub-question 1.2 asks at **Step 1**
+   whether the proposed approach is scientifically convincing (see
+   §2.1).
 2. **The Principal Investigator.** Panels evaluate the PI's
    *intellectual capacity* and *creativity*, with focus on the PI's
    *scientific expertise and capacity* to successfully execute the
@@ -48,10 +60,11 @@ project over the CV**: panels assess the idea first, the PI second.
 
 ---
 
-## 2. Criterion 1 — Research Project (verbatim from Annex 1 of the Guide for Peer Reviewers v6.0)
+## 2. Criterion 1 — Research Project (verbatim, 2027 calls)
 
-These are the exact sub-questions on the peer reviewer evaluation
-form, copied verbatim from Annex 1.
+These are the exact sub-questions applied to the 2027 calls, copied
+verbatim from *Information for Applicants* v11.0 (22 July 2026), which
+reproduces the evaluation elements of Work Programme 2027 §1.6.5.
 
 > *Research Project. The ground-breaking nature and ambition of the
 > Research Project is assessed as follows:*
@@ -60,28 +73,43 @@ form, copied verbatim from Annex 1.
 
 - *"To what extent does the research address important scientific
   questions?"*
-- *"To what extent are the project's objectives ambitious and will it
-  advance the frontier of knowledge?"*
+- *"To what extent are the project's objectives ambitious, will the
+  project advance the frontier of knowledge and is the proposed
+  approach scientifically convincing?"*
 
 ### 2.2 At Step 2 (full proposal + interview)
 
-The Step 1 sub-questions above remain. **Two additional sub-questions
-apply only at Step 2:**
+The Step 1 sub-questions above remain, **in the same wording**. Two
+additional sub-questions apply only at Step 2:
 
 - *"To what extent are the research methodology and working arrangements
   appropriate to achieve the goals of the project?"*
 - *"To what extent are the timescales and resources adequate and
   properly justified?"*
 
+**Change introduced for the 2027 calls — read this before scoring.**
+Sub-question 1.2 gained a third clause, *"and is the proposed approach
+scientifically convincing?"*, and it applies **at Step 1 as well as at
+Step 2**. Earlier ERC forms, including the Guide for Peer Reviewers
+v6.0 stamped for the 2026 calls, carried only the two-clause version
+(*"are the project's objectives ambitious and will it advance the
+frontier of knowledge?"*). The practical consequence: at Step 1, where
+only Part I and the CV are read, the **plausibility of the proposed
+approach is now formally in scope**, even though the detailed
+methodology sub-questions (1.3, 1.4) remain Step 2 only. An Extended
+Synopsis that states an ambitious objective without an approach a
+generalist can find convincing is now weak on 1.2 itself, not merely
+exposed at Step 2. Do not treat approach quality as a Step-2-only
+concern.
+
 ### 2.3 On "high risk / high gain"
 
 This phrase appears widely in ERC framing language (Work Programme
 2026, training materials, "Guide" introductions) and describes the
 **ethos** of frontier research the ERC funds. **It is not a formal
-sub-question in the current Annex 1.** The evaluation of risk-bearing
-ambition is folded into the "ambitious and will it advance the
-frontier" question at Step 1, and into the methodology / timescales /
-resources questions at Step 2.
+sub-question in the current evaluation form.** The evaluation of
+risk-bearing ambition is folded into sub-question 1.2 at Step 1, and
+into the methodology / timescales / resources questions at Step 2.
 
 Note for readers who remember the older form: ERC evaluation forms
 used before the current methodology (revised with the 2024 Work
@@ -163,7 +191,7 @@ Three options: *highly recommended / recommended / not recommended*.
 
 ---
 
-## 5. Proposal structure (2026 calls)
+## 5. Proposal structure (2027 calls)
 
 The applicant submits **one single submission** containing all parts
 together. The two-step evaluation reviews different parts at each
@@ -219,28 +247,63 @@ repeating sections of Part I in Part II"**.
 
 ---
 
-## 6. Eligibility windows (2026 calls)
+## 6. Eligibility windows (2027 calls — the open ones)
 
-Reference date is **1 January 2026** for the 2026 calls.
+Reference date is **1 January 2027** for the 2027 calls. The windows
+were widened in Work Programme 2027.
 
-| Grant | PhD defended between |
-|---|---|
-| Starting (StG-2026) | 1 January 2019 — 31 December 2023 (2-7 years post-PhD) |
-| Consolidator (CoG-2026) | 1 January 2014 — 31 December 2018 (7-12 years) |
+| Grant | Years post-PhD | PhD defended between |
+|---|---|---|
+| Starting (StG-2027) | > 0 and ≤ 10 | 1 January 2017 — 31 December 2026 |
+| Consolidator (CoG-2027) | > 5 and ≤ 15 | 1 January 2012 — 31 December 2021 |
 
 Time commitment requirements: **StG ≥ 50%, CoG ≥ 40%** of working
 time on the project. **Minimum 50% of total working time** must be
-in an EU Member State or Associated Country.
+in an EU Member State or Associated Country. Unchanged for 2027.
 
-Extensions to the eligibility window are available for parental
-leave, long-term illness, clinical training, asylum, military
-service, and (added for 2026) gender-based violence and other
-documented circumstances.
+Extensions to the eligibility window are available for maternity,
+paternity and parental leave, long-term illness, national service,
+disability, clinical training (up to 4 years), major disasters,
+asylum, and gender-based violence.
 
-**2027 expansion** (not applicable to the 2026 calls): StG window
-widens to **0-10 years** post-PhD (apply immediately after PhD
-defence onward); CoG widens to **5-15 years**. One Starting Grant
-and one Consolidator Grant per career limit also lands in 2027.
+### 6.1 Submission and resubmission restrictions (Work Programme 2027)
+
+These are stated per Work Programme, not as a lifetime rule. Verbatim
+from Work Programme 2027 §1.4.3:
+
+- *"A Principal Investigator may have only one proposal to an ERC main
+  grant call under evaluation at any given time"*;
+- *"A Principal Investigator may submit only one eligible proposal to
+  an ERC main grant call published under the ERC Work Programme
+  2027"*;
+- *"A Principal Investigator who has held an ERC Starting Grant cannot
+  apply for a Starting Grant call under the ERC Work Programme 2027"*;
+  the same rule applies to Consolidator Grant holders and the
+  Consolidator call.
+
+The Work Programme's own summary of the last point is broader — *"Principal
+Investigators who have already held a Starting or a Consolidator Grant
+in the past will not be able to apply for the same type of grant"* — and
+the ERC states it reserves the right to modify these restrictions in
+subsequent Work Programmes. Treat the per-2027 bullets as operative and
+the lifetime framing as the direction of travel.
+
+**Resubmission restrictions (Work Programme 2027, Table 6). This is the
+one applicants most often get wrong, and it is severe:**
+
+| Previous application and outcome | Ineligible for these 2027 calls |
+|---|---|
+| Starting or Consolidator Grant **2026**, scored **B or C at Step 1** | Starting, Consolidator, Advanced, ERC Plus **and** Synergy 2027 |
+| Starting, Consolidator or Advanced Grant **2025**, scored **C at Step 1** | Starting, Consolidator, Advanced, ERC Plus **and** Synergy 2027 |
+| Any call, rejected for a breach of research integrity | All 2027 main grant calls |
+
+So a B at Step 1 in the 2026 StG or CoG call bars the applicant from the
+**entire** next Work Programme, not merely from the same scheme, and a C
+in 2025 bars them two cycles running. An **A (not invited)** at Step 1,
+and an **A or B at Step 2**, carry **no** resubmission restriction —
+those are the applicants who may come straight back. Inadmissible,
+ineligible or withdrawn proposals do not count against any of these
+restrictions.
 
 ---
 
@@ -252,14 +315,19 @@ Three domains, 28 panels:
 - **LS — Life Sciences:** LS1 through LS9.
 - **SH — Social Sciences and Humanities:** SH1 through SH8.
 
-**Full panel descriptors with topic keywords are at the official ERC
-panel structure page:**
-https://erc.europa.eu/projects-figures/panel-structure
+**Full panel descriptors with topic keywords are in Annex 1 of the ERC
+Work Programme for the call year** (for the 2027 calls, Work Programme
+2027, "Primary Panel Structure"):
+https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf
 
 Panel labels and topic descriptors are periodically updated by the ERC
 Scientific Council; this file does not enumerate them, both to avoid
-going stale and because the descriptor URL above is the authoritative
-source for the current call.
+going stale and because the Work Programme annex is the authoritative
+source for the current call. (An earlier version of this file pointed
+at `erc.europa.eu/projects-figures/panel-structure`, which the ERC has
+since removed. The Work Programme annex is the durable source; the
+ERC document library at https://erc.europa.eu/support/document-library
+is the place to look if the URL above moves.)
 
 **Panel choice rules:**
 
@@ -301,40 +369,86 @@ retaining full authorship responsibility for the submitted text.** No
 disclosure language is required in the proposal text by the ERC
 itself; some Host Institutions may have their own policies.
 
-The **asymmetric rule** that applies to peer reviewers: the ERC
-prohibits reviewers from uploading proposals or any part of them to
-external AI systems, on confidentiality grounds. **That rule does
-not constrain applicants** working on their own draft.
+The **asymmetric rule** that applies to peer reviewers rests on **two
+independent principles**, not one. From *The use of AI in grant proposal
+evaluation — Guidelines for ERC panel members and remote reviewers*
+(23 March 2026), verbatim:
+
+> *"The position of the ERC Scientific Council on the use of AI in grant
+> proposal evaluation is based on two key principles: (1) non-delegation
+> of the evaluation task, and (2) privacy and confidentiality."*
+
+**Confidentiality** bars putting proposal text into an external AI
+system. **Non-delegation** bars using AI to understand or assess a
+proposal *at all*, and it is not discharged by keeping the data safe.
+The guidelines answer this explicitly and in the negative:
+
+- *Q2 — running a model locally on your own computer, no data
+  disclosed, to summarise the proposal?* **"No. This violates the
+  principle of non-delegation."**
+- *Q3 — a tool that discloses nothing to a third party, to evaluate the
+  methodology or novelty?* **"No... regardless of data privacy
+  settings."**
+- *Q7 — an AI-generated first draft of a review that you then edit?*
+  **"No."**
+- *Q8 — an AI tool to check whether your review is missing important
+  points?* **"No."**
+- *Q9 — a university-internal AI system?* Only under contractual data
+  guarantees, and **"All principles of non-delegation still apply."**
+
+**Consequence for this package: there is no configuration in which a
+panel member or remote reviewer may run these prompts on a proposal
+under evaluation.** A local model, a command-line tool, an offline
+deployment, or an institutional system does not create an exception —
+non-delegation is violated by the assessment itself, wherever the model
+runs. Q8 in particular describes what this package does, and the answer
+is No.
+
+**That rule does not constrain applicants** working on their own draft:
+non-delegation governs the *evaluation* task, which applicants do not
+perform.
 
 ---
 
-## 10. Calendar of 2026 calls (for reference)
+## 10. Calendar — the open 2027 calls
+
+Work Programme 2027 was adopted on **20 July 2026** (Commission Decision
+C(2026) 4907). These are the calls an applicant using this package today
+is preparing for.
 
 | Call | Opened | Submission deadline |
 |---|---|---|
-| Starting Grants (ERC-2026-StG) | 9 July 2025 | 14 October 2025 |
-| Consolidator Grants (ERC-2026-CoG) | 25 September 2025 | 13 January 2026 |
-| Advanced Grants (ERC-2026-AdG) | 28 May 2026 | 27 August 2026 |
-| Synergy Grants (ERC-2026-SyG) | 10 July 2025 | 5 November 2025 |
+| Starting Grants (ERC-2027-StG) | 22 July 2026 | **14 October 2026** |
+| Consolidator Grants (ERC-2027-CoG) | 24 September 2026 | **12 January 2027** |
 
-A new **ERC Plus** scheme (up to 7 years, up to €7 million) was
-announced as part of *Choose Europe for Science* and is expected to
-be added to the 2026 Work Programme by amendment.
+Dates are provisional in the ERC's own terms: the ERCEA Director may
+open a call up to one month either side of the envisaged date, or delay
+a deadline by up to two months. Confirm on the Funding & Tenders Portal.
+
+For reference, the closed 2026 calls were StG 14 October 2025 and CoG
+13 January 2026; a 2026 Step-1 outcome is what triggers the
+resubmission restrictions in §6.1.
+
+The **ERC Plus** scheme (up to 7 years, up to €7 million), introduced
+under *Choose Europe*, is live and is being awarded for a second
+consecutive year under Work Programme 2027. It is outside this
+package's scope, which is Starting and Consolidator Grants only.
 
 ---
 
 ## 11. Sources
 
-- ERC Work Programme 2026: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026/wp_horizon-erc-2026_en.pdf
-- Guide for Peer Reviewers — StG/CoG Calls, v6.0 (30 Sep 2025), **Annex 1 "Evaluation Form" is the verbatim source of the sub-questions in §2 and §3 above**: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/experts/guide-for-peer-reviewers_he-erc-stg-cog_en.pdf
-- Information for Applicants — StG/CoG: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf
-- Changes to the 2026 and 2027 Work Programmes: https://erc.europa.eu/news-events/news/changes-2026-and-2027-work-programmes
+- **ERC Work Programme 2027** (C(2026) 4907, 20 July 2026) — source for §6, §6.1, §10, and the panel structure annex: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf
+- **Information for Applicants — StG/CoG, v11.0 (22 July 2026)** — **verbatim source of the Criterion 1 and Criterion 2 sub-questions in §2 and §3 above**, and of §5: https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/information-for-applicants_he-erc-stg-cog_en.pdf
+- Guide for Peer Reviewers — StG/CoG Calls, v6.0 (30 Sep 2025), Annex 1 "Evaluation Form" — source for the reviewer form mechanics in §4; **stamped for the 2026 calls, so its sub-question 1.2 is one revision behind** (see the note at the top of this file): https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/experts/guide-for-peer-reviewers_he-erc-stg-cog_en.pdf
+- **The use of AI in grant proposal evaluation — Guidelines for ERC panel members and remote reviewers (23 March 2026)** — verbatim source of the two principles in §9: https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf
+- Current position of the ERC Scientific Council on AI (applicant side): https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai
+- ERC clarifies limits on AI use in grant evaluation (reviewer rule): https://erc.europa.eu/news-events/news/erc-clarifies-limits-ai-use-grant-evaluation
+- New ERC Work Programme sets out 2027 funding opportunities: https://erc.europa.eu/news-events/news/new-erc-work-programme-sets-out-2027-funding-opportunities
 - ERC Starting Grant page: https://erc.europa.eu/apply-grant/starting-grant
 - ERC Consolidator Grant page: https://erc.europa.eu/apply-grant/consolidator-grant
-- Current position of the ERC Scientific Council on AI: https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai
-- ERC clarifies limits on AI use in grant evaluation (reviewer rule): https://erc.europa.eu/news-events/news/erc-clarifies-limits-ai-use-grant-evaluation
 - StG 2025 statistics: https://erc.europa.eu/system/files/2025-09/erc-2025-stg-statistics.pdf
-- ERC panel structure (authoritative for panel labels and keywords): https://erc.europa.eu/projects-figures/panel-structure
+- ERC document library (use this if any URL above moves): https://erc.europa.eu/support/document-library
 
 When this rubric is updated, all source URLs above must be
 re-checked and the "Last verified" stamp at the top of this file
@@ -345,6 +459,35 @@ Peer Reviewers** — that is the single most critical source.
 
 ## 12. Changelog
 
+- **v1.3 (2026-08-08):** Re-verified against **Work Programme 2027**
+  (adopted 20 July 2026) and **Information for Applicants v11.0**
+  (22 July 2026), both read directly. The v1.2 stamp predated Work
+  Programme 2027 by three weeks, and the ERC-2027-StG call opened on
+  22 July 2026 with a 14 October 2026 deadline — so the previous
+  version described a closed call as operative. Substantive changes:
+  (1) **Criterion 1 sub-question 1.2 now carries a third clause**,
+  *"and is the proposed approach scientifically convincing?"*, applying
+  at Step 1 as well as Step 2 — §2 updated and the Step-1 consequence
+  spelled out; (2) §6 flipped to the widened 2027 eligibility windows
+  (StG 0-10, CoG 5-15, reference date 1 January 2027) with the 2026
+  windows retired; (3) new **§6.1** with the Work Programme 2027
+  submission restrictions quoted verbatim and the Table 6 resubmission
+  restrictions tabulated — a B or C at Step 1 in the 2026 StG/CoG call
+  bars the applicant from the entire 2027 Work Programme, which the
+  previous version did not state; (4) §9 rewritten around the ERC's
+  **two** principles, adding **non-delegation**, which the file
+  previously omitted entirely — with the guidelines' own Q2/Q3/Q7/Q8/Q9
+  answers making clear that a locally-run or institutional model is not
+  an exception; (5) §10 replaced with the open 2027 calendar; (6) §7's
+  panel-structure URL repointed at the Work Programme annex, the former
+  `projects-figures/panel-structure` page having been removed by the
+  ERC (verified: returns "Page not found"); (7) ERC Plus corrected from
+  "expected by amendment" to live and running for a second year; (8) §11
+  re-sourced, with the Guide for Peer Reviewers explicitly marked as one
+  revision behind on 1.2. No change to any score cap, scoring scale, or
+  Criterion 2 sub-question — those were re-checked and are unchanged.
+  §8 statistics were **not** refreshed and remain StG-2025; re-verify
+  before relying on them.
 - **v1.2 (2026-05-30):** Re-verified the entire rubric against
   primary ERC sources in a two-model fact-check (a web-enabled
   factual agent reading the Annex 1 PDF text layer word-for-word,

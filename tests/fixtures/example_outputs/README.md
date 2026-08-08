@@ -13,6 +13,16 @@ SH3 fixtures in this directory's parent.
 > model-output record, not regenerated — the package's discipline
 > lives in the schema, rubric, and cap definitions, not in this
 > phrasing.
+>
+> **Two further gaps, as of v0.3.4.** None of these captures shows
+> the `## In plain words (read this first)` block, which did not
+> exist when they were made — so do not read them as examples of
+> how the current prompt opens a report. And they were scored
+> against rubric v1.2, before sub-question 1.2 gained its third
+> clause for the 2027 calls, so any judgement they make about
+> approach quality at Step 1 is calibrated to the older form. Treat
+> them as a record of output *structure*, not as a current
+> reference for content or wording.
 
 These are real, unedited model outputs. The "Pilot self-assessment"
 section at the end of each file is Codex's own candid note on what

@@ -1,5 +1,14 @@
 # Question bank generator
 
+**This generates questions for an applicant rehearsing the defence of
+their own proposal. It must never be used by a panel member or remote
+referee to prepare questions for a real Step-2 interview** — the ERC
+[bars that](https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf)
+on non-delegation grounds, whatever tool or deployment is used. The
+prompt below is written in a panel member's voice because the applicant
+needs to hear the questions that way, not because a panel member should
+run it.
+
 Paste the prompt between the `=== PROMPT BEGIN ===` and
 `=== PROMPT END ===` markers below into a paid chat session. Then
 paste your complete B1 + B2 (or your most recent submitted

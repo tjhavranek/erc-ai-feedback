@@ -3,6 +3,16 @@
 A short note for senior readers running ERC workshops on how to
 use the AI pre-review without giving up the workshop's value.
 
+**Before anything else.** Many workshop readers also serve as ERC
+panel members or remote referees. Never run this — or any AI tool —
+on a proposal you are evaluating for the ERC. The
+[ERC's guidelines for panel members and remote
+reviewers](https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf)
+bar it on two grounds, confidentiality *and* non-delegation, and the
+second is not discharged by running the model locally or on a secure
+institutional system. This package is for applicants and for workshop
+preparation the applicant has authorised, and for nothing else.
+
 ## What it does for the workshop
 
 If applicants run the pre-review on their drafts before the
@@ -90,7 +100,11 @@ open an Issue immediately — this is a release-blocking failure.
 ## Verification
 
 The rubric was last verified against the official ERC documents on
-2026-05-30. If you are reading this more than a year later,
-re-verify before recommending to applicants. The maintainer
-commits to annual re-verification within 60 days of each new ERC
+2026-08-08, against Work Programme 2027 and *Information for
+Applicants* v11.0. Before recommending the tool in any cycle, check
+the ERC news page for a new Work Programme rather than relying on
+this stamp: Work Programme 2027 was adopted on 20 July 2026 and the
+Starting Grant call opened two days later, so a rubric verified in
+the spring can be out of date by the time a call opens. The
+maintainer commits to re-verification within 60 days of each new ERC
 Work Programme.

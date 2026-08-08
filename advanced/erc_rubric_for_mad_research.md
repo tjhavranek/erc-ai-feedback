@@ -15,14 +15,15 @@ the ERC rule set changes, update the version, the last-verified
 stamp, and re-sync with `shared/rubric_locked.md` in the same
 commit.
 
-Version: 1.0 (ERC StG/CoG audit rubric, for mad-research)
-Source: `tjhavranek/erc-ai-feedback` v0.3.1, `shared/rubric_locked.md`
-(v1.2)
-Last verified: 2026-05-30 against ERC Work Programme 2026 and
-*Guide for Peer Reviewers — Starting and Consolidator Grant Calls*
-v6.0 (30 September 2025). The Annex 1 sub-questions this frame
-re-projects were re-confirmed verbatim in the v0.3.1 primary-source
-fact-check.
+Version: 1.1 (ERC StG/CoG audit rubric, for mad-research)
+Source: `tjhavranek/erc-ai-feedback` v0.3.4, `shared/rubric_locked.md`
+(v1.3)
+Last verified: 2026-08-08 against ERC Work Programme 2027
+(20 July 2026) and *Information for Applicants to the Starting and
+Consolidator Grant Calls* v11.0 (22 July 2026). Sub-question 1.2
+gained a third clause for the 2027 calls — *"and is the proposed
+approach scientifically convincing?"* — applying at Step 1 as well as
+Step 2; dimension 1 below reflects it.
 
 ## Six audit dimensions
 
@@ -37,9 +38,14 @@ ambitious in a way that, if achieved, would advance the frontier
 of knowledge — as opposed to advancing applied practice, which is
 not an ERC criterion? When the proposal claims frontier advance,
 does it name the mechanism that would deliver it, and does it
-identify what would still be learned if the mechanism fails?
+identify what would still be learned if the mechanism fails? And
+would a generalist reading Part I alone find the proposed approach
+scientifically convincing — not in methodological detail, which is
+Step 2, but enough to believe the objectives are reachable?
 
 This dimension maps to ERC Criterion 1 sub-questions 1.1 and 1.2.
+Note that for the 2027 calls 1.2 asks whether the approach is
+scientifically convincing, and asks it at Step 1.
 CAP-A (no falsifiable question on page 1) and CAP-B (ambition
 without contingency) live here.
 

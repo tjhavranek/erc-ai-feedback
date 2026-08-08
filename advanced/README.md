@@ -19,6 +19,35 @@ If you do not use Claude Code, the Basic or Standard pre-review is
 the right tool for you. Advanced is not better than Basic; it is a
 different cross-check using a different protocol.
 
+### Evidence on whether the extra effort pays
+
+In a pre-registered study, the authors of 44 published economics
+meta-analyses each ranked three AI reports on their own paper by
+usefulness. They preferred a single pass by one frontier model to the
+multi-agent debate protocol that Advanced adapts, by 0.66 rank points
+(95% CI 0.32 to 1.00). Both debate tools in that comparison were built
+by the same authors, who had pre-registered the expectation that debate
+would win.
+
+That result comes with real limits, and they cut both ways. It measured
+perceived usefulness on finished papers, not grant proposals; reports
+were held to a common length and template; and a genre where the method
+is open to dispute — which an ERC proposal is — could return a different
+answer. The paper mentions this package but does not evaluate it. So the
+question is open here. It is not a reason to expect Advanced to do
+better.
+
+The practical reading is the one the paper gives: start with the single
+pass, which in this package is the Basic pre-review. Advanced is a
+cross-check to run afterwards, and there is no evidence at present that
+it returns a better critique for the extra time and the second provider.
+
+Havránek, T. and Z. Iršová (2026). "Does Multi-Agent Debate Improve AI
+Feedback on Research Papers?" arXiv:2607.14713 [econ.GN],
+<https://arxiv.org/abs/2607.14713>. Preprint under review; not
+peer-reviewed. Pre-registration:
+<https://doi.org/10.17605/OSF.IO/E6XGW>.
+
 ## Status of this integration
 
 The integration is **manual** as of this release. `mad-research`'s

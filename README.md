@@ -6,54 +6,52 @@ proposal that the applicant runs in one chat session with a current
 frontier model. The intent is to clear routine structural problems
 — vague hypotheses, hidden incrementalism, missing risk logic,
 weak panel fit, CV–project disconnect — before workshop time is
-spent on them. It does not replace human review. It is for
-applicants and applicant-authorised workshop preparation only: do
-not use it on a proposal you are evaluating as an ERC panel member
-or remote reviewer, since the ERC [prohibits reviewers from
-uploading proposals under evaluation to external AI
-systems](https://erc.europa.eu/news-events/news/erc-clarifies-limits-ai-use-grant-evaluation).
+spent on them. It does not replace human review.
+
+**It is for applicants, and for workshop preparation the applicant has
+authorised. Nothing else.** If you are evaluating a proposal for the
+ERC, do not use this or any AI tool on it. The ERC's
+[guidelines for panel members and remote
+reviewers](https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf)
+rest on two principles — confidentiality *and* non-delegation — and
+non-delegation is not discharged by keeping the data safe: the
+guidelines answer "no" to a model run locally (Q2), to a tool that
+discloses nothing to a third party (Q3), and to asking an AI whether
+your review is missing points (Q8). Running it offline is not a
+workaround. Applicants are in a different position, which is what
+licenses this package: the [Scientific
+Council](https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai)
+permits AI in preparing a proposal provided the author takes full
+authorship responsibility for the result.
 
 Two files do the work: the locked evaluation rubric in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) and the prompt
 in [`basic/prompt.md`](basic/prompt.md). The rubric contains the
-verbatim Annex 1 Criterion 1 and Criterion 2 sub-questions from the
-ERC *Guide for Peer Reviewers* for Starting and Consolidator Grant
-calls, plus source-checked notes on scoring scales, proposal
-structure, eligibility windows, panel structure, and the ERC's
-AI-use rules. The prompt loads the rubric, applies structural caps
+verbatim Criterion 1 and Criterion 2 sub-questions applied to the
+2027 Starting and Consolidator Grant calls, taken from ERC Work
+Programme 2027 and *Information for Applicants* v11.0, plus
+source-checked notes on scoring scales, proposal structure,
+eligibility windows, resubmission restrictions, panel structure,
+and the ERC's AI-use rules. The prompt loads the rubric, applies structural caps
 that fire when an expected element is missing, and produces an
 evidence-grounded critique.
 
-This package is the ERC-specific application of two general
-research-audit projects by the same author group:
-[`tjhavranek/research-audit-duel-protocol`](https://github.com/tjhavranek/research-audit-duel-protocol)
-(manual multi-model adversarial-debate protocols) and
-[`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research)
-(Claude Code skills that automate the same audit discipline for
-Claude + Codex). The Advanced pre-review here is a direct
-extension of the latter; the multi-model convergence walkthrough
-in [`docs/multi_model_walkthrough.md`](docs/multi_model_walkthrough.md)
-is a direct application of the former.
-
-A sibling project,
-[`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop),
-is a heavier Claude Code skill that runs an adversarial expert
-workshop on a full manuscript and then rebuilds it; it is built for
-papers but can be adapted to proposals. It is noted here for
-completeness rather than recommended for ERC use, because it does
-something this pre-review deliberately avoids: it proposes and writes
-edits, whereas this package only identifies problems and leaves the
-drafting to the applicant. It is not calibrated to the ERC rubric and
-is not part of this package.
+The Advanced pre-review extends
+[`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research),
+a general research-audit project by the same authors. Related tools
+and the reasoning behind them are listed in
+[`docs/roadmap.md`](docs/roadmap.md).
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![DOI](https://zenodo.org/badge/1251103176.svg)](https://doi.org/10.5281/zenodo.20829165)
 
 ## Use
 
-1. Open a paid chat session with a current frontier model. Confirm
-   training opt-out is on. (Provider settings change; see Privacy
-   below.)
+1. Open a paid chat session with a current frontier model, and
+   select the provider's strongest reasoning setting rather than
+   the fast default — the score caps and quote grounding degrade
+   noticeably on a non-reasoning model. Confirm training opt-out is
+   on. (Provider settings change; see Privacy below.)
 2. Copy the text between the `=== PROMPT BEGIN ===` and `=== PROMPT
    END ===` markers in [`basic/prompt.md`](basic/prompt.md). Paste
    it into the chat.
@@ -65,11 +63,14 @@ is not part of this package.
    - **Full proposal** — complete B1 (cover-page abstract, Part I,
      CV and track record), plus any available B2 draft (Part II;
      required for final ERC submission).
-4. Read the output. The model returns the top findings ranked by
-   severity, each grounded in a verbatim quote from your draft;
-   which structural caps fired; a short list of what the next draft
-   stage needs to add; and a paragraph you can attach when sending
-   the draft to a workshop reader.
+4. Read the output. It opens with a plain-language summary meant to
+   stand on its own. Below that: the top findings ranked by severity,
+   each grounded in a verbatim quote from your draft; which structural
+   score caps fired; what the next draft stage needs to add; and a
+   paragraph you can attach when sending the draft to a workshop
+   reader. The risk level and the provisional marks are the model's
+   reading of structural completeness, not a prediction of how the
+   ERC will score you.
 
 ## Privacy
 
@@ -100,11 +101,16 @@ models confidently miss field-specific failure modes; the
 applicant should push back on findings they disagree with on
 merit.
 
-The ERC rubric changes annually. The version in
+The ERC rubric changes annually, and the 2027 changes are already
+in force. The version in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) was last
-verified on 2026-05-30 against ERC Work Programme 2026 and the
-*Guide for Peer Reviewers* v6.0 (30 September 2025). If you read
-this twelve months later, re-verify before use.
+verified on 2026-08-08 against ERC Work Programme 2027 (adopted
+20 July 2026) and *Information for Applicants* v11.0 (22 July
+2026). Note that sub-question 1.2 gained a third clause for the
+2027 calls and the eligibility windows widened. The *Guide for
+Peer Reviewers* is still v6.0, stamped for the 2026 calls; a v7.0
+is expected before the Starting Grant deadline. Re-verify before
+use if you are reading this after the current call cycle.
 
 ## For workshop leaders
 
@@ -116,24 +122,31 @@ when a reader runs the tool on someone else's draft.
 
 ## Other ways to use the package
 
-The single-prompt pre-review above is what most applicants will
-use. The repository also contains:
+The single-prompt pre-review above is what most applicants should
+use. It is one structured pass by a frontier model, and that is the
+configuration that came out ahead of the more elaborate ones in the
+comparison cited in [`advanced/README.md`](advanced/README.md). The
+alternatives below cost more of your time, and Advanced also sends
+the draft to a second provider. Run them as cross-checks on a draft
+that has already been through the pre-review, not instead of it.
 
 - A three-prompt sequence in [`standard/`](standard/) for
   applicants who want a more thorough single-model pass
   (Panel Reviewer, then Devil's Advocate, then Writing Coach).
-- A Claude Code + Codex CLI integration in
-  [`advanced/`](advanced/) that runs the
-  [`mad-research`](https://github.com/tjhavranek/mad-research)
-  protocol against the same ERC rubric (experimental; not yet
-  end-to-end pilot-verified — see
-  [`advanced/README.md`](advanced/README.md)).
 - A question-bank and answer stress-test prompt pair in
   [`mock_interview/`](mock_interview/) for Step-2 applicants
   preparing for the panel interview.
 - A resubmission audit prompt in [`resubmission/`](resubmission/)
   that checks whether a new draft engages with a previous
   Evaluation Report.
+- A Claude Code + Codex CLI integration in
+  [`advanced/`](advanced/) that runs the
+  [`mad-research`](https://github.com/tjhavranek/mad-research)
+  protocol against the same ERC rubric. Experimental, not yet
+  end-to-end pilot-verified, and the only mode that sends the draft
+  to two providers. A pre-registered study by this package's authors
+  found a single pass preferred over that protocol on a different
+  kind of document — see [`advanced/README.md`](advanced/README.md).
 
 Synthetic test fixtures used to exercise the prompts are in
 [`tests/fixtures/`](tests/fixtures/). Roadmap and development
@@ -142,7 +155,9 @@ notes are in [`docs/roadmap.md`](docs/roadmap.md).
 ## Citation, licence, maintainer
 
 Developed by Tomáš Havránek and Zuzana Iršová, Charles University,
-Prague. MIT licence; see
+Prague. Further tools and materials from the same research group are
+collected at [meta-analysis.cz](https://meta-analysis.cz).
+MIT licence; see
 [`LICENSE`](LICENSE). The ERC materials cited in the rubric remain
 the property of the European Research Council Executive Agency
 and are referenced under fair use with source URLs in

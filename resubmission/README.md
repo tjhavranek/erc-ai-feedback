@@ -1,20 +1,56 @@
 # Resubmission audit
 
-For ERC Starting and Consolidator Grant applicants who received a
-B (or C, in the case of a Step 1 rejection) on a previous
-submission and are preparing a new submission. The audit
-checks whether the new draft addresses the weaknesses the previous
-evaluation report flagged.
+For ERC Starting and Consolidator Grant applicants preparing a new
+submission after a previous one. The audit checks whether the new
+draft addresses the weaknesses the previous evaluation report
+flagged.
+
+## First check whether you may resubmit at all
+
+A Step-1 score does not only tell you how the proposal did; it can
+bar you from the next call entirely. Under Work Programme 2027,
+Table 6:
+
+- **B or C at Step 1** in the Starting or Consolidator Grant **2026**
+  call → ineligible for Starting, Consolidator, Advanced, ERC Plus
+  **and** Synergy under Work Programme 2027. Not just the same
+  scheme — the whole Work Programme.
+- **C at Step 1** in a 2025 call → the same bar for 2027, so a C
+  costs two cycles.
+- **A (not invited)** at Step 1, or **A or B at Step 2** → no
+  resubmission restriction. These are the applicants who can come
+  straight back.
+
+So if your previous outcome was a B or C at Step 1, check the current
+Work Programme before spending time on a revision: your next
+opportunity may be a later Work Programme, not the next call.
+Inadmissible, ineligible or withdrawn proposals do not count.
+Restrictions change between Work Programmes — verify against the
+current one rather than trusting this summary.
 
 ## Scope
 
 The ERC sends each evaluated applicant an Evaluation Report
 containing the panel score (A invited / A not invited / B / C at
 Step 1; A / B at Step 2), the panel comment, and the individual
-reviews. Applicants resubmitting in a future call are expected to
-have addressed those criticisms — not necessarily to have
-adopted every suggestion, but to have engaged with each one
-visibly enough that a new panel can see the engagement.
+reviews.
+
+**The next panel will not see any of it.** *Information for
+Applicants* v11.0 is explicit: resubmitted proposals "will be
+evaluated as new proposals without any reference or comparison to
+the previous score and/or with previous assessments", and "the
+content of the reviews from an ERC call will not be made available
+to reviewers of the resubmitted proposal". There is no ERC
+response-to-reviewers channel, and nothing you write will be read as
+a reply to the last round.
+
+That is why this audit matters, and it changes what it is for. The
+previous report is not a document to answer; it is evidence about
+your proposal, written by competent readers in your field. A fresh
+panel of different people, reading the same draft, will tend to hit
+the same weaknesses independently. So the test is not whether your
+engagement is visible — no one is looking for it — but whether the
+underlying weakness is actually gone.
 
 This directory provides a single prompt that takes the previous
 evaluation report and the new draft and reports, point by point,

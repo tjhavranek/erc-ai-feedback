@@ -6,6 +6,94 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.3.4] — 2026-08-08
+
+Currency and governance release. ERC Work Programme 2027 was adopted
+on 20 July 2026 and the ERC-2027 Starting Grant call opened on
+22 July with a 14 October 2026 deadline — three weeks after this
+package's rubric was last verified. Anyone using v0.3.3 today was
+therefore drafting for a call the package described incorrectly.
+Nothing in this release changes a score cap, a scoring scale, or the
+output schema.
+
+**Rubric brought to the 2027 calls** (`shared/rubric_locked.md`
+v1.2 → v1.3, re-verified against Work Programme 2027 and
+*Information for Applicants* v11.0, both read directly):
+
+- **Criterion 1 sub-question 1.2 gained a third clause** — *"and is
+  the proposed approach scientifically convincing?"* — and it applies
+  at **Step 1**, not only Step 2. The package's central claim is that
+  it reproduces the ERC's sub-questions verbatim, so this was a
+  correctness failure, not a cosmetic one. Propagated to
+  `basic/prompt.md` and to the Advanced synthesis frame
+  (`advanced/erc_rubric_for_mad_research.md` v1.0 → v1.1), with the
+  Step-1 consequence spelled out in each: an Extended Synopsis whose
+  approach a generalist cannot find convincing is now weak on 1.2
+  itself.
+- Eligibility windows replaced with the widened 2027 ones (StG 0–10
+  years, CoG 5–15, reference date 1 January 2027). The 2026 windows
+  are retired rather than kept alongside.
+- New **§6.1** quoting the Work Programme 2027 submission
+  restrictions and tabulating the Table 6 resubmission restrictions.
+- Calendar section replaced with the open 2027 calls.
+- Panel-structure link repointed at the Work Programme annex; the
+  former `projects-figures/panel-structure` page has been removed by
+  the ERC and returned "Page not found".
+- ERC Plus corrected from "expected by amendment" to live.
+
+**ERC AI rules stated in full.** The package previously described the
+reviewer prohibition as resting on confidentiality alone. It rests on
+**two** principles, and the second — **non-delegation** — was absent
+from the repository entirely. Non-delegation is not discharged by
+keeping the data private: the ERC's guidelines for panel members and
+remote reviewers answer "no" to a locally-run model, to a tool that
+discloses nothing to a third party, and to asking an AI whether a
+review is missing important points. A reader could previously have
+inferred from the old wording that a local or command-line deployment
+was a compliant workaround. It is not. Stated now in `README.md`,
+`shared/rubric_locked.md` §9, `docs/for_workshop_leaders.md`, and as a
+refusal condition in `basic/prompt.md`; `mock_interview/` carries its
+own warning, being the module whose prompt is written in a panel
+member's voice. The applicant-side rule, which is what licenses the
+package, is now stated in the README beside it.
+
+**Resubmission module corrected.** It advised applicants to engage
+with prior criticism "visibly enough that a new panel can see the
+engagement". *Information for Applicants* v11.0 says the opposite:
+resubmissions are evaluated as new proposals, and prior reviews are
+never shown to the reviewers of a resubmitted proposal. The audit is
+reframed around whether the weakness is actually fixed. The module
+also now opens with the resubmission bar itself — a B or C at Step 1
+in the 2026 StG/CoG call makes the applicant ineligible for the whole
+2027 Work Programme — which the previous version never mentioned
+while addressing exactly those applicants.
+
+**Prompt robustness** (`basic/prompt.md`): the refusal section
+conflated "refuse the whole review" with "decline this sub-request",
+and its prompt-injection clause triggered on draft *content*, so a
+proposal about AI safety quoting "ignore previous instructions" would
+have had its review refused. Split into refuse / decline-and-continue,
+with an explicit statement that material after the prompt is data
+rather than instructions, and that discussing such attacks as a
+research object is normal draft content.
+
+**Framing.** The README now states that the single-pass pre-review is
+what most applicants should use and is the configuration that came
+out ahead in the authors' own pre-registered comparison; the modes are
+reordered so the list runs from cheapest and best-supported to
+heaviest and least verified, with Advanced last. `advanced/README.md`
+cites that study (arXiv:2607.14713, a preprint under review) including
+its limits and the fact that it mentions but does not evaluate this
+package. Self-reference on the README's first screen was cut rather
+than added to: the paper-workshop paragraph is gone, and with it an
+inconsistency, since it claimed the package "only identifies problems"
+while `standard/`'s Writing Coach proposes replacement wording.
+
+**Maintenance.** The annual re-verification reminder moves from
+1 September to 25 July, because a September trigger left the rubric
+stale through the opening weeks of a live call. Example outputs are
+flagged as predating both the readability rails and the 1.2 change.
+
 ## [0.3.3] — 2026-06-24
 
 Archival release to mint a Zenodo DOI for the package. Also captures

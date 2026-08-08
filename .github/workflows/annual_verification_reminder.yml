@@ -1,8 +1,7 @@
 name: Annual ERC rubric re-verification reminder
 
-# Runs once a year in early September (after the typical ERC
-# Work Programme adoption window in summer) to open an Issue
-# prompting the maintainer to re-verify the rubric in
+# Runs once a year in late July to open an Issue prompting the
+# maintainer to re-verify the rubric in
 # shared/rubric_locked.md against the current Work Programme,
 # the current Guide for Peer Reviewers, and the current
 # Information for Applicants. Can also be triggered manually
@@ -10,8 +9,12 @@ name: Annual ERC rubric re-verification reminder
 
 on:
   schedule:
-    # 09:00 UTC on 1 September every year
-    - cron: '0 9 1 9 *'
+    # 09:00 UTC on 25 July every year. Deliberately before the start
+    # of August: Work Programme 2027 was adopted on 20 July 2026 and
+    # the Starting Grant call opened on 22 July, so a September
+    # reminder left the rubric stale through the opening weeks of a
+    # live call.
+    - cron: '0 9 25 7 *'
   workflow_dispatch:
 
 permissions:

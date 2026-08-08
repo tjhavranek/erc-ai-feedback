@@ -67,12 +67,13 @@ What to produce:
       engagement is absent — "no engagement found".
     - **New-draft location:** section / page.
     - **Engagement quality:** one to three sentences on whether
-      the engagement is likely to convince a new panel reader.
-      Acceptable engagement is not the same as adopting the
-      reviewer's suggestion verbatim — it can be a reasoned
-      counter ("we considered the alternative the reviewer
-      suggested and have retained X for these reasons") as
-      long as the counter is visible.
+      the underlying weakness is actually fixed, not merely
+      acknowledged. The next panel never sees the old report or
+      the old score, so visible engagement earns nothing on its
+      own — judge the draft as a new reader would. Fixing it need
+      not mean adopting the reviewer's suggestion: retaining the
+      original choice is fine if the new draft now carries the
+      argument that makes the choice defensible on its face.
 
   ## 3. Engagement pattern summary
 
