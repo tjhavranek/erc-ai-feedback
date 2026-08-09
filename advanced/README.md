@@ -32,7 +32,7 @@ would win.
 That result comes with real limits, and they cut both ways. It measured
 perceived usefulness on finished papers, not grant proposals; reports
 were held to a common length and template; and a genre where the method
-is open to dispute — which an ERC proposal is — could return a different
+is open to dispute, which an ERC proposal is, could return a different
 answer. The paper mentions this package but does not evaluate it. So the
 question is open here. It is not a reason to expect Advanced to do
 better.
@@ -74,7 +74,7 @@ synthetic fixtures is a v0.4 candidate.
 3. A local checkout of
    [`mad-research`](https://github.com/tjhavranek/mad-research)
    installed as a Claude Code skill per its own README.
-4. A current frontier model context window — full proposal audits
+4. A current frontier model context window. Full proposal audits
    are token-heavy.
 
 If any of the above are missing, install them first. Advanced will
@@ -87,7 +87,7 @@ These instructions assume your `mad-research` skill is installed at
 location on macOS/Linux; on Windows
 `C:\Users\<you>\.claude\skills\mad-research\`).
 
-### Step 1 — back up the default mad-research rubric
+### Step 1: back up the default mad-research rubric
 
 ```sh
 cp ~/.claude/skills/mad-research/rubric.md \
@@ -97,7 +97,7 @@ cp ~/.claude/skills/mad-research/rubric.md \
 This preserves the empirical-paper rubric so you can switch back
 when auditing a paper rather than an ERC proposal.
 
-### Step 2 — install the ERC rubric
+### Step 2: install the ERC rubric
 
 Copy [`erc_rubric_for_mad_research.md`](erc_rubric_for_mad_research.md)
 from this directory into mad-research's rubric slot:
@@ -107,7 +107,7 @@ cp advanced/erc_rubric_for_mad_research.md \
    ~/.claude/skills/mad-research/rubric.md
 ```
 
-### Step 3 — install the ERC role-prompt overrides (optional but recommended)
+### Step 3: install the ERC role-prompt overrides (optional but recommended)
 
 The default mad-research role prompts (Methodologist / Evidence
 Auditor / Contribution Skeptic) are tuned for empirical papers.
@@ -121,7 +121,7 @@ cp advanced/erc_role_prompts/round1_*.md \
 
 Back up the originals first if you do paper audits as well.
 
-### Step 4 — run the audit
+### Step 4: run the audit
 
 In Claude Code, in the directory containing your draft (either as
 a `.pdf` or as a markdown file with the full B1 + B2 content):
@@ -135,7 +135,7 @@ anonymised Round 2 cross-critique, optional Round 3, fresh-Codex
 synthesis against the rubric). The output appears at
 `mad_sessions/<timestamp>-<slug>/final/final_memo.md`.
 
-### Step 5 — switch back when you're done
+### Step 5: switch back when you're done
 
 To switch the rubric back for non-ERC audits:
 
@@ -146,19 +146,21 @@ cp ~/.claude/skills/mad-research/rubric.md.empirical-paper.bak \
 
 ## How Advanced differs from Basic and Standard
 
-Three substantive differences. **Anonymised cross-critique** —
+Three substantive differences. **Anonymised cross-critique**:
 Round 2 sends each role stream the other streams' outputs with
 role and provider labels stripped, so each stream evaluates the
-others' findings on merit. **Fresh-context Codex synthesis** —
+others' findings on merit. **Fresh-context Codex synthesis**:
 the final memo is synthesised by a Codex session that has not
 seen the role streams produce their findings, only the
 anonymised packets and the rubric, reducing session-context
-bias. **"Points rejected" trail** — the final memo retains a
+bias. **"Points rejected" trail**: the final memo retains a
 record of findings that were proposed but dropped, with the
 reason, so a workshop reader can see what was tried.
 
 Advanced does not change the rubric, the score caps, or the
-evidence rules; those remain the same locked ERC criteria. It
+evidence rules. The Criterion 1 and 2 sub-questions are the ERC's,
+verbatim; the score caps and evidence rules are this package's own
+heuristics, and Advanced uses the same ones. It
 does not replace human review, and it does not work outside
 Claude Code + Codex CLI via mad-research.
 
@@ -176,5 +178,5 @@ provider instead.
 If Advanced produces results that diverge meaningfully from Basic
 or Standard on the same draft, please open an Issue describing the
 divergence pattern (without proposal content). Divergence is
-informative — it tells us where the cross-critique discipline
+informative: it tells us where the cross-critique discipline
 adds signal and where it adds noise.

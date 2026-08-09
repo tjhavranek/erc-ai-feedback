@@ -6,6 +6,116 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.3.5] — 2026-08-09
+
+Follow-up to v0.3.4 after two independent external model reviews. The ERC
+sourcing was confirmed correct in both; every change below is to the tool's
+own internals, where both reviews concentrated their objections.
+
+**The prompt no longer opens by instantiating the use the package bans.**
+`basic/prompt.md` began "You are a senior panel member... preparing for a
+panel discussion" — which is, in miniature, the scenario the README
+prohibits — while the evaluator refusal sat about 370 lines below and fired
+only if the user volunteered their role. The prompt now opens by stating
+that the model works for the applicant and is rehearsing the panel's
+reading rather than performing an evaluation, with the refusal restated
+immediately. `mock_interview/01_question_bank.md` carried its warning
+*outside* the copy-paste block, so the receiving model never saw it; the
+refusal is now inside the block. A mandatory "confirm you are not an
+evaluator" gate was considered and rejected: it taxes every legitimate
+applicant and stops nobody who is willing to answer it falsely.
+
+**The caps are labelled as what they are.** CAP-A to CAP-F are this
+package's structural heuristics, not ERC rules, official ceilings, or
+validated predictors of panel marks. Stated at the top of Section 3, in the
+README, and in `advanced/README.md`, which had claimed the caps and evidence
+rules "remain the same locked ERC criteria" — they are package inventions
+and this package's readers will know it.
+
+**CAP-A no longer reads as hostile to non-experimental fields.**
+"Falsifiable" now carries a portability gloss for interpretive humanities,
+proof-based mathematics, conceptual work, exploratory discovery and
+instrument building: stated precisely enough that a reader can say what
+would count as an answer and what would count as failure. "First page" is
+operationalised for pasted text, which has no page boundaries — the opening
+section, roughly the first 500 words — with an instruction never to assert
+an unverifiable page number.
+
+**CAP-B's two arms are now evaluated separately and per stage.** The cap
+fires on a missing mechanism OR a missing contingency plan, and the two
+behave differently once B2 is supplied. The prompt now says so, requires the
+run to name which arm fired, and notes that a mechanism visible only in B2
+does not help at Step 1, where the panel reads B1 alone.
+
+**Score consequences are anchored, not counterfactual.** Findings said
+"this drops the 1.2 mark from 4.5 to 3.0", inventing a baseline the draft
+never had; the shipped v0.3.4 example carried four such findings on one
+sub-question with three different invented baselines. Findings now state the
+consequence against the mark actually assigned.
+
+**Criterion 1.4 stopped contradicting itself.** Section 1 said 1.4 was
+unassessable without the separate Resources / Time Commitment text; the
+schema said to mark it from B2. A B2 with a work plan and budget now makes
+1.4 partly assessable, marked with an explicit statement of what was not
+supplied.
+
+**Omissions are distinguished from things not supplied.** A truncated paste,
+an unreadable table, or a referenced-but-absent annex is not a defect in the
+proposal. The prompt now requires that check before any omission finding.
+
+**The Standard synthesis no longer overstates what agreement means.** It
+called three sequential roles in one chat "parallel role-critiques" and
+treated convergence between them as "the highest-confidence signal in this
+whole process". All three run in one model and one session, and the Devil's
+Advocate has already read the Panel Reviewer's findings, so agreement is
+correlated corroboration within a single reader. Convergence is now a
+priority signal, not a verdict.
+
+**Corrections of fact.** The English-only refusal justified itself on the
+claim that ERC proposals are evaluated in English; in fact an application
+may be submitted in any official EU language, with an unverified ERCEA
+machine translation for the panel. English-only is a limit of this tool, not
+an ERC admissibility rule, and now says so. "The prompt loads the rubric"
+became "embeds a condensed extract", which is what it does. "Catches
+routine structural problems" became "is designed to flag", given that
+testing is still synthetic. The README carries an unofficial-status line,
+because the repository name and the phrase "locked ERC rubric" together
+invite the wrong inference.
+
+**Privacy.** "Use a paid tier with training opt-out, *or* remove names" put
+payment forward as an alternative to sanitisation. Payment is not a
+confidentiality control. The paid tier is now a floor, and the resubmission
+module no longer tells applicants to sanitise a confidential evaluation
+report "only if sharing it with anyone else".
+
+**Measured run-to-run variance, and said so.** The example output was
+regenerated under the patched prompt and replaces the v0.3.4 capture. Across
+three runs of the same prompt on the same fixture, the substantive diagnosis
+was stable, but only one of the three caught an elementary planted arithmetic
+error: fieldwork budgeted at EUR 290,000 against a survey priced at EUR 24 per
+case for 36,000 cases, a EUR 574,000 gap. None caught a second planted
+inconsistency in the pilot yield figures. `tests/fixtures/example_outputs/`
+now records this rather than shipping whichever run scored best, because it is
+the concrete form of the claim the rest of the repository makes: a human
+checking the budget line by line catches both every time, and this tool
+catches one of them about a third of the time.
+
+**Prose.** Em-dashes removed from every reader-facing document and from the
+repository description, with the joining work spread across colons, commas and
+sentence breaks rather than moved onto semicolons. "Forcing function" and "AI
+catches the routine structural problems" went with them. The prompt file was
+left alone: it is machine-facing, its own banned-phrasings rail governs the
+register of the output, and restyling it before circulation risks a silent
+regression.
+
+**The SH3 oracle now states its own stage.** It was written for Part I + CV
+and did not say so, which made a Full-proposal run firing CAP-A but not
+CAP-B look like a regression. It is not one: at Full proposal, B2 supplies
+both the mechanism and the contingency plan. The oracle now sets out the
+per-stage expectation for each CAP-B arm, drops a "medium-high" risk label
+the tool may not emit, and notes that a cap-to-3 finding sits ambiguously
+between HIGH and MEDIUM on the ladder as written.
+
 ## [0.3.4] — 2026-08-08
 
 Currency and governance release. ERC Work Programme 2027 was adopted

@@ -26,9 +26,14 @@ ones humans uniquely judge — not a thirty-finding document.
 
 ## Decision rules
 
-- **Two roles converge on the same issue → fix it.** The
-  Panel Reviewer and Devil's Advocate flagging the same thing
-  is the highest-confidence signal in this whole process.
+- **Two roles converge on the same issue → inspect it first.**
+  Treat convergence as a priority signal, not a verdict. All three
+  roles run in one model and one chat session, and the Devil's
+  Advocate has already read the Panel Reviewer's findings, so
+  agreement is corroboration within a single reader — correlated,
+  not independent replication. It tells you where to look first; it
+  does not tell you the criticism is right. Your own scientific
+  judgement decides that.
 - **Only the Panel Reviewer flagged it → almost always fix it.**
   Caps that fired are not negotiable; structural omissions kill
   panel scores.

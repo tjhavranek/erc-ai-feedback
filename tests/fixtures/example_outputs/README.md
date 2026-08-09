@@ -5,8 +5,8 @@ receiving the prompt, against the synthetic PE6 and SH3 fixtures in
 this directory's parent.
 
 **Start with
-[`sh3_basic_critique_codex_v034.md`](sh3_basic_critique_codex_v034.md).**
-It is the only capture produced by the current prompt (v0.3.4, Codex
+[`sh3_basic_critique_codex_v035.md`](sh3_basic_critique_codex_v035.md).**
+It is the only capture produced by the current prompt (v0.3.5, Codex
 CLI gpt-5.6, Full proposal stage, SH3 fixture), and the only one that
 shows what a report actually looks like now: the `In plain words`
 opening, cap codes glossed inline, and the 2027 wording of
@@ -40,11 +40,11 @@ the prompt rules.
 
 ## Files
 
-### Basic pre-review (v0.3.4 — current prompt)
+### Basic pre-review (v0.3.5, current prompt)
 
-- [`sh3_basic_critique_codex_v034.md`](sh3_basic_critique_codex_v034.md) —
+- [`sh3_basic_critique_codex_v035.md`](sh3_basic_critique_codex_v035.md) —
   Basic critique on the SH3 fixture, Full proposal stage, produced by
-  Codex CLI (gpt-5.6) against prompt v1.4 on 2026-08-08. Fired CAP-A
+  Codex CLI (gpt-5.6) against prompt v1.5 on 2026-08-09. Fired CAP-A
   only. Step-1 risk: high. This is the capture to read if you want to
   know what the tool produces today: it opens with the plain-language
   summary, glosses the cap code inline every time it appears, and
@@ -98,6 +98,32 @@ the prompt rules.
   ADDRESSED / PARTIALLY / NOT ADDRESSED verdict for each
   criticism in the synthetic report, with quote-grounded
   evidence.
+
+## Run-to-run variance, measured
+
+Three runs of the same prompt against this same fixture, at the same
+model and effort, were produced while preparing v0.3.4 and v0.3.5. They
+agreed on the substantive diagnosis every time: the causal claim
+outruns the observational design, the exposure measures are
+under-specified, the attrition figure contradicts the power
+calculation, and the budget does not reconcile.
+
+They did not agree on everything. The fixture contains an elementary
+arithmetic error the authors planted: fieldwork is budgeted at
+EUR 290,000, while the same document prices the survey at EUR 24 per
+case for 36,000 completed interviews, which is EUR 864,000. One run of
+the three caught that EUR 574,000 gap. Two missed it, including the run
+shipped here. No run caught a second planted inconsistency, a pilot
+recruitment yield reported as 12.3% in one paragraph and 14% in the
+next.
+
+That is worth stating plainly rather than hiding by shipping the run
+that happened to score best. An applicant who runs this once should not
+assume the arithmetic in their budget has been checked. It is also the
+concrete form of the claim made everywhere else in this repository,
+that the pre-review does not replace a human reader: a human who checks
+the budget line by line catches both errors every time, and this tool
+catches one of them about a third of the time.
 
 ## What these outputs are not
 

@@ -1,20 +1,23 @@
 # erc-ai-feedback
 
+*Independent and unofficial. Not produced, endorsed, or approved by
+the European Research Council or ERCEA.*
+
 This is a small package for ERC Starting and Consolidator Grant
 applicants. It provides a rubric-based pre-review of a draft
 proposal that the applicant runs in one chat session with a current
-frontier model. The intent is to clear routine structural problems
-— vague hypotheses, hidden incrementalism, missing risk logic,
-weak panel fit, CV–project disconnect — before workshop time is
-spent on them. It does not replace human review.
+frontier model. The intent is to clear routine structural problems before workshop
+time is spent on them: vague hypotheses, hidden incrementalism,
+missing risk logic, weak panel fit, a CV that does not connect to the
+project. It does not replace human review.
 
 **It is for applicants, and for workshop preparation the applicant has
 authorised. Nothing else.** If you are evaluating a proposal for the
 ERC, do not use this or any AI tool on it. The ERC's
 [guidelines for panel members and remote
 reviewers](https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf)
-rest on two principles — confidentiality *and* non-delegation — and
-non-delegation is not discharged by keeping the data safe: the
+rest on two principles, confidentiality and non-delegation. The
+second is not discharged by keeping the data safe: the
 guidelines answer "no" to a model run locally (Q2), to a tool that
 discloses nothing to a third party (Q3), and to asking an AI whether
 your review is missing points (Q8). Running it offline is not a
@@ -43,9 +46,10 @@ verbatim Criterion 1 and Criterion 2 sub-questions applied to the
 Programme 2027 and *Information for Applicants* v11.0, plus
 source-checked notes on scoring scales, proposal structure,
 eligibility windows, resubmission restrictions, panel structure,
-and the ERC's AI-use rules. The prompt loads the rubric, applies structural caps
-that fire when an expected element is missing, and produces an
-evidence-grounded critique.
+and the ERC's AI-use rules. The prompt embeds a condensed extract of that rubric,
+applies structural caps that fire when an expected element is missing,
+and produces an evidence-grounded critique. The caps are this
+package's own heuristics, not ERC rules.
 
 The Advanced pre-review extends
 [`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research),
@@ -60,19 +64,20 @@ and the reasoning behind them are listed in
 
 1. Open a paid chat session with a current frontier model, and
    select the provider's strongest reasoning setting rather than
-   the fast default. The prompt asks for conjunctive checks and
-   quote grounding across a long document, which is the work a
-   reasoning model is for. Confirm training opt-out is on.
+   the fast default. The prompt asks the model to check several
+   conditions at once and to tie every finding to a quote from a long
+   document; a fast model does that noticeably less reliably. Confirm
+   training opt-out is on.
    (Provider settings change; see Privacy below.)
 2. Copy the text between the `=== PROMPT BEGIN ===` and `=== PROMPT
    END ===` markers in [`basic/prompt.md`](basic/prompt.md). Paste
    it into the chat.
 3. Paste your current draft after the prompt. State which stage you
    are at:
-   - **Pitch** — idea sketch, or abstract plus draft CV.
-   - **Part I + CV** — Extended Synopsis (Part I of the Scientific
+   - **Pitch**: idea sketch, or abstract plus draft CV.
+   - **Part I + CV**: Extended Synopsis (Part I of the Scientific
      Proposal) in progress, with a draft CV.
-   - **Full proposal** — complete B1 (cover-page abstract, Part I,
+   - **Full proposal**: complete B1 (cover-page abstract, Part I,
      CV and track record), plus any available B2 draft (Part II;
      required for final ERC submission).
 4. Read the output. It opens with a plain-language summary meant to
@@ -86,8 +91,11 @@ and the reasoning behind them are listed in
 
 ## Privacy
 
-Use a paid tier with training opt-out enabled, or remove names and
-institutions before pasting a proposal draft into any chat product.
+Use a paid tier with training opt-out enabled. That is a floor rather
+than a substitute for judgement about what you paste. Payment is not a
+confidentiality control: the provider still receives the text, and
+opt-out is not the same as zero retention or deletion. Remove names
+and institutions you do not need, including other people's.
 Provider UI labels change every few months, so check the provider's
 current data-controls page rather than relying on setting names
 copied here:
@@ -104,11 +112,13 @@ pre-review, follow the consent rule in
 ## Limitations
 
 The tool is calibrated for ERC Starting and Consolidator Grants
-only — not Advanced, Synergy, Proof of Concept, or ERC Plus. It
-is in English; the ERC working language of evaluation is English.
-It catches routine structural problems and does not judge novelty
-in a specific field, panel strategy, or interview credibility —
-these remain workshop, mentor, and research-office work. Frontier
+only, not Advanced, Synergy, Proof of Concept, or ERC Plus. It is in
+English. That is a limit of this tool rather than an ERC rule: an
+application may formally be submitted in any official EU language, but
+English is the working language of the evaluation panels.
+It is designed to flag routine structural problems and does not judge novelty
+in a specific field, panel strategy, or interview credibility. Those
+remain workshop, mentor, and research-office work. Frontier
 models confidently miss field-specific failure modes; the
 applicant should push back on findings they disagree with on
 merit.
@@ -155,7 +165,7 @@ draft that has already been through the pre-review, not instead of it.
   end-to-end pilot-verified, and the only mode that sends the draft
   to two providers. A pre-registered study by this package's authors
   found a single pass preferred over that protocol on a different
-  kind of document — see [`advanced/README.md`](advanced/README.md).
+  kind of document. See [`advanced/README.md`](advanced/README.md).
 
 Synthetic test fixtures used to exercise the prompts are in
 [`tests/fixtures/`](tests/fixtures/). Roadmap and development

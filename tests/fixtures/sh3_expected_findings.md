@@ -4,7 +4,33 @@
 
 ---
 
-## 1. Expected score caps
+## 0. Which stage this oracle describes — read first
+
+**This oracle is written for the Part I + CV stage.** Everything below,
+including the cap expectations in §1, assumes the reviewing model has seen
+Part I and the CV and *not* B2. That was not stated in earlier versions and
+it caused a false alarm: a Full-proposal run of the same fixture fires CAP-A
+but not CAP-B, which looks like a calibration regression and is not one.
+
+At **Full proposal** stage the expectation changes for CAP-B only, and only
+because of what B2 supplies. CAP-B has two arms and either one fires the cap:
+
+- *Mechanism arm* — at Part I + CV this fires: Part I claims the project will
+  "transform our understanding" and names no specific mechanism. At Full
+  proposal, B2 §1.5's three pre-registered counter-factual experiments give a
+  specific mechanism, so a model may reasonably treat this arm as satisfied.
+  It should say so, because the Step-1 panel reads B1 alone.
+- *Contingency arm* — at Part I + CV this fires: the Part I contingency
+  paragraph is generic. At Full proposal, the B2 §4 risk plan is specific
+  (§1 below certifies this), so this arm is satisfied.
+
+So at Full proposal a run may legitimately fire **CAP-A only**, provided it
+still reports the Part I ambition problem as a finding and holds 1.2 at or
+below 3. A Full-proposal run that fires neither cap, or that fires CAP-B
+without saying which arm, is a genuine failure. Judge Full-proposal runs
+against this paragraph, not against §1 and §2 as written.
+
+## 1. Expected score caps (Part I + CV stage)
 
 ### Caps that SHOULD fire
 
@@ -43,7 +69,11 @@
 - **Summary:** Part I §2 articulates four "how" sub-questions and an overarching question, but specifies no falsifiable hypotheses, effect directions, or measurable predictions. Language is exploratory ("explore," "investigate," "broad expectation").
 - **Expected quote:** "*We will explore how social media changes democratic deliberation across diverse European contexts, and investigate the mechanisms by which algorithmic curation interacts with users' political practices.*"
 - **Sub-question:** 1.1 (ground-breaking nature / clarity of research objective).
-- **Severity:** **HIGH** (triggers CAP-A; caps 1.1 at Very Good).
+- **Severity:** **HIGH** (triggers CAP-A; caps 1.1 at Very Good). Note that
+  the severity ladder's HIGH and MEDIUM definitions overlap for a
+  cap-to-3 finding, so a run that calls this MEDIUM is not wrong on the
+  ladder as written; what matters is that the cap fires and 1.1 is held at
+  3. Do not fail a run on this label alone.
 
 ### F2 — Transformative ambition claimed without specifying the mechanism
 
@@ -124,4 +154,7 @@ The tool must **not** also fire CAP-C on the basis of F5: a single venue-prestig
 - **Caps not fired:** C, D, E, F (four).
 - **Section 5 register triggers:** societal-impact-as-criterion, venue-prestige-as-proxy.
 - **Top findings:** 6 substantive + 1 optional low-severity, all confined to Part I and CV stage as the test brief specifies.
-- **Net expected Step-1 risk:** medium-high (vague hypothesis + ambition/contingency mismatch are serious for 1.1 and 1.2 respectively), but **not** "critical": the CV, methodology risk plan, cross-panel justification, and CV-fit are all in good shape. Contrast with the PE6 fixture, where all six caps fire and the Step-1 verdict should be "critical."
+- **Net expected Step-1 risk:** **high** — note that the permitted output
+  labels are low / medium / high / critical, so "medium-high" (used in
+  earlier versions of this file) is not a value the tool may emit. High, not
+  critical (vague hypothesis + ambition/contingency mismatch are serious for 1.1 and 1.2 respectively), but **not** "critical": the CV, methodology risk plan, cross-panel justification, and CV-fit are all in good shape. Contrast with the PE6 fixture, where all six caps fire and the Step-1 verdict should be "critical."

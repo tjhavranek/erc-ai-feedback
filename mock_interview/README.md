@@ -12,7 +12,7 @@ presentation by the PI, then questions from the panel members
 written remote-referee reviews to formulate questions, but the
 remote referees themselves do not attend the interview).
 The interview tests judgement under pressure, panel chemistry,
-clarity of communication, and command of the proposal's details —
+clarity of communication, and command of the proposal's details.
 all of which a human mock panel (a workshop simulation, or a few
 senior colleagues running questions) judges far better than any
 AI.
@@ -24,7 +24,7 @@ interview reviewer. It is a **question bank generator** and an
 1. Generate the likely panel questions the applicant should be
    ready for, grounded in the applicant's own draft.
 2. Take the applicant's draft answer to a question and stress-test
-   it — find weak responses, unsupported claims, places the
+   it: find weak responses, unsupported claims, places the
    applicant assumes the panel will accept a defence they would
    not actually accept.
 
@@ -32,12 +32,12 @@ A human mock panel still judges live performance.
 
 ## Files in this directory
 
-- [`01_question_bank.md`](01_question_bank.md) — prompt that
+- [`01_question_bank.md`](01_question_bank.md): prompt that
   generates a question bank from the applicant's draft. About
   20-30 questions split into categories (scientific question,
   methodology, risk and contingency, PI fit, panel-specific
   follow-ups, hostile questions).
-- [`02_answer_stress_test.md`](02_answer_stress_test.md) —
+- [`02_answer_stress_test.md`](02_answer_stress_test.md):
   prompt that takes a question and the applicant's draft answer
   and stress-tests the answer. Used iteratively: applicant
   drafts answers to the question bank, runs each one through
@@ -85,7 +85,7 @@ Same as the Basic pre-review. The applicant's draft and draft
 answers leave the local machine when pasted into a chat. Use a
 paid tier with training opt-out, or sanitise. The question bank
 itself does not contain proposal content beyond the question
-text — so question banks can be shared more freely than draft
+text, so question banks can be shared more freely than draft
 content if a workshop reader wants to see them.
 
 ## Status

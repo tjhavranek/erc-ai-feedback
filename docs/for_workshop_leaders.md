@@ -4,7 +4,7 @@ A short note for senior readers running ERC workshops on how to
 use the AI pre-review without giving up the workshop's value.
 
 **Before anything else.** Many workshop readers also serve as ERC
-panel members or remote referees. Never run this — or any AI tool —
+panel members or remote referees. Never run this, or any AI tool,
 on a proposal you are evaluating for the ERC. The
 [ERC's guidelines for panel members and remote
 reviewers](https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf)
@@ -27,9 +27,9 @@ a proposal you are evaluating.
 ## What it does for the workshop
 
 If applicants run the pre-review on their drafts before the
-workshop, AI catches the routine structural problems — vague
+workshop, the pre-review flags routine structural problems: vague
 hypothesis, hidden incrementalism, missing risk plan, weak panel
-fit, CV–project disconnect — that take up a disproportionate
+fit, a CV that does not connect to the project. These take up a disproportionate
 share of workshop time. The workshop then concentrates on what
 only experienced human readers can judge: whether the idea is
 actually ERC-level, panel strategy, field positioning, and (at the
@@ -60,19 +60,19 @@ summary alone.
 
 Before forwarding, sanity-check the top three findings: does each
 plain sentence in the summary still match the detailed finding it
-stands for? Plain wording must not drift from the precise finding —
+stands for? Plain wording must not drift from the precise finding.
 if it has, fix the summary, not the finding.
 
 ## Who runs the tool
 
-**Pattern A — applicant runs the pre-review.** This is the default:
+**Pattern A: applicant runs the pre-review.** This is the default:
 the applicant controls the draft, chooses the model account,
 confirms training opt-out, and decides what to share with the
 workshop reader. It also keeps the AI critique in its proper role:
 pre-work by the applicant, not a parallel review commissioned by the
 reader.
 
-**Pattern B — workshop reader runs the pre-review on an applicant's
+**Pattern B: workshop reader runs the pre-review on an applicant's
 draft.** This is permitted only with explicit applicant consent and
 institutional approval. Consent template:
 
@@ -94,7 +94,7 @@ and confidently misses field-specific issues; you do not.
 
 ## What this is not
 
-Not a panel scorer — the AI's risk level is a forcing function,
+Not a panel scorer. The risk level is there to prompt revision,
 not a prediction. Not a substitute for the workshop, mentoring, or
 the institution's research office. Not authoritative on
 field-specific judgement, novelty, or interview credibility.
@@ -106,7 +106,7 @@ flagged yourself, that is the tool working. If it misses issues a
 panel member would have caught, please open an Issue on the
 repository with a desensitised description. If it produces a
 hallucinated quote (quoted text not present in the source draft),
-open an Issue immediately — this is a release-blocking failure.
+open an Issue immediately. That is a release-blocking failure.
 
 ## Verification
 

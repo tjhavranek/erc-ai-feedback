@@ -14,7 +14,7 @@ Table 6:
 - **B or C at Step 1** in the Starting or Consolidator Grant **2026**
   call → ineligible for Starting, Consolidator, Advanced, ERC Plus
   **and** Synergy under Work Programme 2027. Not just the same
-  scheme — all five 2027 main grant calls. (Proof of Concept is not
+  scheme, all five 2027 main grant calls. (Proof of Concept is not
   a main grant call and is not covered by this bar; it is open only
   to existing ERC grant holders in any case.)
 - **C at Step 1** in a Starting, Consolidator or Advanced Grant
@@ -27,7 +27,7 @@ So if your previous outcome was a B or C at Step 1, check the current
 Work Programme before spending time on a revision: your next
 opportunity may be a later Work Programme, not the next call.
 Inadmissible, ineligible or withdrawn proposals do not count.
-Restrictions change between Work Programmes — verify against the
+Restrictions change between Work Programmes, so verify against the
 current one rather than trusting this summary.
 
 ## Scope
@@ -51,7 +51,7 @@ previous report is not a document to answer; it is evidence about
 your proposal, written by competent readers in your field. A fresh
 panel of different people, reading the same draft, will tend to hit
 the same weaknesses independently. So the test is not whether your
-engagement is visible — no one is looking for it — but whether the
+engagement is visible, since no one is looking for it, but whether the
 underlying weakness is actually gone.
 
 This directory provides a single prompt that takes the previous
@@ -70,13 +70,13 @@ After a rejection on a previous ERC StG / CoG call (B at Step 1,
 or A-non-invited at Step 1 if revising for next call, or B at
 Step 2), once a new draft is at Part I + CV or Full proposal
 stage. Run after the Basic or Standard pre-review has been
-done first — the resubmission audit assumes the new draft is
+done first, because the resubmission audit assumes the new draft is
 already structurally sound on its own; it adds the historical
 dimension.
 
 ## Files in this directory
 
-- [`prompt.md`](prompt.md) — single self-contained prompt for the
+- [`prompt.md`](prompt.md): single self-contained prompt for the
   resubmission audit. Takes (previous evaluation report + new
   draft) as input.
 
@@ -85,9 +85,12 @@ dimension.
 1. Save the previous Evaluation Report locally. Most applicants
    receive this as a PDF from ERC; copy the panel comment and
    individual reviews into a text file. The applicant identity
-   is already known to the maintainer of the new draft; sanitise
-   only if sharing the input with anyone else (e.g., a workshop
-   reader).
+   is already known to the maintainer of the new draft. Before
+   pasting, remove reviewer-identifying detail and any third-party
+   personal information, and read the Privacy section below. The
+   evaluation report is a confidential ERC document. Keep the
+   substantive review text intact: the audit works by matching it
+   against your new draft.
 2. Open a paid chat session with training opt-out.
 3. Paste the contents of [`prompt.md`](prompt.md) between the
    BEGIN and END markers.
@@ -142,7 +145,7 @@ the audit predicted.
 ## What this does not do
 
 - Predict the new panel's score. No tool can.
-- Audit the new draft's standalone quality — use Basic,
+- Audit the new draft's standalone quality. Use Basic,
   Standard, or Advanced for that.
 - Provide field-specific advice on whether a specific
   criticism was valid in the first place. Some criticisms in
