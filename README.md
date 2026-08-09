@@ -18,10 +18,22 @@ non-delegation is not discharged by keeping the data safe: the
 guidelines answer "no" to a model run locally (Q2), to a tool that
 discloses nothing to a third party (Q3), and to asking an AI whether
 your review is missing points (Q8). Running it offline is not a
-workaround. Applicants are in a different position: the [Scientific
+workaround.
+
+**Applicants are in a different position, and this package is built to
+sit inside it.** The [ERC Scientific
 Council](https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai)
-permits AI in preparing a proposal provided the author takes full
-authorship responsibility for the result.
+"recognises that researchers regularly seek input from AI technologies
+or human third parties, for example to brainstorm or generate ideas, to
+search the literature, and to revise, translate or summarise text", and
+requires only that this "does not relieve the author from taking full
+and sole authorship responsibilities with regard to acknowledgements,
+plagiarism and the practice of good scientific and professional
+conduct". The ERC sets no disclosure wording of its own; a host
+institution may. This package stays deliberately inside that permission
+and does less than it allows: it identifies problems in a draft and
+never writes proposal content, so the words submitted to the ERC remain
+the applicant's own.
 
 Two files do the work: the locked evaluation rubric in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) and the prompt

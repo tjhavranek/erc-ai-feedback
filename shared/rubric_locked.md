@@ -379,11 +379,38 @@ pages before relying on them in any output.
 
 ## 9. AI use rules — applicants vs reviewers
 
-The **ERC Scientific Council position** (current as of 2026-05) is
-that **researchers may use AI tools in proposal preparation while
-retaining full authorship responsibility for the submitted text.** No
-disclosure language is required in the proposal text by the ERC
-itself; some Host Institutions may have their own policies.
+### 9.1 Applicants — permitted, and this package sits inside the permission
+
+The **ERC Scientific Council position** (page last updated 2026-03-25)
+states it directly. Verbatim:
+
+> *"The ERC Scientific Council recognises that researchers regularly
+> seek input from AI technologies or human third parties, for example
+> to brainstorm or generate ideas, to search the literature, and to
+> revise, translate or summarise text."*
+>
+> *"The Scientific Council emphasises that use of external help in
+> preparing a proposal does not relieve the author from taking full and
+> sole authorship responsibilities with regard to acknowledgements,
+> plagiarism and the practice of good scientific and professional
+> conduct."*
+
+So applicant use is **recognised, not merely tolerated**, and the single
+condition is undiminished authorship responsibility. No disclosure
+language is required in the proposal text by the ERC itself; some Host
+Institutions have their own policies, and those still apply.
+
+Note what this means for the design of this package. The ERC explicitly
+contemplates AI that *revises* and *summarises* proposal text. This
+package deliberately does **less than the ERC permits**: it identifies
+problems and refuses to draft or rewrite proposal content, so the text
+submitted remains the applicant's own words. The authorship condition is
+therefore satisfied by construction rather than by the applicant
+remembering to satisfy it. That is a design choice, not an ERC
+requirement, and it is why the package can be recommended to an
+applicant without a caveat about authorship.
+
+### 9.2 Reviewers — prohibited, on two independent grounds
 
 The **asymmetric rule** that applies to peer reviewers rests on **two
 independent principles**, not one. From *The use of AI in grant proposal

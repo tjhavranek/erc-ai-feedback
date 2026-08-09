@@ -13,6 +13,17 @@ second is not discharged by running the model locally or on a secure
 institutional system. This package is for applicants and for workshop
 preparation the applicant has authorised, and for nothing else.
 
+**The applicant side is settled, and it is the question you will be
+asked.** The ERC Scientific Council recognises that researchers use AI
+to brainstorm, search the literature, and revise or summarise text, on
+the single condition that the author retains "full and sole authorship
+responsibilities". An applicant running this pre-review on their own
+draft is doing something the ERC explicitly contemplates. This package
+goes further than the rule requires by refusing to write proposal
+content at all, so the submitted text stays the applicant's own. You can
+tell an applicant that with confidence; what you cannot do is run it on
+a proposal you are evaluating.
+
 ## What it does for the workshop
 
 If applicants run the pre-review on their drafts before the

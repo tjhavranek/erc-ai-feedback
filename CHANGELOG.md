@@ -57,6 +57,21 @@ own warning, being the module whose prompt is written in a panel
 member's voice. The applicant-side rule, which is what licenses the
 package, is now stated in the README beside it.
 
+**The applicant permission is now stated affirmatively.** The package
+described the reviewer prohibition at length while leaving the rule that
+actually licenses applicant use as a subordinate clause. The ERC
+Scientific Council does not merely tolerate applicant AI use — it
+"recognises that researchers regularly seek input from AI technologies
+… to brainstorm or generate ideas, to search the literature, and to
+revise, translate or summarise text", on the single condition of "full
+and sole authorship responsibilities". That is now quoted in the README,
+in `shared/rubric_locked.md` §9.1, and in `docs/for_workshop_leaders.md`,
+together with the point that this package deliberately does *less* than
+the ERC permits: it refuses to draft or rewrite proposal content, so the
+submitted text stays the applicant's own and the authorship condition is
+met by construction. A workshop leader asked "is this allowed?" now has
+the answer and the source in one place.
+
 **Resubmission module corrected.** It advised applicants to engage
 with prior criticism "visibly enough that a new panel can see the
 engagement". *Information for Applicants* v11.0 says the opposite:
