@@ -31,7 +31,7 @@ examples.
 > calls, so any judgement they make about approach quality at Step 1
 > is calibrated to the older form. Treat them as a record of output
 > *structure*, not as a current reference for content or wording —
-> and use the v0.3.4 capture above for that.
+> and use the v0.3.5 capture above for that.
 
 These are real, unedited model outputs. The "Pilot self-assessment"
 section at the end of each pilot file is Codex's own candid note on what
@@ -101,8 +101,10 @@ the prompt rules.
 
 ## Run-to-run variance, measured
 
-Three runs of the same prompt against this same fixture, at the same
-model and effort, were produced while preparing v0.3.4 and v0.3.5. They
+Three runs against this same fixture, at the same model and effort,
+were produced while preparing v0.3.4 and v0.3.5, under prompt versions
+v1.4 and v1.5. The two versions do not differ in what they ask about
+the budget. They
 agreed on the substantive diagnosis every time: the causal claim
 outruns the observational design, the exposure measures are
 under-specified, the attrition figure contradicts the power
@@ -121,9 +123,9 @@ That is worth stating plainly rather than hiding by shipping the run
 that happened to score best. An applicant who runs this once should not
 assume the arithmetic in their budget has been checked. It is also the
 concrete form of the claim made everywhere else in this repository,
-that the pre-review does not replace a human reader: a human who checks
-the budget line by line catches both errors every time, and this tool
-catches one of them about a third of the time.
+that the pre-review does not replace a human reader. A human checking
+the numbers line by line, in the budget and in the risk section, catches
+both every time. This tool caught one of them in one run out of three.
 
 ## What these outputs are not
 

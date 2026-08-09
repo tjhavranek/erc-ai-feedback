@@ -156,5 +156,4 @@ The tool must **not** also fire CAP-C on the basis of F5: a single venue-prestig
 - **Top findings:** 6 substantive + 1 optional low-severity, all confined to Part I and CV stage as the test brief specifies.
 - **Net expected Step-1 risk:** **high** — note that the permitted output
   labels are low / medium / high / critical, so "medium-high" (used in
-  earlier versions of this file) is not a value the tool may emit. High, not
-  critical (vague hypothesis + ambition/contingency mismatch are serious for 1.1 and 1.2 respectively), but **not** "critical": the CV, methodology risk plan, cross-panel justification, and CV-fit are all in good shape. Contrast with the PE6 fixture, where all six caps fire and the Step-1 verdict should be "critical."
+  earlier versions of this file) is not a value the tool may emit. High (vague hypothesis + ambition/contingency mismatch are serious for 1.1 and 1.2 respectively), but **not** "critical": the CV, methodology risk plan, cross-panel justification, and CV-fit are all in good shape. Contrast with the PE6 fixture, where all six caps fire and the Step-1 verdict should be "critical."

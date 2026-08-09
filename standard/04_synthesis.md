@@ -30,8 +30,8 @@ ones humans uniquely judge — not a thirty-finding document.
   Treat convergence as a priority signal, not a verdict. All three
   roles run in one model and one chat session, and the Devil's
   Advocate has already read the Panel Reviewer's findings, so
-  agreement is corroboration within a single reader — correlated,
-  not independent replication. It tells you where to look first; it
+  agreement is corroboration within a single reader, not independent
+  replication. It tells you where to look first; it
   does not tell you the criticism is right. Your own scientific
   judgement decides that.
 - **Only the Panel Reviewer flagged it → almost always fix it.**

@@ -100,13 +100,16 @@ the concrete form of the claim the rest of the repository makes: a human
 checking the budget line by line catches both every time, and this tool
 catches one of them about a third of the time.
 
-**Prose.** Em-dashes removed from every reader-facing document and from the
-repository description, with the joining work spread across colons, commas and
-sentence breaks rather than moved onto semicolons. "Forcing function" and "AI
-catches the routine structural problems" went with them. The prompt file was
-left alone: it is machine-facing, its own banned-phrasings rail governs the
-register of the output, and restyling it before circulation risks a silent
-regression.
+**Prose.** Em-dashes removed from the documents a reader actually lands on
+(top-level README, the module READMEs, the workshop-leaders note, the roadmap,
+and the repository description), with the joining work spread across colons,
+commas and sentence breaks rather than moved onto semicolons. "Forcing
+function" and "AI catches the routine structural problems" went with them.
+Contributing notes, the fixture READMEs and the issue templates were left for
+a later pass. The prompt file was left alone deliberately: it is
+machine-facing, its own banned-phrasings rail governs the register of the
+output, and restyling six hundred lines before circulation is where a silent
+regression would come from.
 
 **The SH3 oracle now states its own stage.** It was written for Part I + CV
 and did not say so, which made a Full-proposal run firing CAP-A but not

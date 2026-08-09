@@ -110,11 +110,11 @@ record.
 This package is the ERC-specific application of two related
 research-audit projects by the same author group:
 
-- [`tjhavranek/research-audit-duel-protocol`](https://github.com/tjhavranek/research-audit-duel-protocol)
+- [`tjhavranek/research-audit-duel-protocol`](https://github.com/tjhavranek/research-audit-duel-protocol):
   the manual multi-model adversarial-debate protocols this
   package's Standard and roadmap multi-model variants are
   derived from.
-- [`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research)
+- [`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research):
   the Claude Code skills that automate the same protocols
   for Claude + Codex; the Advanced pre-review in this package
   drops an ERC rubric override into a local mad-research
