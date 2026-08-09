@@ -53,8 +53,11 @@ package's own heuristics, not ERC rules.
 
 The Advanced pre-review extends
 [`tjhavranek/mad-research`](https://github.com/tjhavranek/mad-research),
-a general research-audit project by the same authors. Related tools
-and the reasoning behind them are listed in
+a general research-audit project by the same authors. A sibling project,
+[`tjhavranek/paper-workshop`](https://github.com/tjhavranek/paper-workshop),
+does the same kind of adversarial review for manuscripts, but it writes
+edits, so it is not suitable for an ERC proposal. Related tools and the
+reasoning behind them are listed in
 [`docs/roadmap.md`](docs/roadmap.md).
 
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
