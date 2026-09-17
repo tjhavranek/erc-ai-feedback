@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<title>ERC draft pre-review (unofficial)</title>
+<meta name="description" content="An unofficial AI pre-review of an ERC Starting or Consolidator Grant draft, for applicants. One prompt, pasted into a chatbot with your draft.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="web/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="web/site.css">
+<script src="web/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#pre-review">Skip to the pre-review</a>
+
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M8.5 20.5c0-4.6 1.9-7.9 5.4-9.4l.8 1.5c-2 1-3 2.6-3.2 4.4h2.7v5.5H8.5zm9.3 0c0-4.6 1.9-7.9 5.4-9.4l.8 1.5c-2 1-3 2.6-3.2 4.4h2.7v5.5h-5.7z"/></svg>
+      <span>ERC draft pre-review</span>
+    </a>
+    <span class="pill">unofficial</span>
+    <a class="top-link" href="https://github.com/tjhavranek/erc-ai-feedback"><span class="wide-only">Source on </span>GitHub</a>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <p class="stale" id="stale" role="note" hidden></p>
+
+  <section class="hero">
+    <h1>A pre-review of your ERC Starting or Consolidator Grant draft</h1>
+    <p class="lead">Paste one prompt into a chatbot, then your draft. The prompt asks the model to read the draft as a busy panel member would and to flag the routine problems that should not take up workshop time: vague hypotheses, hidden incrementalism, missing risk logic, weak panel fit, a CV that does not connect to the project.</p>
+    <p class="points">It does not write proposal content, predict how the ERC will score you, or replace human review.</p>
+    <p class="byline">By Tomáš Havránek and Zuzana Iršová, Charles University · <a class="nowrap" href="https://meta-analysis.cz">meta-analysis.cz</a></p>
+    <p class="note">Independent and unofficial. Not produced, endorsed or approved by the European Research Council or ERCEA.</p>
+  </section>
+
+  <aside class="boundary" aria-labelledby="boundary-h">
+    <h2 id="boundary-h">For applicants, not for evaluators</h2>
+    <p>If you evaluate proposals for the ERC, as a panel member, panel chair or remote referee, do not use this or any AI tool on them. The ERC’s <a href="https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf">guidelines for panel members and remote reviewers</a> rest on two principles, confidentiality and non-delegation. Keeping the data safe is not enough for the second. The guidelines also rule out a locally run model, a tool that discloses nothing to a third party, and asking an AI whether a review is missing points.</p>
+    <p>Applicants are in a different position. The <a href="https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai">ERC Scientific Council</a> recognises that researchers seek input from AI, provided the author keeps full and sole authorship responsibility. Your host institution may have its own disclosure rules.</p>
+  </aside>
+
+  <section class="basic" id="pre-review" aria-labelledby="basic-h" tabindex="-1">
+    <div class="section-head">
+      <h2 id="basic-h">The pre-review</h2>
+      <span class="tag">Basic · recommended for most applicants</span>
+    </div>
+    <ol class="steps" role="list">
+      <li>
+        <h3>Copy the prompt</h3>
+        <div class="copy" data-src="basic/prompt.md">
+          <div class="copy-row"><button type="button" class="btn btn-big" disabled>Copy the prompt</button><p class="status" role="status"></p></div>
+          <p class="source">basic/prompt.md</p>
+          <details class="show">
+            <summary>Show the prompt</summary>
+            <textarea readonly rows="10" aria-label="The pre-review prompt" spellcheck="false"></textarea>
+          </details>
+        </div>
+      </li>
+      <li>
+        <h3>Open a paid chat with training turned off</h3>
+        <p>Use a paid account and the provider’s strongest reasoning setting rather than the fast default. Before you paste anything, turn off training on your data (<a href="https://help.openai.com/en/articles/7730893-chatgpt-privacy-practices">ChatGPT</a>, <a href="https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training">Claude</a>, <a href="https://support.google.com/gemini/answer/13594961">Gemini</a>) and check your institution’s rules. Paying does not make the text confidential, because the provider still receives it, and opting out of training does not delete it. Remove names and institutions you do not need, including other people’s, and do not paste embargoed or patent-sensitive material unless you have sanitised it.</p>
+      </li>
+      <li>
+        <h3>Paste the prompt, then your draft, then your stage</h3>
+        <p>Paste the prompt into a new chat, then your draft, and end with one line that names your stage.</p>
+        <dl class="stages">
+          <div><dt><code>Stage: Pitch</code></dt><dd>An idea sketch, or an abstract plus a draft CV. Methodology and a complete CV are not expected yet.</dd></div>
+          <div><dt><code>Stage: Part I + CV</code></dt><dd>The Extended Synopsis (Part I of the Scientific Proposal) in progress, with a draft CV.</dd></div>
+          <div><dt><code>Stage: Full proposal</code></dt><dd>The complete B1 (abstract, Part I, CV and track record) and whatever B2 you have. The panel reads only B1 at Step 1.</dd></div>
+        </dl>
+        <p class="hint">If you forget the stage, it asks. If the stage does not match what you pasted, it says so and reviews what is there.</p>
+      </li>
+      <li>
+        <h3>Read the report</h3>
+        <p>The prompt asks for a report in this order (<a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/tests/fixtures/example_outputs/sh3_basic_critique_codex_v035.md">an example on a synthetic draft</a>).</p>
+        <figure class="specimen">
+          <figcaption class="specimen-title">ERC StG/CoG critique</figcaption>
+          <ol role="list">
+            <li><b>In plain words:</b> four to six sentences, written so that you can forward them.</li>
+            <li><b>Stage and Step-1 risk:</b> the stage you declared and what you actually supplied, plus, at Pitch and Part I + CV, a risk level from low to critical.</li>
+            <li><b>Provisional marks:</b> a breakdown the ERC form does not have, on its sub-questions 1.1 to 1.4 for the project (1 to 5) and 2.1 to 2.3 for you as principal investigator (Outstanding to Non-competitive). None at Pitch stage.</li>
+            <li><b>Score caps triggered:</b> this package’s own heuristics for missing elements, not ERC rules, each named in plain words.</li>
+            <li><b>Findings:</b> up to 6 at Pitch, 8 at Part I + CV and 10 for a full proposal, ranked by severity, each with a verbatim quote from your draft and a concrete repair.</li>
+            <li><b>What the next stage needs to add</b></li>
+            <li><b>Workshop hand-off:</b> one paragraph to send with your draft, with brackets you fill in.</li>
+          </ol>
+        </figure>
+        <p>The risk level and the marks are the model’s reading of structural completeness. They do not predict how the ERC will score you. Before acting on a finding, search your draft for the exact words it quotes.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="others" aria-labelledby="others-h">
+    <h2 id="others-h">After the pre-review</h2>
+    <p class="intro">Standard and Advanced cost more of your time and are cross-checks on a draft that has already been through the pre-review. The other two are for a resubmission and for a Step 2 interview.</p>
+
+    <details class="row" id="standard">
+      <summary><h3 class="row-title">Standard: three roles in one chat</h3><span class="row-meta">A more thorough pass with the same model · 20 to 30 minutes</span></summary>
+      <div class="row-body">
+        <p>Three roles read the draft in turn, in one chat. The Panel Reviewer is the pre-review above. The Devil’s Advocate looks for counterarguments the Panel Reviewer did not raise. The Writing Coach looks only at how the draft reads and is told to add no content, so check that each edit keeps your meaning.</p>
+        <ol class="mini">
+          <li>Run the pre-review above and leave the chat open.</li>
+          <li>
+            <p>Paste this into the same chat, without your draft.</p>
+            <div class="copy" data-src="standard/02_devils_advocate.md">
+              <div class="copy-row"><button type="button" class="btn" disabled>Copy the Devil’s Advocate prompt</button><p class="status" role="status"></p></div>
+              <p class="source">standard/02_devils_advocate.md</p>
+              <details class="show"><summary>Show the prompt</summary><textarea readonly rows="8" aria-label="The Devil’s Advocate prompt" spellcheck="false"></textarea></details>
+            </div>
+          </li>
+          <li>
+            <p>When it has answered, paste this into the same chat.</p>
+            <div class="copy" data-src="standard/03_writing_coach.md">
+              <div class="copy-row"><button type="button" class="btn" disabled>Copy the Writing Coach prompt</button><p class="status" role="status"></p></div>
+              <p class="source">standard/03_writing_coach.md</p>
+              <details class="show"><summary>Show the prompt</summary><textarea readonly rows="8" aria-label="The Writing Coach prompt" spellcheck="false"></textarea></details>
+            </div>
+          </li>
+          <li>Merge the three yourself. Where two roles agree, look there first, but that is one model agreeing with itself and not independent confirmation. Bring the workshop your synthesis and up to three questions. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/standard/04_synthesis.md">More on the synthesis</a>.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="row" id="resubmission">
+      <summary><h3 class="row-title">Resubmission audit</h3><span class="row-meta">Did the new draft fix what the last panel flagged? · check eligibility first</span></summary>
+      <div class="row-body">
+        <div class="warn">
+          <h4>First check whether you may resubmit at all</h4>
+          <p>Under <a href="https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2027/wp_horizon-erc-2027_en.pdf">Work Programme 2027</a>, Table 6, a B or C at Step 1 in the 2026 Starting or Consolidator Grant call means you cannot apply to any of the five 2027 main grant calls: Starting, Consolidator, Advanced, ERC Plus and Synergy. So does a C at Step 1 in a 2025 Starting, Consolidator or Advanced Grant call. A B or C at Step 1 in the 2026 Advanced Grant call bars all of these except Synergy. An A at Step 1 without an invitation to Step 2, or an A or B at Step 2, carries no restriction. The rules change between Work Programmes, so check the current one first.</p>
+        </div>
+        <p>The next panel will not see your previous Evaluation Report, so the new draft cannot answer it. The report is evidence of weaknesses a fresh panel will tend to find again, and the audit asks whether each one is gone.</p>
+        <ol class="mini">
+          <li>Run the pre-review above first.</li>
+          <li>Copy the panel comment and the individual reviews into a text file. Remove reviewer-identifying detail and other people’s personal information, but keep the substance.</li>
+          <li>
+            <p>Paste the prompt into a new chat.</p>
+            <div class="copy" data-src="resubmission/prompt.md">
+              <div class="copy-row"><button type="button" class="btn" disabled>Copy the resubmission prompt</button><p class="status" role="status"></p></div>
+              <p class="source">resubmission/prompt.md</p>
+              <details class="show"><summary>Show the prompt</summary><textarea readonly rows="8" aria-label="The resubmission prompt" spellcheck="false"></textarea></details>
+            </div>
+          </li>
+          <li>
+            <p>Then paste the report and the new draft, each under its label:</p>
+            <pre class="labels">--- PREVIOUS EVALUATION REPORT ---
+(panel comment and individual reviews)
+
+--- NEW DRAFT ---
+(Part I + CV, or the full proposal)</pre>
+          </li>
+        </ol>
+        <p>For each criticism you get a verdict (addressed, partially addressed or not addressed) with quotes from both documents. It does not predict the new panel’s score. <span class="maturity">Not yet tested on a real resubmission cycle.</span></p>
+      </div>
+    </details>
+
+    <details class="row" id="interview">
+      <summary><h3 class="row-title">Interview preparation</h3><span class="row-meta">For Step 2 invitees · a question bank, then a stress test of your answers</span></summary>
+      <div class="row-body">
+        <p>It prepares you for a human mock panel and does not replace one. The question-bank prompt speaks in a panel member’s voice so that you hear the questions as a panel would put them. A panel member or remote referee must never use it to prepare a real interview.</p>
+        <ol class="mini">
+          <li>
+            <p>Paste the prompt into a new chat, then your complete B1 and B2. You get twenty to thirty likely questions.</p>
+            <div class="copy" data-src="mock_interview/01_question_bank.md">
+              <div class="copy-row"><button type="button" class="btn" disabled>Copy the question-bank prompt</button><p class="status" role="status"></p></div>
+              <p class="source">mock_interview/01_question_bank.md</p>
+              <details class="show"><summary>Show the prompt</summary><textarea readonly rows="8" aria-label="The question-bank prompt" spellcheck="false"></textarea></details>
+            </div>
+          </li>
+          <li>Draft a spoken answer of about a minute to each question.</li>
+          <li>
+            <p>Stress-test one answer at a time, each in a fresh chat: paste the prompt, the question, your answer and, if it is short, the part of the proposal the answer relies on. Revise, then take the answers to a human mock panel.</p>
+            <div class="copy" data-src="mock_interview/02_answer_stress_test.md">
+              <div class="copy-row"><button type="button" class="btn" disabled>Copy the stress-test prompt</button><p class="status" role="status"></p></div>
+              <p class="source">mock_interview/02_answer_stress_test.md</p>
+              <details class="show"><summary>Show the prompt</summary><textarea readonly rows="8" aria-label="The stress-test prompt" spellcheck="false"></textarea></details>
+            </div>
+          </li>
+        </ol>
+        <p>About ninety minutes, plus drafting the answers. <span class="maturity">Not yet used in a real Step 2 cycle.</span></p>
+      </div>
+    </details>
+
+    <details class="row row-quiet" id="advanced">
+      <summary><h3 class="row-title">Advanced: Claude Code and Codex</h3><span class="row-meta">Experimental · manual setup · sends the draft to two providers</span></summary>
+      <div class="row-body">
+        <p>It runs the <a href="https://github.com/tjhavranek/mad-research">mad-research</a> protocol against the same rubric in Claude Code and the Codex CLI. It takes thirty to forty-five minutes, has not been verified end to end, and is the only option that sends your draft to two providers.</p>
+        <p>In a pre-registered study by this package’s authors (<a href="https://arxiv.org/abs/2607.14713">Havránek and Iršová, 2026</a>, not yet peer-reviewed), the authors of 44 published economics meta-analyses preferred a single pass by one frontier model to the debate protocol Advanced adapts. Grant proposals were not tested, and there is no evidence that Advanced does better on them. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/advanced/README.md">Setup</a>.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="limits" aria-labelledby="limits-h">
+    <h2 id="limits-h">Good to know</h2>
+    <ul role="list">
+      <li>It covers Starting and Consolidator Grants only, not Advanced, Synergy, Proof of Concept or ERC Plus. It reviews English drafts only. That is a limit of this tool, not an ERC rule.</li>
+      <li>It has been tested on synthetic drafts only. It does not judge novelty in your field, panel strategy or interview credibility, and models miss field-specific problems with confidence.</li>
+      <li>The ERC changes its rules every year. <span id="rubric-line">The rubric behind the prompt lists its sources and when it was last verified</span> in <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/shared/rubric_locked.md">shared/rubric_locked.md</a>.</li>
+      <li id="leaders">If you run a workshop: by default the applicant runs the pre-review and brings the draft, the critique and up to three findings for your judgement. Running it on someone else’s draft needs their explicit consent and your institution’s approval, with training off. Where the AI and a human reader disagree on a high-severity finding, the human view wins. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/docs/for_workshop_leaders.md">Note for workshop leaders</a>.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><a href="https://github.com/tjhavranek/erc-ai-feedback">Source on GitHub</a> · <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/LICENSE">MIT licence</a> · <a class="nowrap" href="https://doi.org/10.5281/zenodo.20829165">DOI 10.5281/zenodo.20829165</a> · <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/CHANGELOG.md">Changelog</a></p>
+    <p class="small">The buttons copy the prompts unchanged from the files in the repository. If a report quotes words that are not in your draft, or you find another error, please open a <a href="https://github.com/tjhavranek/erc-ai-feedback/issues">GitHub issue</a>, without pasting proposal content.</p>
+  </div>
+</footer>
+
+<noscript><p class="wrap noscript">The copy buttons need JavaScript. You can copy each prompt by hand from its file on <a href="https://github.com/tjhavranek/erc-ai-feedback">GitHub</a>: the text between the lines <code>=== PROMPT BEGIN ===</code> and <code>=== PROMPT END ===</code>.</p></noscript>
+</body>
+</html>

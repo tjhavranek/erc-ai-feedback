@@ -11,6 +11,10 @@ time is spent on them: vague hypotheses, hidden incrementalism,
 missing risk logic, weak panel fit, a CV that does not connect to the
 project. It does not replace human review.
 
+**Web page: <https://tjhavranek.github.io/erc-ai-feedback/>.** Its Copy
+buttons load each prompt directly from this repository, so the copied
+text cannot drift from the files.
+
 **It is for applicants, and for workshop preparation the applicant has
 authorised. Nothing else.** If you are evaluating a proposal for the
 ERC, do not use this or any AI tool on it. The ERC's
@@ -73,7 +77,8 @@ reasoning behind them are listed in
    training opt-out is on.
    (Provider settings change; see Privacy below.)
 2. Copy the text between the `=== PROMPT BEGIN ===` and `=== PROMPT
-   END ===` markers in [`basic/prompt.md`](basic/prompt.md). Paste
+   END ===` markers in [`basic/prompt.md`](basic/prompt.md), or use
+   the Copy button on the web page, which copies the same text. Paste
    it into the chat.
 3. Paste your current draft after the prompt. State which stage you
    are at:

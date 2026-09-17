@@ -71,9 +71,10 @@ and calibration additions:
 
 ## What is explicitly deferred (parked)
 
-- A web app, an API, a hosted service. The package is prompts
+- A web app or hosted service that receives the draft, and an API.
+  The web page only copies the prompts. The package is prompts
   and rubrics; running them is the applicant's responsibility,
-  using their own provider account. Adding hosting would
+  using their own provider account. Hosting the run would
   introduce data-handling responsibilities the maintainer is
   not equipped to take on.
 - Automatic scoring against a panel-score scale (A invited / B

@@ -8,6 +8,21 @@ that do not change the locked rubric.
 
 ## [Unreleased]
 
+**A web page for the package, with no change to any prompt or to the
+rubric.** `index.html` at the repository root, with `web/site.css`,
+`web/site.js`, `web/favicon.svg` and `.nojekyll`, is served by GitHub
+Pages from `main`. Each Copy button fetches its prompt file and copies the
+text between the marker lines unchanged, so the copied text cannot drift
+from the file; a missing file or a broken marker disables the button and links to
+the file instead. The page carries the evaluator rule, the four steps of
+the Basic pre-review, the other four modes folded underneath, and the
+limits. It shows the rubric's verification date, read from
+`shared/rubric_locked.md`, and warns when that date is more than 300 days
+old. No build step, no third-party requests, no analytics. The README
+links to the page. Designed from independent Codex and Claude (Fable 5.1) proposals,
+reviewed by both, read by simulated applicants and a simulated workshop leader, and
+checked with the prompts copied from the page on synthetic drafts.
+
 **Rubric v1.4: a currency check, no rule change.** Everything published by
 the ERC since the 8 August verification was checked in three independent
 passes, each claimed change was challenged twice, and the survivors were
