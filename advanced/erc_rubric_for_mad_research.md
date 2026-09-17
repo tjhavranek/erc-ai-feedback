@@ -17,8 +17,8 @@ commit.
 
 Version: 1.1 (ERC StG/CoG audit rubric, for mad-research)
 Source: `tjhavranek/erc-ai-feedback` v0.3.4, `shared/rubric_locked.md`
-(v1.3)
-Last verified: 2026-08-08 against ERC Work Programme 2027
+(v1.4)
+Last verified: 2026-09-17 against ERC Work Programme 2027
 (20 July 2026) and *Information for Applicants to the Starting and
 Consolidator Grant Calls* v11.0 (22 July 2026). Sub-question 1.2
 gained a third clause for the 2027 calls — *"and is the proposed

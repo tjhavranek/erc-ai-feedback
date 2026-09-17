@@ -6,6 +6,25 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [Unreleased]
+
+**Rubric v1.4: a currency check, no rule change.** Everything published by
+the ERC since the 8 August verification was checked in three independent
+passes, each claimed change was challenged twice, and the survivors were
+re-read in the primary documents. The Guide for Peer Reviewers (v6.0), the
+Information for Applicants (v11.0) and Work Programme 2027 are unchanged.
+`shared/rubric_locked.md` now carries the ERC-2026-StG results (4,807
+applications, 421 grants, ~8.8%), the Table 6 row for a B or C at Step 1 in
+the 2026 Advanced Grant call (also in `resubmission/README.md` and on the
+page), research-integrity rows scoped to the 2025 and 2026 calls, a corrected
+ERC Plus sentence (no grant awarded yet), and Part I and Part II quotations
+taken from the Information for Applicants instead of ERC training slides.
+`resubmission/README.md` no longer calls the published panel-member lists
+internal. `mock_interview/README.md` adds that applicants are interviewed
+remotely and may be asked about the budget table. `basic/prompt.md` v1.6
+updates one stale gloss of sub-question 1.2. `docs/roadmap.md` gives the
+reminder's July date. Verification stamps moved to 2026-09-17.
+
 ## [0.3.5] — 2026-08-09
 
 Follow-up to v0.3.4 after two independent external model reviews. The ERC

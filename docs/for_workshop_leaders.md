@@ -61,7 +61,7 @@ summary alone.
 Before forwarding, sanity-check the top three findings: does each
 plain sentence in the summary still match the detailed finding it
 stands for? Plain wording must not drift from the precise finding.
-if it has, fix the summary, not the finding.
+If it has, fix the summary, not the finding.
 
 ## Who runs the tool
 
@@ -111,7 +111,7 @@ open an Issue immediately. That is a release-blocking failure.
 ## Verification
 
 The rubric was last verified against the official ERC documents on
-2026-08-08, against Work Programme 2027 and *Information for
+2026-09-17, against Work Programme 2027 and *Information for
 Applicants* v11.0. Before recommending the tool in any cycle, check
 the ERC news page for a new Work Programme rather than relying on
 this stamp: Work Programme 2027 was adopted on 20 July 2026 and the

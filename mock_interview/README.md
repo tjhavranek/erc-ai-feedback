@@ -11,8 +11,12 @@ presentation by the PI, then questions from the panel members
 (panel format varies; the panel may use points raised in the
 written remote-referee reviews to formulate questions, but the
 remote referees themselves do not attend the interview).
+The *Information for Applicants* (v11.0) adds two facts worth
+rehearsing for: applicants are interviewed remotely while the panel
+sits at the ERC's premises, and the PI may expect questions on the
+detailed budget table and resources as well as on the science.
 The interview tests judgement under pressure, panel chemistry,
-clarity of communication, and command of the proposal's details.
+clarity of communication, and command of the proposal's details,
 all of which a human mock panel (a workshop simulation, or a few
 senior colleagues running questions) judges far better than any
 AI.

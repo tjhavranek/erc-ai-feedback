@@ -129,7 +129,7 @@ merit.
 The ERC rubric changes annually, and the 2027 changes are already
 in force. The version in
 [`shared/rubric_locked.md`](shared/rubric_locked.md) was last
-verified on 2026-08-08 against ERC Work Programme 2027 (adopted
+verified on 2026-09-17 against ERC Work Programme 2027 (adopted
 20 July 2026) and *Information for Applicants* v11.0 (22 July
 2026). Note that sub-question 1.2 gained a third clause for the
 2027 calls and the eligibility windows widened. The *Guide for

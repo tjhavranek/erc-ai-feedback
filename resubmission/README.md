@@ -19,6 +19,9 @@ Table 6:
   to existing ERC grant holders in any case.)
 - **C at Step 1** in a Starting, Consolidator or Advanced Grant
   **2025** call → the same bar for 2027, so a C costs two cycles.
+- **B or C at Step 1** in the Advanced Grant **2026** call →
+  ineligible for Starting, Consolidator, Advanced and ERC Plus under
+  Work Programme 2027 (Synergy is not barred by this row).
 - **A (not invited)** at Step 1, or **A or B at Step 2** → no
   resubmission restriction. These are the applicants who can come
   straight back.
@@ -128,9 +131,9 @@ paid tier, training opt-out, do not paste in any context where
 the report could be re-used.
 
 If the previous report is from a recent call (last twelve
-months), the reviewers may still be identifiable from internal
-ERC publications of panel member lists. Treat the report's
-content as confidential to the resubmission preparation.
+months), panel members may still be identifiable from the
+lists the ERC publishes on its website. Treat the
+report's content as confidential to the resubmission preparation.
 
 ## Status
 

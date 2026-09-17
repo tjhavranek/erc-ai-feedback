@@ -185,8 +185,8 @@ CRITERION 1 — RESEARCH PROJECT
   ON "HIGH RISK / HIGH GAIN":
   The phrase appears in ERC framing language and training material
   but is NOT a formal sub-question on the current form. The risk-bearing
-  ambition concept is folded into sub-question 1.2 (ambitious and
-  advancing the frontier). When you flag "ambition without
+  ambition concept is folded into sub-question 1.2 (ambition / frontier
+  advance / approach scientifically convincing). When you flag "ambition without
   contingency", cite sub-question 1.2, not a "high risk / high gain"
   criterion.
 
@@ -725,6 +725,10 @@ concrete.
 
 ## Changelog (this file)
 
+- **v1.6 (2026-09-17):** One stale gloss updated. The note on "high risk /
+  high gain" still described sub-question 1.2 by its pre-2027 two-clause
+  form; it now uses the three-clause gloss the Section 7 scorecard already
+  carries. No change to any rule, cap or output field.
 - **v1.5 (2026-08-09):** Reframed the opening so the model works for the
   applicant and rehearses the panel's reading rather than being a panel
   member, with the evaluator refusal restated at the top instead of only

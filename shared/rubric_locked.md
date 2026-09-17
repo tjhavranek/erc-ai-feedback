@@ -1,6 +1,6 @@
 # ERC StG / CoG evaluation rubric — locked
 
-**Version:** 1.3
+**Version:** 1.4
 **Last verified against:** ERC Work Programme 2027 (Commission Decision
 C(2026) 4907, 20 July 2026); *Information for Applicants to the
 Starting and Consolidator Grant Calls*, version 11.0 (22 July 2026);
@@ -8,8 +8,9 @@ Starting and Consolidator Grant Calls*, version 11.0 (22 July 2026);
 version 6.0 (30 September 2025), **Annex 1 "Evaluation Form" in
 particular**; ERC Scientific Council position on AI in proposal
 preparation; *The use of AI in grant proposal evaluation — Guidelines
-for ERC panel members and remote reviewers* (23 March 2026).
-**Verified on:** 2026-08-08.
+for ERC panel members and remote reviewers* (23 March 2026); the
+ERC-2026-StG results and statistics (3 September 2026).
+**Verified on:** 2026-09-17.
 
 **Note on the reviewer-form source.** The *Guide for Peer Reviewers* at
 the URL in §11 is still v6.0, which is stamped for the Work Programme
@@ -223,15 +224,16 @@ step.
 References are **excluded** from page limits in both Part I and
 Part II.
 
-The official Part I instruction (from the Information for Applicants):
-*"Why your proposal is an original, creative idea about an important
-question in your research field(s) and how the project will advance the
-frontier of knowledge. What you expect may be changed, opened,
-challenged or how the current understanding will be different after
-your work has been undertaken."* Followed by three components: (1) lay
-out the current state of knowledge; (2) explain the scientific question
-and the objectives of the project; (3) present the overall approach or
-research strategy.
+The official Part I instruction (Information for Applicants v11.0,
+p. 28): Part I *"should convince the evaluation panel that the proposal
+presents an original and creative idea addressing an important question
+in the research field(s). It should explain how the project will advance
+the frontier of knowledge, and what contribution it will make to the
+research field(s) i.e. what may be changed, opened, challenged or how the
+results of the work will alter the current understanding of the
+field."* It has three components: (1) lay out the current state of
+knowledge; (2) explain the scientific question and the objectives of the
+project; (3) present the overall approach or research strategy.
 
 ### 5.2 Part B2 (one PDF — seen at Step 2 only)
 
@@ -240,8 +242,9 @@ research strategy.
 | Full Scientific Proposal (Part II) | Detailed explanation of project implementation: research methodology, work plan, risk assessment and mitigating measures, justification for the requested budget and resources, and any further necessary background not in Part I | up to 7 pages, refs not counted |
 | Funding ID | Current grants and pending applications (NOT a complete funding record) | (administrative) |
 
-Note: the Information for Applicants explicitly says **"try to avoid
-repeating sections of Part I in Part II"**.
+Note: the Information for Applicants (v11.0, p. 29) says **"Part II
+should not be a repetition of Part I"**, because the panel reads Parts I
+and II together at Step 2.
 
 ### 5.3 Annexes (no page limit, but only what is asked for)
 
@@ -310,11 +313,14 @@ one applicants most often get wrong, and it is severe:**
 |---|---|
 | Starting or Consolidator Grant **2026**, scored **B or C at Step 1** | Starting, Consolidator, Advanced, ERC Plus **and** Synergy 2027 |
 | Starting, Consolidator or Advanced Grant **2025**, scored **C at Step 1** | Starting, Consolidator, Advanced, ERC Plus **and** Synergy 2027 |
-| Any call, rejected for a breach of research integrity | All 2027 main grant calls |
+| Advanced Grant **2026**, scored **B or C at Step 1** | Starting, Consolidator, Advanced **and** ERC Plus 2027 (not Synergy) |
+| Starting, Consolidator, Advanced or Synergy Grant **2025**, or Starting, Consolidator, Advanced, ERC Plus or Synergy Grant **2026**, rejected on the grounds of a breach of research integrity | Starting, Consolidator, Advanced, ERC Plus **and** Synergy 2027 |
 
 So a B at Step 1 in the 2026 StG or CoG call bars the applicant from **all
 five 2027 main grant calls**, not merely from the same scheme, and a C in
-2025 bars them two cycles running. (Proof of Concept is not a main grant
+2025 bars them two cycles running. A B or C at Step 1 in the 2026
+Advanced Grant call bars the Starting, Consolidator, Advanced and ERC Plus
+2027 calls, though not Synergy. (Proof of Concept is not a main grant
 call and is not covered by these rows.) An **A (not invited)** at Step 1,
 and an **A or B at Step 2**, carry **no** resubmission restriction —
 those are the applicants who may come straight back. Inadmissible,
@@ -362,15 +368,17 @@ is the place to look if the URL above moves.)
 
 ## 8. Headline statistics (most recent)
 
-- **StG 2025:** 3,928 applications, 478 grants awarded → success
-  rate ~12.2%. Domain split: PE 42%, SH 30%, LS 28%. Women received
-  ~42% of the grants awarded (the ERC's headline, press-release-level
-  figure; the share of women among all *applicants* is published only
-  in the detailed statistics annex and is not reproduced here).
+- **StG 2026** (results announced 3 September 2026): 4,807
+  applications, a record and 22% more than the 3,928 of StG 2025; 421
+  grants → success rate ~8.8% (StG 2025: 478 grants, ~12.2%). Total
+  funding €705 million. Applications by domain: PE 1,971, SH 1,575,
+  LS 1,261; grants: PE 169, SH 139, LS 113. Women: 172 of the 421
+  grantees (~41%), from the statistics annex; the press release gives no
+  gender figure.
 - **CoG 2026:** 3,060 applications received (call closed 13 January
-  2026).
-- Country leaders for StG 2025 grants: Germany 99, UK 60,
-  Netherlands 44, France 41.
+  2026); Step 2 results are scheduled for December 2026.
+- Leading host countries for StG 2026 grants: Germany 89, UK 47,
+  France 38, Switzerland 36, Netherlands 33.
 
 Numbers move yearly. Re-verify on the ERC's *Facts and figures*
 pages before relying on them in any output.
@@ -473,9 +481,10 @@ For reference, the closed 2026 calls were StG 14 October 2025 and CoG
 resubmission restrictions in §6.1.
 
 The **ERC Plus** scheme (up to 7 years, up to €7 million), introduced
-under *Choose Europe*, is live and is being awarded for a second
-consecutive year under Work Programme 2027. It is outside this
-package's scope, which is Starting and Consolidator Grants only.
+under *Choose Europe*, is outside this package's scope, which is Starting
+and Consolidator Grants only. Its first call (ERC-2026-PLUS) closed on
+2 September 2026 with 198 proposals, and results are expected in spring
+2027. Work Programme 2027 schedules a second call, ERC-2027-PLUS.
 
 ---
 
@@ -490,7 +499,8 @@ package's scope, which is Starting and Consolidator Grants only.
 - New ERC Work Programme sets out 2027 funding opportunities: https://erc.europa.eu/news-events/news/new-erc-work-programme-sets-out-2027-funding-opportunities
 - ERC Starting Grant page: https://erc.europa.eu/apply-grant/starting-grant
 - ERC Consolidator Grant page: https://erc.europa.eu/apply-grant/consolidator-grant
-- StG 2025 statistics: https://erc.europa.eu/system/files/2025-09/erc-2025-stg-statistics.pdf
+- StG 2026 results (3 September 2026): https://erc.europa.eu/news-events/news/erc-2026-starting-grants-results ; statistics annex: https://erc.europa.eu/system/files/2026-09/erc-2026-stg-statistics.pdf
+- ERC Plus 2026 applications: https://erc.europa.eu/news-events/news/applications-erc-plus-grants-facts-and-figures
 - ERC document library (use this if any URL above moves): https://erc.europa.eu/support/document-library
 
 When this rubric is updated, all source URLs above must be
@@ -502,6 +512,21 @@ Peer Reviewers** — that is the single most critical source.
 
 ## 12. Changelog
 
+- **v1.4 (2026-09-17):** Currency check against the ERC sources
+  published since v1.3. The rules did not change: the Guide for Peer
+  Reviewers is still v6.0, the Information for Applicants still v11.0,
+  Work Programme 2027 is unamended, and the calendar, eligibility
+  windows, panel structure and both AI texts are as in v1.3. Changes:
+  (1) §8 refreshed to the ERC-2026-StG results of 3 September 2026
+  (4,807 applications, 421 grants, ~8.8%); (2) §10 corrected: no ERC
+  Plus grant has yet been awarded, the first call closed on 2 September
+  2026; (3) §6.1 gained the Table 6 row for a B or C at Step 1 in the
+  2026 Advanced Grant call, which bars the Starting, Consolidator,
+  Advanced and ERC Plus 2027 calls, and the research-integrity row now
+  names the 2025 and 2026 calls it covers instead of "any call"; (4) the
+  §5.1 and §5.2 quotations, which came from ERC applicant-training
+  slides, are replaced by the Information for Applicants v11.0 text.
+  No criterion, sub-question, scoring scale or score cap changed.
 - **v1.3 (2026-08-08):** Re-verified against **Work Programme 2027**
   (adopted 20 July 2026) and **Information for Applicants v11.0**
   (22 July 2026), both read directly. The v1.2 stamp predated Work

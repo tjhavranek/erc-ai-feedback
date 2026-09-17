@@ -31,8 +31,8 @@ and calibration additions:
   failure profiles, plus their expected-findings annotations.
 - **Annual rubric verification** workflow at
   [`../.github/workflows/annual_verification_reminder.yml`](../.github/workflows/annual_verification_reminder.yml).
-  Opens an Issue every September prompting the maintainer to
-  re-verify the rubric against the new Work Programme.
+  Opens an Issue every 1 July, ahead of the summer Work Programme
+  adoption, prompting the maintainer to re-verify the rubric.
 - **Companion-repository links** in
   [`../README.md`](../README.md), connecting this ERC package to
   the manual duel protocol and mad-research automation it builds
