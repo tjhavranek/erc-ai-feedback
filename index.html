@@ -30,8 +30,8 @@
   <p class="stale" id="stale" role="note" hidden></p>
 
   <section class="hero">
-    <h1>Your ERC draft, read against the ERC’s evaluation questions</h1>
-    <p class="lead">One prompt, pasted into a chatbot with your Starting or Consolidator Grant draft. The prompt asks the model to read the draft against the ERC’s 2027 evaluation questions and to flag the routine problems: vague hypotheses, no risk plan, weak panel fit, a CV that does not connect to the project, each with a quote from your draft and a repair.</p>
+    <h1>An unofficial check of your ERC draft before you submit</h1>
+    <p class="lead">Paste one prompt into a chatbot with your Starting or Consolidator Grant draft. It asks the model to read the draft against the ERC’s 2027 evaluation questions and to flag the routine problems: vague hypotheses, no risk plan, weak panel fit, a CV that does not connect to the project, each with a quote from your draft and a repair. Four more checks sit below: a second pass over the same draft, a resubmission audit, interview preparation, and a route for Claude Code or Codex.</p>
     <p class="points">Tested on synthetic drafts only. It does not write proposal content, predict how the ERC will score you, or replace human review.</p>
     <p class="byline">By Tomáš Havránek and Zuzana Iršová, Charles University · <a class="nowrap" href="https://meta-analysis.cz">meta-analysis.cz</a></p>
     <p class="note">Independent and unofficial. Not produced, endorsed or approved by the European Research Council or ERCEA.</p>
@@ -89,7 +89,7 @@
             <li><b>Score caps triggered:</b> this package’s own heuristics for missing elements, not ERC rules, each named in plain words.</li>
             <li><b>Findings:</b> up to 6 at Pitch, 8 at Part I + CV and 10 for a full proposal, ranked by severity, each with a verbatim quote from your draft and a concrete repair.</li>
             <li><b>What the next stage needs to add</b></li>
-            <li><b>Workshop hand-off:</b> one paragraph to send with your draft, with brackets you fill in.</li>
+            <li><b>Workshop hand-off:</b> one finished paragraph to send with your draft.</li>
           </ol>
         </figure>
         <p>The risk level and the marks are the model’s reading of structural completeness. They do not predict how the ERC will score you. Before acting on a finding, search your draft for the exact words it quotes, and check your own arithmetic: one synthetic draft carries a planted budget error, and <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/tests/fixtures/example_outputs/README.md">two of three recorded runs missed it</a>.</p>
@@ -191,7 +191,7 @@
       <summary><h3 class="row-title">Advanced: Claude Code and Codex</h3><span class="row-meta">Experimental · manual setup · sends the draft to two providers</span></summary>
       <div class="row-body">
         <p>It runs the <a href="https://github.com/tjhavranek/mad-research">mad-research</a> protocol against the same rubric in Claude Code and the Codex CLI. It takes thirty to forty-five minutes, has not been verified end to end, and is the only option that sends your draft to two providers.</p>
-        <p>In a pre-registered study by this package’s authors (<a href="https://arxiv.org/abs/2607.14713">Havránek and Iršová, 2026</a>, not yet peer-reviewed), the authors of 44 published economics meta-analyses preferred a single pass by one frontier model to the debate protocol Advanced adapts. Grant proposals were not tested. On six proposals to a UK funder, an unrelated group found the same (<a href="https://arxiv.org/abs/2603.08281">Thorne and others, 2026</a>, a preprint), so there is no evidence that Advanced does better. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/advanced/README.md">Setup</a>.</p>
+        <p>In a pre-registered study by this package’s authors (<a href="https://arxiv.org/abs/2607.14713">Havránek and Iršová, 2026</a>, not yet peer-reviewed), the authors of 44 published economics meta-analyses preferred a single pass by one frontier model to the debate protocol Advanced adapts. Grant proposals were not tested. On six proposals to a UK funder, an unrelated group found that a council of AI personas did no better than a single pass (<a href="https://arxiv.org/abs/2603.08281">Thorne and others, 2026</a>, a preprint), so there is no evidence that Advanced does better. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/advanced/README.md">Setup</a>.</p>
       </div>
     </details>
   </section>

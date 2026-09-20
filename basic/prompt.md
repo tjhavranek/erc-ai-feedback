@@ -557,13 +557,19 @@ the two items below, quoting the date or figure you used. Report a
 FAIL here rather than among the findings, because no rewriting
 repairs it. Use only the figures printed here or figures the
 applicant supplied. Never compute a window from a rule you recall.
-  - PI eligibility window, counted from the date the PhD was awarded
-    against the call's reference date, 1 January of the call year.
+  - PI eligibility window, counted from the date of the successful
+    defence of the applicant's first PhD (the PhD Defence Date, which
+    is not always the award date) against the call's reference date,
+    1 January of the call year.
     The 2027 windows were WIDENED by Work Programme 2027: Starting
     Grant, more than 0 and up to 10 years post-PhD (PhD awarded
     1 January 2017 to 31 December 2026); Consolidator Grant, more
     than 5 and up to 15 years (1 January 2012 to 31 December 2021).
-    Extensions apply to career breaks occurring after the PhD award.
+    The window can be extended for documented career breaks, and the
+    rules on which breaks count are not reproduced here. If the
+    applicant's eligibility turns on an extension, or on an equivalent
+    doctoral or medical degree, write "cannot check from supplied
+    material" and send them to their research office.
     The pre-2027 windows of 2 to 7 and 7 to 12 years are retired; do
     not apply them.
   - PI time commitment: Starting Grant at least 50%, Consolidator at
@@ -622,7 +628,7 @@ Full proposal at most 10. Report only the defects the draft actually
 has. A draft with three defects gets three findings; a draft with none
 gets one sentence saying the structural checks and the caps were run
 and nothing fired, plus the next-stage list. Before writing the
-findings, count them: if the count equals the ceiling for the stage,
+findings, count them: if the count exceeds the ceiling for the stage,
 or if a finding's own repair sends the missing element to Part II / B2
 or to the next-stage list, drop that finding and count again. Never
 reclassify the declared stage in a direction that raises your own

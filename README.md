@@ -37,7 +37,7 @@ requires only that this "does not relieve the author from taking full
 and sole authorship responsibilities with regard to acknowledgements,
 plagiarism and the practice of good scientific and professional
 conduct". The ERC sets no disclosure wording of its own; a host
-institution may. This package stays deliberately inside that permission
+institution may. The Basic pre-review stays deliberately inside that permission
 and does less than it allows: it identifies problems in a draft and
 never writes proposal content, so the words submitted to the ERC remain
 the applicant's own.

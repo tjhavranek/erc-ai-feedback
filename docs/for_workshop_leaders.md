@@ -18,9 +18,11 @@ asked.** The ERC Scientific Council recognises that researchers use AI
 to brainstorm, search the literature, and revise or summarise text, on
 the single condition that the author retains "full and sole authorship
 responsibilities". An applicant running this pre-review on their own
-draft is doing something the ERC explicitly contemplates. This package
-goes further than the rule requires by refusing to write proposal
-content at all, so the submitted text stays the applicant's own. You can
+draft is doing something the ERC explicitly contemplates. The Basic
+pre-review goes further than the rule requires by refusing to write
+proposal content at all, so the submitted text stays the applicant's
+own; the Writing Coach in `../standard/` may reword a sentence the
+applicant wrote, and nothing else does. You can
 tell an applicant that with confidence; what you cannot do is run it on
 a proposal you are evaluating.
 

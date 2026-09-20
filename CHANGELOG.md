@@ -83,10 +83,29 @@ quote from the draft and a repair. Two phrasings were rejected for
 overclaiming, "the way the panel will read it" (the prompt checks one
 document against a rubric, with no comparator pool) and "every objection
 quotes your own text" (the trial measured 103 verbatim quotes out of 105).
-A third blind test, six headlines with the lead held constant, settled the
-wording: an imperative headline told the reader to do what the model does, and
-paraphrased a thing the lead then named, so the page now opens "Your ERC draft,
-read against the ERC's evaluation questions".
+The opening was tested three times in all and then settled by hand: an
+imperative headline told the reader to do what the model does, and naming the
+draft rather than the tool told a first-time reader nothing. The page now opens
+the way the sibling GA UK page does, "An unofficial check of your ERC draft
+before you submit", and the lead ends by naming the four further checks by
+purpose, since the page is more than one prompt. Advertising the machinery
+itself stays out: it was ranked last by every reader who saw it.
+
+**A last pass by Codex astra found eight things to correct**, each verified
+before it was applied. The eligibility line counted from the date the PhD was
+awarded; Work Programme 2027 counts from the date of the successful defence of
+the first PhD, and the extension rules are now left to the applicant's research
+office rather than summarised. A rule meant to stop the model filling the
+finding ceiling said "equals" where it should have said "exceeds", which would
+have deleted a genuine last finding. The rubric said the authorship condition
+was "satisfied by construction", which no design choice can do for an applicant.
+Three files said the package never rewrites text, which is true of the Basic
+pre-review and not of the Writing Coach. The synthesis note called a fired cap
+"not negotiable", contradicting the prompt's own statement that the caps are
+unvalidated heuristics. The page described the workshop hand-off as still having
+brackets to fill in, which v1.7 removed, and summarised the independent study as
+finding "the same" when what it found was that a council of AI personas did no
+better than a single pass.
 The Czech National Contact Point is named
 Technologické centrum Praha, its name since November 2022.
 

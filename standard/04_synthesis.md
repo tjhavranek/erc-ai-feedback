@@ -35,8 +35,9 @@ ones humans uniquely judge — not a thirty-finding document.
   does not tell you the criticism is right. Your own scientific
   judgement decides that.
 - **Only the Panel Reviewer flagged it → almost always fix it.**
-  Caps that fired are not negotiable; structural omissions kill
-  panel scores.
+  Check each fired cap against the draft: the caps are this
+  package's unvalidated heuristics, not ERC scoring rules, so fix a
+  genuine omission and reject a cap whose element is already there.
 - **Only the Devil's Advocate flagged it → use judgement.**
   Devil's Advocate is reaching by design. Counterarguments
   worth raising are ones where a panel member would actually

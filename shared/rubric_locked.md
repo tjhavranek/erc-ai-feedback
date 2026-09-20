@@ -409,14 +409,15 @@ language is required in the proposal text by the ERC itself; some Host
 Institutions have their own policies, and those still apply.
 
 Note what this means for the design of this package. The ERC explicitly
-contemplates AI that *revises* and *summarises* proposal text. This
-package deliberately does **less than the ERC permits**: it identifies
-problems and refuses to draft or rewrite proposal content, so the text
-submitted remains the applicant's own words. The authorship condition is
-therefore satisfied by construction rather than by the applicant
-remembering to satisfy it. That is a design choice, not an ERC
-requirement, and it is why the package can be recommended to an
-applicant without a caveat about authorship.
+contemplates AI that *revises* and *summarises* proposal text. The
+Basic pre-review deliberately does **less than the ERC permits**: it
+identifies problems and refuses to draft or rewrite proposal content, so
+the text submitted remains the applicant's own words. The Writing Coach
+in `../standard/` is the one exception, and it is limited to rewording
+sentences the applicant already wrote. Refusing to draft or rewrite text is a design choice, not an ERC
+requirement, and it does not by itself discharge the applicant: the
+author stays answerable for acknowledgements, plagiarism and good
+scientific conduct in whatever they act on.
 
 ### 9.2 Reviewers — prohibited, on two independent grounds
 
