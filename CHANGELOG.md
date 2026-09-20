@@ -77,12 +77,16 @@ the multi-agent mode: all five ranked it last and two called it a feature flex,
 which is also what the authors' own null result argues. The report specimen
 gains the eligibility line. In a second blind test, with a panel member, two
 applicants and a link-follower, all four ranked the old opening last: the
-headline now names what the draft is read against, and the lead ends on the
+headline names what the draft is read against, and the lead ends on the
 fact that separates this from a generic chatbot, that each finding carries a
 quote from the draft and a repair. Two phrasings were rejected for
 overclaiming, "the way the panel will read it" (the prompt checks one
 document against a rubric, with no comparator pool) and "every objection
 quotes your own text" (the trial measured 103 verbatim quotes out of 105).
+A third blind test, six headlines with the lead held constant, settled the
+wording: an imperative headline told the reader to do what the model does, and
+paraphrased a thing the lead then named, so the page now opens "Your ERC draft,
+read against the ERC's evaluation questions".
 The Czech National Contact Point is named
 Technologické centrum Praha, its name since November 2022.
 
