@@ -6,7 +6,7 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
-## [Unreleased]
+## [0.4.0] — 2026-09-20
 
 **A web page for the package, with no change to any prompt or to the
 rubric.** `index.html` at the repository root, with `web/site.css`,
@@ -75,8 +75,21 @@ what `shared/rubric_locked.md` §2 and §3 carry verbatim. Four alternative
 openings were tested on five simulated readers, including one that advertised
 the multi-agent mode: all five ranked it last and two called it a feature flex,
 which is also what the authors' own null result argues. The report specimen
-gains the eligibility line. The Czech National Contact Point is named
+gains the eligibility line. In a second blind test, with a panel member, two
+applicants and a link-follower, all four ranked the old opening last: the
+headline now names what the draft is read against, and the lead ends on the
+fact that separates this from a generic chatbot, that each finding carries a
+quote from the draft and a repair. Two phrasings were rejected for
+overclaiming, "the way the panel will read it" (the prompt checks one
+document against a rubric, with no comparator pool) and "every objection
+quotes your own text" (the trial measured 103 verbatim quotes out of 105).
+The Czech National Contact Point is named
 Technologické centrum Praha, its name since November 2022.
+
+**Two smaller alignments.** `resubmission/prompt.md` asked whether the new
+draft "visibly engages with" each criticism, while its own README says the next
+panel never sees the previous report, so the test is whether the weakness is
+gone; the prompt now says that too. `CITATION.cff` moves to 0.4.0.
 
 **Rubric v1.4: a currency check, no rule change.** Everything published by
 the ERC since the 8 August verification was checked in three independent

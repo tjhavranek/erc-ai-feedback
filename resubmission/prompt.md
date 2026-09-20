@@ -34,9 +34,10 @@ You are auditing the engagement of a revised ERC Starting /
 Consolidator Grant draft against a previous Evaluation Report
 that scored the earlier submission B at Step 1, A-non-invited at
 Step 1, or B at Step 2. The applicant has revised the proposal
-for a future call; your job is to check whether the new draft
-visibly engages with each substantive criticism in the previous
-report.
+for a future call. The next panel will never see the previous report,
+so visible engagement is worth nothing by itself: your job is to check
+whether the weakness behind each substantive criticism is actually
+gone from the new draft.
 
 You will receive two blocks of text, in this order:
 
@@ -162,8 +163,8 @@ Output schema:
 === PROMPT END ===
 ```
 
-After the audit, the applicant has a checklist of what the new
-draft visibly engages with and what it does not. Items marked
+After the audit, the applicant has a checklist of which weaknesses
+the new draft has repaired and which it has not. Items marked
 NOT ADDRESSED are the first priority for revision before
 submission. Items marked PARTIALLY ADDRESSED should be checked
 against the original report wording — sometimes the missing
