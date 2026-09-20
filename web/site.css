@@ -124,6 +124,8 @@ code, pre, textarea { font-family: var(--mono); }
 .status { margin: 0; font-size: 15px; font-weight: 600; color: var(--accent); }
 .status.err { color: var(--warn); font-weight: 500; }
 .source { margin: 6px 0 0; font-family: var(--mono); font-size: 12.5px; color: var(--muted); overflow-wrap: anywhere; }
+.source a { color: inherit; text-decoration-color: var(--line-strong); }
+.source a:hover { color: var(--accent); }
 .show { margin-top: 6px; }
 .show summary { cursor: pointer; color: var(--accent); font-size: 15px; font-weight: 600; width: fit-content; }
 .show textarea {

@@ -32,7 +32,7 @@
   <section class="hero">
     <h1>A pre-review of your ERC Starting or Consolidator Grant draft</h1>
     <p class="lead">Paste one prompt into a chatbot, then your draft. The prompt asks the model to read the draft as a busy panel member would and to flag the routine problems that should not take up workshop time: vague hypotheses, hidden incrementalism, missing risk logic, weak panel fit, a CV that does not connect to the project.</p>
-    <p class="points">It does not write proposal content, predict how the ERC will score you, or replace human review.</p>
+    <p class="points">Tested on synthetic drafts only. It does not write proposal content, predict how the ERC will score you, or replace human review.</p>
     <p class="byline">By Tomáš Havránek and Zuzana Iršová, Charles University · <a class="nowrap" href="https://meta-analysis.cz">meta-analysis.cz</a></p>
     <p class="note">Independent and unofficial. Not produced, endorsed or approved by the European Research Council or ERCEA.</p>
   </section>
@@ -42,6 +42,8 @@
     <p>If you evaluate proposals for the ERC, as a panel member, panel chair or remote referee, do not use this or any AI tool on them. The ERC’s <a href="https://erc.europa.eu/system/files/2026-03/Use-AI-grant-proposal-evaluation.pdf">guidelines for panel members and remote reviewers</a> rest on two principles, confidentiality and non-delegation. Keeping the data safe is not enough for the second. The guidelines also rule out a locally run model, a tool that discloses nothing to a third party, and asking an AI whether a review is missing points.</p>
     <p>Applicants are in a different position. The <a href="https://erc.europa.eu/news-events/news/current-position-erc-scientific-council-ai">ERC Scientific Council</a> recognises that researchers seek input from AI, provided the author keeps full and sole authorship responsibility. Your host institution may have its own disclosure rules.</p>
   </aside>
+
+  <noscript><p class="noscript">The copy buttons need JavaScript. You can copy each prompt by hand from its file on <a href="https://github.com/tjhavranek/erc-ai-feedback">GitHub</a>: the text between the lines <code>=== PROMPT BEGIN ===</code> and <code>=== PROMPT END ===</code>.</p></noscript>
 
   <section class="basic" id="pre-review" aria-labelledby="basic-h" tabindex="-1">
     <div class="section-head">
@@ -89,14 +91,14 @@
             <li><b>Workshop hand-off:</b> one paragraph to send with your draft, with brackets you fill in.</li>
           </ol>
         </figure>
-        <p>The risk level and the marks are the model’s reading of structural completeness. They do not predict how the ERC will score you. Before acting on a finding, search your draft for the exact words it quotes.</p>
+        <p>The risk level and the marks are the model’s reading of structural completeness. They do not predict how the ERC will score you. Before acting on a finding, search your draft for the exact words it quotes, and check your own arithmetic: one synthetic draft carries a planted budget error, and <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/tests/fixtures/example_outputs/README.md">two of three recorded runs missed it</a>.</p>
       </li>
     </ol>
   </section>
 
   <section class="others" aria-labelledby="others-h">
     <h2 id="others-h">After the pre-review</h2>
-    <p class="intro">Standard and Advanced cost more of your time and are cross-checks on a draft that has already been through the pre-review. The other two are for a resubmission and for a Step 2 interview.</p>
+    <p class="intro">Standard and Advanced cost more of your time and are cross-checks on a draft that has already been through the pre-review.</p>
 
     <details class="row" id="standard">
       <summary><h3 class="row-title">Standard: three roles in one chat</h3><span class="row-meta">A more thorough pass with the same model · 20 to 30 minutes</span></summary>
@@ -188,7 +190,7 @@
       <summary><h3 class="row-title">Advanced: Claude Code and Codex</h3><span class="row-meta">Experimental · manual setup · sends the draft to two providers</span></summary>
       <div class="row-body">
         <p>It runs the <a href="https://github.com/tjhavranek/mad-research">mad-research</a> protocol against the same rubric in Claude Code and the Codex CLI. It takes thirty to forty-five minutes, has not been verified end to end, and is the only option that sends your draft to two providers.</p>
-        <p>In a pre-registered study by this package’s authors (<a href="https://arxiv.org/abs/2607.14713">Havránek and Iršová, 2026</a>, not yet peer-reviewed), the authors of 44 published economics meta-analyses preferred a single pass by one frontier model to the debate protocol Advanced adapts. Grant proposals were not tested, and there is no evidence that Advanced does better on them. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/advanced/README.md">Setup</a>.</p>
+        <p>In a pre-registered study by this package’s authors (<a href="https://arxiv.org/abs/2607.14713">Havránek and Iršová, 2026</a>, not yet peer-reviewed), the authors of 44 published economics meta-analyses preferred a single pass by one frontier model to the debate protocol Advanced adapts. Grant proposals were not tested. On six proposals to a UK funder, an unrelated group found the same (<a href="https://arxiv.org/abs/2603.08281">Thorne and others, 2026</a>, a preprint), so there is no evidence that Advanced does better. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/advanced/README.md">Setup</a>.</p>
       </div>
     </details>
   </section>
@@ -197,7 +199,7 @@
     <h2 id="limits-h">Good to know</h2>
     <ul role="list">
       <li>It covers Starting and Consolidator Grants only, not Advanced, Synergy, Proof of Concept or ERC Plus. It reviews English drafts only. That is a limit of this tool, not an ERC rule.</li>
-      <li>It has been tested on synthetic drafts only. It does not judge novelty in your field, panel strategy or interview credibility, and models miss field-specific problems with confidence.</li>
+      <li>It does not judge novelty in your field, panel strategy or interview credibility, and models miss field-specific problems with confidence.</li>
       <li>The ERC changes its rules every year. <span id="rubric-line">The rubric behind the prompt lists its sources and when it was last verified</span> in <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/shared/rubric_locked.md">shared/rubric_locked.md</a>.</li>
       <li id="leaders">If you run a workshop: by default the applicant runs the pre-review and brings the draft, the critique and up to three findings for your judgement. Running it on someone else’s draft needs their explicit consent and your institution’s approval, with training off. Where the AI and a human reader disagree on a high-severity finding, the human view wins. <a href="https://github.com/tjhavranek/erc-ai-feedback/blob/main/docs/for_workshop_leaders.md">Note for workshop leaders</a>.</li>
     </ul>
@@ -211,6 +213,5 @@
   </div>
 </footer>
 
-<noscript><p class="wrap noscript">The copy buttons need JavaScript. You can copy each prompt by hand from its file on <a href="https://github.com/tjhavranek/erc-ai-feedback">GitHub</a>: the text between the lines <code>=== PROMPT BEGIN ===</code> and <code>=== PROMPT END ===</code>.</p></noscript>
 </body>
 </html>

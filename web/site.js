@@ -56,7 +56,17 @@
     var status = box.querySelector(".status");
     var details = box.querySelector("details");
     var area = box.querySelector("textarea");
+    var source = box.querySelector(".source");
     var prompt = null;
+
+    // The path under the button links to the file the button fetches.
+    if (source) {
+      var srcLink = document.createElement("a");
+      srcLink.href = REPO + src;
+      srcLink.textContent = src;
+      source.textContent = "";
+      source.appendChild(srcLink);
+    }
 
     function fail() {
       button.disabled = true;
