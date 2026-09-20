@@ -28,8 +28,8 @@ a proposal you are evaluating.
 
 If applicants run the pre-review on their drafts before the
 workshop, the pre-review flags routine structural problems: vague
-hypothesis, hidden incrementalism, missing risk plan, weak panel
-fit, a CV that does not connect to the project. These take up a disproportionate
+hypothesis, no risk plan, weak panel fit, a CV that does not
+connect to the project. These take up a disproportionate
 share of workshop time. The workshop then concentrates on what
 only experienced human readers can judge: whether the idea is
 actually ERC-level, panel strategy, field positioning, and (at the

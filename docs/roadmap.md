@@ -144,6 +144,6 @@ not use it:
   pre-review.
 
 This package was created specifically for ERC. Other members of
-the Czech ERC support group (Technologické centrum AV ČR
+the Czech ERC support group (Technologické centrum Praha
 expert group and Charles University ERC Přípravka) are welcome
 to open issues, propose changes, or fork.

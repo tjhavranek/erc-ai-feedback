@@ -7,9 +7,9 @@ This is a small package for ERC Starting and Consolidator Grant
 applicants. It provides a rubric-based pre-review of a draft
 proposal that the applicant runs in one chat session with a current
 frontier model. The intent is to clear routine structural problems before workshop
-time is spent on them: vague hypotheses, hidden incrementalism,
-missing risk logic, weak panel fit, a CV that does not connect to the
-project. It does not replace human review.
+time is spent on them: vague hypotheses, no risk plan, weak panel
+fit, a CV that does not connect to the project. It does not replace
+human review.
 
 **Web page: <https://tjhavranek.github.io/erc-ai-feedback/>.** Its Copy
 buttons load each prompt directly from this repository, so the copied

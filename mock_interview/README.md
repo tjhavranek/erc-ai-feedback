@@ -87,7 +87,8 @@ counting the answer drafting.
 
 Same as the Basic pre-review. The applicant's draft and draft
 answers leave the local machine when pasted into a chat. Use a
-paid tier with training opt-out, or sanitise. The question bank
+paid tier with training opt-out, and sanitise what you do not need to
+paste. Payment is a floor, not a substitute. The question bank
 itself does not contain proposal content beyond the question
 text, so question banks can be shared more freely than draft
 content if a workshop reader wants to see them.

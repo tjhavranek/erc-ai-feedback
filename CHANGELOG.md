@@ -23,6 +23,61 @@ links to the page. Designed from independent Codex and Claude (Fable 5.1) propos
 reviewed by both, read by simulated applicants and a simulated workshop leader, and
 checked with the prompts copied from the page on synthetic drafts.
 
+**What a twelve-run trial changed in the prompts.** Six fresh synthetic
+drafts, one of them a positive control written to contain no substantive
+defects, were each reviewed twice, by two different chat models, and every
+report was judged against a hidden answer key. Quote fidelity held up: 103 of
+105 quoted fragments were verbatim. Three failures did not. One run told an
+eligible applicant with a 2019 PhD, at HIGH severity and in the opening
+summary, that the arithmetic pointed outside the Starting Grant window; the
+2027 window is 1 January 2017 to 31 December 2026, so the warning was false,
+and no other run mentioned eligibility at all. One model returned exactly eight
+findings on all six drafts, the ceiling for the stage, including four HIGH
+against the control. The schema's own example text was pasted back as output:
+the "would a human reviewer catch this fast" answer was the supplied sentence
+in 88 of 94 cases, and the `[items]` placeholder in the workshop hand-off
+reached the applicant in all twelve runs.
+
+`basic/prompt.md` v1.7 answers all three, and three smaller rails that the
+re-runs showed were still missing. The report now opens with an eligibility and
+time-commitment line carrying the 2027 windows from `shared/rubric_locked.md`
+§6, with an instruction never to compute a window from recall and never to put
+an applicant's eligibility in doubt unless the date they supplied falls outside
+the printed window. The per-stage finding numbers are ceilings with no floor,
+and a finding whose own repair belongs in Part II is to be dropped. The
+catch-fast field is answered in the model's own words. The hand-off paragraph is
+written out in full. A draft with no cap fired must be told it is in better
+shape than most. A pasted excerpt is not charged for the references and figures
+the paste dropped. Unexpanded acronyms come back as one LOW clarity finding.
+Re-runs on the control: eight findings and four HIGH became six and none, with
+the marks at Excellent and the planted acronym caught; on a weak full proposal
+the report still returns nine findings and four HIGH, so the calibration did not
+cost bluntness.
+
+**The refusal now sits in every prompt the package ships.** v0.3.5 stopped
+`basic/prompt.md` opening in an ERC evaluator's voice. The three
+`advanced/erc_role_prompts/` files still opened as "a senior ERC peer reviewer"
+with no refusal anywhere in that directory, and `resubmission/prompt.md`, which
+is handed out with its own Copy button and ingests a confidential evaluation
+report, had neither the refusal nor the rule that the draft is material rather
+than instructions. All four now carry both. `standard/README.md` and
+`mock_interview/README.md` also told applicants that a paid tier with training
+opt-out was an alternative to removing names; the main README has said since
+v0.3.5 that payment is a floor rather than a substitute, and the two mode
+READMEs now say the same.
+
+**The page names what the draft is read against.** The hero said the prompt
+flags "hidden incrementalism", which appears nowhere in `basic/prompt.md` and
+which the tool missed on the one synthetic draft where it was planted; it is
+gone from the page, the README and the workshop note. In its place the lead says
+the prompt reads the draft against the ERC's 2027 evaluation questions, which is
+what `shared/rubric_locked.md` §2 and §3 carry verbatim. Four alternative
+openings were tested on five simulated readers, including one that advertised
+the multi-agent mode: all five ranked it last and two called it a feature flex,
+which is also what the authors' own null result argues. The report specimen
+gains the eligibility line. The Czech National Contact Point is named
+Technologické centrum Praha, its name since November 2022.
+
 **Rubric v1.4: a currency check, no rule change.** Everything published by
 the ERC since the 8 August verification was checked in three independent
 passes, each claimed change was challenged twice, and the survivors were

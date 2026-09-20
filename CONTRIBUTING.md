@@ -10,7 +10,7 @@ locked rubric when the ERC rule set changes.
 This package was created specifically for ERC Starting and
 Consolidator Grant applicants and the people who support them
 (workshop leaders, mentors, research-office staff). The Czech ERC
-support ecosystem — the Technologické centrum AV ČR national
+support ecosystem — the Technologické centrum Praha national
 Expert Group and the Charles University ERC Přípravka — was the
 specific context in which the package was developed. Members of
 that ecosystem, and any other ERC workshop reader anywhere, are

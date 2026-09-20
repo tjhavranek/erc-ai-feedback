@@ -55,7 +55,8 @@ three outputs into a single workshop hand-off.
 ## Provider and privacy
 
 Same provider rules as Basic. Use a paid tier with training opt-out,
-or remove names and institutions before pasting. See the repository
+and remove names and institutions you do not need. Payment is a floor,
+not a substitute for judgement about what you paste. See the repository
 [`README.md`](../README.md) for current provider links.
 
 Running three role prompts in one chat session keeps the draft text

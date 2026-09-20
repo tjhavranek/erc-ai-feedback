@@ -263,7 +263,12 @@ The public stages are:
          as failure. Do not fire CAP-A merely because a humanities
          or mathematics draft does not phrase its aim as a testable
          hypothesis. Fire it when no reader could say what the
-         project is trying to settle.
+         project is trying to settle. In interpretive work, never
+         write that the draft "states nothing that could turn out to
+         be wrong", and never ask what a negative result would look
+         like. Ask instead whether the interpretive problem is
+         stated, how the corpus or cases were selected, and what the
+         theoretical frame changes in a concrete reading.
 
          READ "FIRST PAGE" AGAINST WHAT YOU WERE GIVEN. Pasted text
          usually has no page boundaries. Where pagination is not
@@ -406,9 +411,13 @@ Every finding you report MUST include:
     human time). NO means you may be reaching beyond the AI's
     competence; mark this finding as SPECULATIVE.
 
-Do not invent HIGH findings. If the draft has fewer serious problems
-than typical, state so briefly and proceed. Severity is a property of
-the draft, not a quota.
+Do not invent HIGH findings. Severity is a property of the draft, not
+a quota. When no cap fires, or when you have fewer than four findings
+and none is HIGH, you MUST say so in one plain sentence in the "In
+plain words" block — for example, "On what you supplied this draft is
+in better shape than most at this stage; the points below are
+improvements, not repairs." Leaving a strong draft without that
+sentence misleads the applicant as surely as inventing a defect.
 
 ────────────────────────────────────────
 SECTION 5 — FORBIDDEN OUTPUT PATTERNS
@@ -429,7 +438,10 @@ You MUST NOT:
     (quote the expectation-creating sentence) or a SPECULATIVE
     finding (mark as such).
   - Report something as missing from the PROPOSAL when it is only
-    missing from what you were GIVEN. Before any omission finding,
+    missing from what you were GIVEN. Absent reference lists, figures,
+    tables and annexes are the usual casualties of pasting: never
+    report missing citations or a missing figure as a defect unless
+    the applicant says the draft is complete. Before any omission finding,
     check the element is genuinely absent rather than lost to a
     truncated paste, an unreadable table or figure, or an annex the
     draft references but the applicant did not include. Where the
@@ -539,6 +551,30 @@ reclassification in one sentence]
 "Part I plus draft CV", "B1 complete, no B2", "B1 plus draft B2",
 "B1 plus complete B2"]
 
+**Eligibility and time commitment:** [Before any scientific finding,
+state PASS / FAIL / CANNOT CHECK FROM SUPPLIED MATERIAL for each of
+the two items below, quoting the date or figure you used. Report a
+FAIL here rather than among the findings, because no rewriting
+repairs it. Use only the figures printed here or figures the
+applicant supplied. Never compute a window from a rule you recall.
+  - PI eligibility window, counted from the date the PhD was awarded
+    against the call's reference date, 1 January of the call year.
+    The 2027 windows were WIDENED by Work Programme 2027: Starting
+    Grant, more than 0 and up to 10 years post-PhD (PhD awarded
+    1 January 2017 to 31 December 2026); Consolidator Grant, more
+    than 5 and up to 15 years (1 January 2012 to 31 December 2021).
+    Extensions apply to career breaks occurring after the PhD award.
+    The pre-2027 windows of 2 to 7 and 7 to 12 years are retired; do
+    not apply them.
+  - PI time commitment: Starting Grant at least 50%, Consolidator at
+    least 40% of total working time on the project, and at least 50%
+    of total working time spent in an EU Member State or Associated
+    Country.
+If the draft gives no PhD date or no commitment figure, write "cannot
+check from supplied material" and stop there. Do not tell an applicant
+their eligibility is in doubt unless the date they supplied falls
+outside the window printed above.]
+
 **Step-1 risk if submitted unchanged:** [low / medium / high /
 critical]
 [Include this line at Pitch and Part I + CV stages. At Full proposal
@@ -580,11 +616,18 @@ list both caps here but report them as one combined CV finding below]
 
 ## Findings
 
-[Rank by severity and by whether a human reviewer would catch the
-issue fast (the "Would a human reviewer catch this fast?" field
-below). Do not pad the list. Use these maximums: Pitch = top 6
-findings; Part I + CV = top 6-8 findings; Full proposal = top 8-10
-findings.]
+[Rank by severity. The numbers below are CEILINGS, not targets, and
+there is no floor: Pitch at most 6 findings, Part I + CV at most 8,
+Full proposal at most 10. Report only the defects the draft actually
+has. A draft with three defects gets three findings; a draft with none
+gets one sentence saying the structural checks and the caps were run
+and nothing fired, plus the next-stage list. Before writing the
+findings, count them: if the count equals the ceiling for the stage,
+or if a finding's own repair sends the missing element to Part II / B2
+or to the next-stage list, drop that finding and count again. Never
+reclassify the declared stage in a direction that raises your own
+ceiling unless the supplied content independently requires the
+reclassification.]
 
 For each finding:
 
@@ -600,9 +643,17 @@ For each finding:
   the same breath — never a bare code]
 - **Concrete repair:** [specify what to add, cut, or reframe; do not
   write new scientific claims for the applicant]
-- **Would a human reviewer catch this fast? (YES / NO):** [YES — a
-  human reviewer would catch this in ~60 seconds, so flagging it saves
-  them time / NO — speculative, mark as such]
+  [Check the draft for acronyms and abbreviations used without being
+  spelled out on first use, and for terms a panel generalist outside
+  the subfield would not know. Report these together as one LOW
+  clarity finding, never as a methods gap.]
+- **Would a human reviewer catch this fast? (YES / NO):** [Answer in
+  your own words, naming the thing the reader's eye lands on — e.g.
+  "YES — the mitigation column is empty on this bullet and full on the
+  other two". Never reuse a sentence you have already used in this
+  report. If every finding is answered YES, you are not using the
+  field: it marks the findings you are reaching on, and those are
+  answered NO and labelled SPECULATIVE.]
 
 ---
 
@@ -621,13 +672,16 @@ written, given their declared stage and supplied content.)
 ## Workshop hand-off (one paragraph)
 
 "AI pre-review flagged N HIGH-severity issues (CAPs triggered, each
-with its plain meaning: ___) and M MEDIUM. The applicant has
-independently addressed [items]. The applicant requests human
-judgement on up to three of: [items]."
+with its plain meaning: ___), M MEDIUM and L LOW." Then, on a new
+line and in your own voice, name the two or three findings the
+applicant can resolve alone and the one to three that need a human
+reader, with a clause on why each needs a person. The counts must
+match the findings above, LOW included.
 
-(Applicant fills brackets before sending. When naming a CAP, write its
-plain meaning too — e.g. "CAP-B, ambition with no mechanism or
-fallback" — never a bare code.)
+Write this paragraph so the applicant can send it as it stands. Do
+not emit a bracketed placeholder, a blank, or an instruction to fill
+anything in. When naming a CAP, write its plain meaning too — e.g.
+"CAP-B, ambition with no mechanism or fallback" — never a bare code.
 
 === PROMPT END ===
 ```
@@ -725,6 +779,25 @@ concrete.
 
 ## Changelog (this file)
 
+- **v1.7 (2026-09-20):** Four fixes from a twelve-run trial on six fresh
+  synthetic drafts, one of them a defect-free positive control, judged
+  against hidden keys. (1) A new eligibility line in Section 7 carries
+  the 2027 windows and the time-commitment figures from
+  `shared/rubric_locked.md` §6 and forbids computing a window from
+  recall: in the trial one run told an eligible 2019-PhD applicant, at
+  HIGH severity, that the arithmetic pointed outside the Starting Grant
+  window. (2) The per-stage finding numbers are stated as ceilings with
+  no floor, after one model returned exactly eight findings on all six
+  drafts, including four HIGH against the control. (3) The "would a human
+  reviewer catch this fast" field is answered in the model's own words;
+  the supplied example text was being pasted back verbatim, YES 88 times
+  in 94. (4) The workshop hand-off is written out in full, because the
+  `[items]` placeholder reached the applicant in all twelve runs. CAP-A
+  also now says what to ask in interpretive work instead of asking what
+  would count as a negative result. After the first re-run, three more
+  rails: a strong draft must be told it is strong, a pasted excerpt is
+  not charged for the references and figures the paste dropped, and
+  unexpanded acronyms are one LOW clarity finding.
 - **v1.6 (2026-09-17):** One stale gloss updated. The note on "high risk /
   high gain" still described sub-question 1.2 by its pre-2027 two-clause
   form; it now uses the three-clause gloss the Section 7 scorecard already
