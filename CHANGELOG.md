@@ -6,6 +6,30 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.4.1] — 2026-09-22
+
+**Basic prompt v1.8: five internal contradictions repaired, nothing
+else touched.** An external review of the released file raised five
+criticisms of the prompt; three and a half held up against the source,
+and checking them turned up two more. The findings filter no longer
+deletes a finding whose repair belongs in a Part II / B2 the applicant
+actually supplied, which had been cancelling CAP-D and the Criterion
+1.3 and 1.4 findings the scorecard is anchored to. The "would a human
+reviewer catch this fast?" field no longer tells the model that an
+all-YES report means it is misusing the field: that sentence behaved as
+a quota, and all five v1.7 re-runs returned exactly one NO /
+SPECULATIVE finding, which on the defect-free control was the invented
+problem both times. The eligibility block's parenthetical now says
+"PhD defended" rather than "PhD awarded", matching the rule above it
+and the locked rubric. The calibration sentence now fires only when no
+cap fires and no finding is HIGH, and no longer tells an applicant the
+draft is "in better shape than most", a claim about a population the
+tool has never seen. The "In plain words" block's ban on reassurance
+now excepts the calibration sentence it was suppressing. The rubric,
+the score caps, the severity anchor and every ERC fact are unchanged,
+and the page needs no edit because it quotes none of the amended
+sentences.
+
 ## [0.4.0] — 2026-09-20
 
 **A web page for the package, with no change to any prompt or to the

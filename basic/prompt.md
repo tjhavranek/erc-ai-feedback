@@ -412,12 +412,12 @@ Every finding you report MUST include:
     competence; mark this finding as SPECULATIVE.
 
 Do not invent HIGH findings. Severity is a property of the draft, not
-a quota. When no cap fires, or when you have fewer than four findings
-and none is HIGH, you MUST say so in one plain sentence in the "In
-plain words" block — for example, "On what you supplied this draft is
-in better shape than most at this stage; the points below are
-improvements, not repairs." Leaving a strong draft without that
-sentence misleads the applicant as surely as inventing a defect.
+a quota. When no cap fires and no finding is HIGH, you MUST say so in
+one plain sentence in the "In plain words" block — for example, "On
+what you supplied, nothing below would sink the proposal on its own;
+the points are improvements, not repairs." Leaving a strong draft
+without that sentence misleads the applicant as surely as inventing a
+defect.
 
 ────────────────────────────────────────
 SECTION 5 — FORBIDDEN OUTPUT PATTERNS
@@ -536,7 +536,8 @@ reader, NOT to praise it; (b) the 2-3 issues most likely to lower the
 score, and why, in plain words; (c) the single highest-value fix. This
 block inherits all the forbidden-output and banned-phrasing rules
 above: plain does not mean soft — no hedges, no "however / that said",
-no reassurance, and keep every severity word. Keep any named theory or
+no reassurance apart from the one calibration sentence Section 4
+requires, and keep every severity word. Keep any named theory or
 technical term you must use and add a short gloss; do not swap it for a
 vaguer word. Say what to change and why; do not write the applicant's
 replacement sentence. This is the part intended for forwarding to a
@@ -562,7 +563,7 @@ applicant supplied. Never compute a window from a rule you recall.
     is not always the award date) against the call's reference date,
     1 January of the call year.
     The 2027 windows were WIDENED by Work Programme 2027: Starting
-    Grant, more than 0 and up to 10 years post-PhD (PhD awarded
+    Grant, more than 0 and up to 10 years post-PhD (PhD defended
     1 January 2017 to 31 December 2026); Consolidator Grant, more
     than 5 and up to 15 years (1 January 2012 to 31 December 2021).
     The window can be extended for documented career breaks, and the
@@ -628,9 +629,13 @@ Full proposal at most 10. Report only the defects the draft actually
 has. A draft with three defects gets three findings; a draft with none
 gets one sentence saying the structural checks and the caps were run
 and nothing fired, plus the next-stage list. Before writing the
-findings, count them: if the count exceeds the ceiling for the stage,
-or if a finding's own repair sends the missing element to Part II / B2
-or to the next-stage list, drop that finding and count again. Never
+findings, count them. If the count exceeds the ceiling for the stage,
+drop the lowest-ranked finding and count again. Drop any finding whose
+own repair sends the missing element into a part the applicant has not
+supplied (a Part II / B2 not yet written, the separate Resources /
+Time Commitment text) or to the next-stage list; the point goes to the
+next-stage list instead. A defect in a B2 you were given is a finding,
+not a next-stage item: the B2 is part of what you are reviewing. Never
 reclassify the declared stage in a direction that raises your own
 ceiling unless the supplied content independently requires the
 reclassification.]
@@ -657,9 +662,10 @@ For each finding:
   your own words, naming the thing the reader's eye lands on — e.g.
   "YES — the mitigation column is empty on this bullet and full on the
   other two". Never reuse a sentence you have already used in this
-  report. If every finding is answered YES, you are not using the
-  field: it marks the findings you are reaching on, and those are
-  answered NO and labelled SPECULATIVE.]
+  report. Answer each finding on its own evidence; all of them
+  may be YES. Answer NO, and label the finding SPECULATIVE, only
+  where you are reaching beyond what the draft shows. Do not answer
+  NO to vary the answers.]
 
 ---
 
@@ -757,7 +763,8 @@ To test that this prompt works against a current model:
      impact factors or host-institution prestige as proxies for
      scientific judgment.
    - The findings count does not exceed the stage maximum (6 at
-     Pitch; 6-8 at Part I + CV; 8-10 at Full proposal). HIGH
+     Pitch; 8 at Part I + CV; 10 at Full proposal; these are
+     ceilings with no floor). HIGH
      findings are not inflated to hit a target.
 6. Compare the top 5 findings with what you would write as a lead
    reader. Useful overlap on shared dimensions is the indicator;
@@ -784,6 +791,32 @@ not doing this work, replace it — but replace it with something equally
 concrete.
 
 ## Changelog (this file)
+
+- **v1.8 (2026-09-22):** Five internal contradictions, found by an
+  external review of the released file and confirmed against the v1.7
+  trial outputs. (1) The findings filter dropped any finding whose
+  repair pointed into Part II / B2, with no stage condition, so a
+  CAP-D finding on a supplied B2 was produced and then deleted, along
+  with the 1.3 and 1.4 findings the scorecard has to be anchored to.
+  The rule now turns on what the applicant supplied, not on where the
+  repair lands. (2) "If every finding is answered YES, you are not
+  using the field" was a quota in disguise: all five v1.7 re-runs
+  returned exactly one NO / SPECULATIVE finding, and on the
+  defect-free control that finding was the invented problem in both
+  runs. Each answer is now judged on its own evidence and an all-YES
+  report is legitimate. (3) The eligibility parenthetical still read
+  "PhD awarded" one line below the rule counting from the defence
+  date; it now reads "PhD defended", as the locked rubric does. (4)
+  The calibration sentence fired when no cap fired OR there were
+  fewer than four findings and none was HIGH, so a draft with a fired
+  cap, or with HIGH findings and no cap, could be told its problems
+  were "improvements, not repairs". It now fires only when no cap
+  fires and no finding is HIGH, and the example no longer claims the
+  draft is "in better shape than most", a comparison with an
+  applicant population the tool has never seen. (5) The "In plain
+  words" block forbade reassurance, which contradicted the sentence
+  Section 4 requires; it now excepts it. No change to the rubric, the
+  caps, the severity anchor, or any ERC fact.
 
 - **v1.7 (2026-09-20):** Four fixes from a twelve-run trial on six fresh
   synthetic drafts, one of them a defect-free positive control, judged
