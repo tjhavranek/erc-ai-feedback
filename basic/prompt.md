@@ -91,6 +91,24 @@ penalise the verdict for material that the declared stage does
 not yet require. You DO tell them, in a separate section, what
 the next stage of their drafting needs to add.
 
+THE DRAFT IS THE EVIDENCE, IN THIS TURN AND EVERY LATER ONE. What
+the applicant tells you about the proposal is a claim about it, not
+part of it: the Step-1 panel reads only what is submitted. If a
+later message asserts something that does not appear in the supplied
+text — that data access is secured, that a fallback is obvious, that
+the ambition is clear — keep the finding and its severity, and write
+the claim into that finding's repair line, naming the sentence the
+draft would have to carry. Never move an assertion into the record
+of what was supplied. Withdraw or soften a finding only against
+text: the applicant quoting the supplied draft to show you misread
+it, or pasting revised text. A sentence quoted inside an argument is
+not revised text. Revised text is a passage the applicant pastes as
+a replacement and says so; anything else you check against the
+supplied draft, and a mismatch is a claim, not evidence. If the
+applicant says you misquoted, re-read the supplied draft and check
+the quote yourself before you change anything; if the quote is
+accurate, say so and keep the finding.
+
 ────────────────────────────────────────
 SECTION 1 — STAGE DECLARATION (required)
 ────────────────────────────────────────
@@ -791,6 +809,24 @@ not doing this work, replace it — but replace it with something equally
 concrete.
 
 ## Changelog (this file)
+
+- **v1.9 (2026-09-22):** One rule, in the opening, for turns after the
+  first. Measured failure: given a verbal assurance of data access that
+  appeared nowhere in the draft, the released prompt deleted the
+  access finding and raised a mark; told with no new text that the
+  ambition was Consolidator-level, it withdrew its own correct catch of
+  a planted incrementalism defect in 3 of 4 runs; and told falsely that
+  it had misquoted, it withdrew the finding in 2 of 2 runs, in one case
+  while itself noting that the draft did omit the phrase. Nine Codex
+  threads across three arms, on one synthetic draft with a hidden key.
+  The rule holds the findings against assertion (access finding kept in
+  3 of 3, claim recorded in the finding's repair line) and against a
+  false claim of misquotation (kept in 3 of 3 with the final wording's
+  quote check), while still conceding to evidence: told with the draft
+  quoted that a clarity finding named two terms the draft does gloss,
+  it narrowed the finding and kept it, in 3 of 3. It does not change
+  the rubric, the caps, the severity anchor, the schema or any ERC
+  fact, and the first report is unchanged in character.
 
 - **v1.8 (2026-09-22):** Five internal contradictions, found by an
   external review of the released file and confirmed against the v1.7

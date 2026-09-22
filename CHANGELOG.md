@@ -6,6 +6,36 @@ versioning is loose, with minor bumps for prompt or rubric content
 changes and patch bumps for documentation and behaviour adjustments
 that do not change the locked rubric.
 
+## [0.4.2] — 2026-09-22
+
+**Basic prompt v1.9: the draft is the evidence in every turn.** The
+package is a single prompt used inside a chat, so the second turn is the
+normal case, and nothing in the prompt governed it. Jozef Barunik
+pointed this out, and testing confirmed it: given a verbal assurance of
+data access that appears nowhere in the draft, the released prompt
+deleted the access finding and raised a mark; told with no new text that
+the ambition was at Consolidator level, it withdrew its own correct
+catch of a planted incrementalism defect in three runs of four; and told
+falsely that it had misquoted the draft, it withdrew the finding in two
+runs of two, in one case while noting that the draft did omit the
+phrase. The evidence is nine Codex threads across three prompt versions
+on one synthetic draft with a hidden answer key.
+
+One paragraph in the opening now says that what an applicant tells you
+about a proposal is a claim about it rather than part of it, that a
+claim is recorded in the finding's own repair line, and that a finding
+is withdrawn or softened only against text: the draft quoted back to
+show a misreading, or revised text the applicant pastes and says is a
+replacement. A claim of misquotation is checked against the supplied
+draft before anything changes. Correction by evidence still works: told
+with the draft quoted that a clarity finding listed two terms the draft
+does gloss, the model narrowed the finding and kept it, in three runs of
+three.
+
+No change to the locked rubric, the score caps, the severity anchor, the
+output schema or any ERC fact, and the first report is unchanged in
+character. Test artefacts are outside the repository.
+
 ## [0.4.1] — 2026-09-22
 
 **Basic prompt v1.8: five internal contradictions repaired, nothing
